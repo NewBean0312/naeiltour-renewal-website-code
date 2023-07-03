@@ -13,18 +13,63 @@ a {
   text-decoration: none;
 }
 
-/* slide-banner */
-.slider-banner {
-  position: relative;
+/* option-banner */
+.option-banner {
+  width: 1903px;
   margin: 0 auto;
-  width: 1600px;
-  height: 700px;
+  margin-bottom: 117px;
 }
 
-.slider-wrapper {
+.option-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 911px;
+  height: 240px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.option-wrapper span {
+  color: #000;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+/* select-area */
+.option-wrapper .select {
+  border: none;
+  border-bottom: 2.5px solid #000;
+  margin-left: 5px;
+  margin-right: 8px;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 16px;
+}
+
+
+.select option {
+  text-align: center;
+  font-size: 18px;
+}
+
+.select option:hover {
+  background: none;
+  font-weight: 600;
+}
+
+/* slide-banner-area */
+.slide-banner {
   position: relative;
-  width: 1248px;
-  height: 633px;
+  margin: 0 auto;
+  width: 1903px;
+}
+
+.slide-wrapper {
+  position: relative;
+  width: 1251px;
+  height: 617px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -81,7 +126,7 @@ a {
 
 /* slide-box */
 .slide-box {
-  width: 394px;
+  width: 395px;
   height: 615px;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
@@ -110,7 +155,6 @@ a {
 .slide-box .des > h1 {
   width: 342px;
   margin: 47px 26px 0;
-  border: 1px solid red;
   font-size: 29px;
   font-weight: 400;
 }
@@ -131,7 +175,6 @@ a {
   width: 162px;
   height: 30px;
   text-align: center;
-  border: 1px solid red;
 }
 
 .slide-box .des .button a {
