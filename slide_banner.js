@@ -8,7 +8,7 @@ var slides = document.querySelector(".slides"),
   nextBtn = document.querySelector(".next");
 
 slides.style.width =
-  (slideWidth + slideMargin) * slideCount - slideMargin + "px";
+  (slideWidth + slideMargin) * slideCount - slideMargin + 300+ "px";
 
 prevBtn.classList.add("none");
 

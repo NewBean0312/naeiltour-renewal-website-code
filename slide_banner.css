@@ -28,7 +28,6 @@ a {
   width: 911px;
   height: 240px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .option-wrapper span {
@@ -75,6 +74,7 @@ a {
 }
 
 .slides {
+  display: flex;
   position: absolute;
   top: 0;
   left: 0;
