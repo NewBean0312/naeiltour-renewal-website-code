@@ -12,28 +12,38 @@
       <div class="option-wrapper">
         <div>
           <span>나는</span>
-          <select name="who" class="select" id="who">
-            <option value="child">👶아이와 함께</option>
-            <option value="friend">👥친구와 함께</option>
-            <option value="couple">👫연인과 함께</option>
-            <option value="parents">👪부모님과 함께</option>
-            <option value="alone">😎나혼자</option>
-          </select>
-          <select name="where" class="select" id="where">
-            <option value="child">🏖️동남아에서</option>
-            <option value="friend">⛩️일본/중국/홍콩/대만에서</option>
-            <option value="couple">🗺️유럽에서</option>
-            <option value="parents">🏙️미국/캐나다/대양주에서</option>
-            <option value="alone">🏝️괌/사이판에서</option>
-          </select>
+          <div class="select-box">
+            <select name="who" class="select" id="who">
+              <option value="child">👶아이와 함께</option>
+              <option value="friend">👥친구와 함께</option>
+              <option value="couple">👫연인과 함께</option>
+              <option value="parents">👪부모님과 함께</option>
+              <option value="alone">😎나혼자</option>
+            </select>
+          </div>
+          <div class="select-box">
+            <select name="where" class="select" id="where">
+              <option value="child">🏖️동남아에서</option>
+              <option value="friend">⛩️일본/중국/홍콩/대만에서</option>
+              <option value="couple">🗺️유럽에서</option>
+              <option value="parents">🏙️미국/캐나다/대양주에서</option>
+              <option value="alone">🏝️괌/사이판에서</option>
+            </select>
+          </div>
         </div>
         <div>
-          <select name="how" class="select">
-            <option value="activity">🪂액티비티가 특화된 여행을</option>
-            <option value="shoping">🛍️쇼핑이 특화된 여행을</option>
-            <option value="beach">🌊바다와 함께 휴식과 여유를</option>
-            <option value="waterpark">🛶워터파크 리조트에서 물놀이를</option>
-          </select>
+          <div class="select-box">
+            <select name="how" class="select">
+              <option value="tourism">📷휴식보다는 알찬 관광을</option>
+              <option value="holiday">🥂관광보다는 휴식과 여유를</option>
+              <option value="activity">🪂액티비티가 특화된 여행을</option>
+              <option value="shoping">🛍️쇼핑이 특화된 여행을</option>
+              <option value="history">🖼️역사/문화 특화 여행을</option>
+              <option value="shoping">🏞️천혜 자연경관을</option>
+              <option value="beach">🌊바다와 함께 휴식과 여유를</option>
+              <option value="waterpark">🛶워터파크 리조트에서 물놀이를</option>
+            </select>
+          </div>
           <span>즐기고 싶어요</span>
         </div>
       </div>
@@ -42,8 +52,10 @@
           <span>다른 취향 보기</span>
           <span><img src="./img_folder/reset_logo.jpg" alt="" /></span>
         </button>
-        <button class="search-btn"><span>내 취향 여행 보기</span>
-        <span><img src="./img_folder/search_logo.png" alt="" /></span></button>
+        <button class="search-btn">
+          <span>내 취향 여행 보기</span>
+          <span><img src="./img_folder/search_logo.png" alt="" /></span>
+        </button>
       </div>
     </div>
     <div class="slide-banner">
