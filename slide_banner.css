@@ -136,11 +136,10 @@ a {
 
 .slide-wrapper {
   position: relative;
-  width: 1265px;
+  width: 1255px;
   height: 630px;
   margin: 0 auto;
   overflow: hidden;
-  border: 1px solid red;
 }
 
 .slides {
@@ -153,6 +152,10 @@ a {
 
 .slides li:not(:last-child) {
   float: left;
+  margin-right: 30px;
+}
+
+.last-slide {
   margin-right: 30px;
 }
 
