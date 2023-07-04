@@ -2,13 +2,13 @@ var slides = document.querySelector(".slides"),
   slide = document.querySelectorAll(".slides li"),
   currentIdx = 0,
   slideCount = slide.length,
-  slideWidth = 396.5,
+  slideWidth = 396,
   slideMargin = 30,
   prevBtn = document.querySelector(".prev"),
   nextBtn = document.querySelector(".next");
 
 slides.style.width =
-  (slideWidth + slideMargin) * slideCount - slideMargin + 300+ "px";
+  (slideWidth + slideMargin) * slideCount - slideMargin + (-5)+ "px";
 
 prevBtn.classList.add("none");
 
@@ -26,7 +26,7 @@ function updateBtn() {
     prevBtn.classList.remove("none");
   }
 
-  if (currentIdx == slideCount - 4) {
+  if (currentIdx == slideCount - 3) {
     nextBtn.classList.add("none");
   } else {
     nextBtn.classList.remove("none");

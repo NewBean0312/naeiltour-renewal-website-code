@@ -136,10 +136,11 @@ a {
 
 .slide-wrapper {
   position: relative;
-  width: 1251px;
-  height: 617px;
+  width: 1265px;
+  height: 630px;
   margin: 0 auto;
   overflow: hidden;
+  border: 1px solid red;
 }
 
 .slides {
@@ -226,17 +227,17 @@ a {
 .slide-box .des > h1 {
   width: 342px;
   margin: 47px 26px 0;
-  font-size: 29px;
-  font-weight: 400;
+  font-size: 28px;
+  font-weight: 600;
 }
 
 .slide-box .des > p {
   width: 332px;
   height: 61px;
-  margin: 31px;
+  margin: 20px 31px 31px;
   color: #666;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .slide-box .des .button {
