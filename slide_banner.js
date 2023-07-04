@@ -32,7 +32,7 @@ function updateBtn() {
     prevBtn.classList.remove("none");
   }
 
-  if (currentIdx == slideCount - 3) {
+  if (currentIdx == slideCount - 8) {
     nextBtn.classList.add("none");
   } else {
     nextBtn.classList.remove("none");
@@ -46,7 +46,7 @@ prevBtn.addEventListener("click", function () {
 });
 
 nextBtn.addEventListener("click", function () {
-  if (currentIdx < slideCount - 3) {
+  if (currentIdx < slideCount - 8) {
     moveSlide(currentIdx + 1);
   }
 });
