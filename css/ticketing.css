@@ -79,7 +79,7 @@ header {
   background-color: lightcyan;
 }
 
-.ticketing_box h1 {
+.ticketing_box > h1 {
   font-family: "MaplestoryOTFLight";
   font-size: 30px;
 }
@@ -120,38 +120,104 @@ header {
   color: #fff;
 }
 
+/* tab_content */
 .tab_content > div {
   width: 100%;
-  height: 230px;
+  height: 200px;
   margin-top: 20px;
   /* 안보이게 */
   display: none;
 }
 
 .tab_content .content_box {
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px 0;
   border: 1px solid #000;
   border-radius: 25px;
-  background-color: lightgreen;
 }
 
+.content_box > div {
+  height: 170px;
+}
+
+/* destination */
 .tab_content .destination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 541px;
-  height: 200px;
-  border: 1px solid red;
+  height: 100%;
+  border-right: 1px dashed #767676;
+}
+
+/* destination - button */
+.destination button {
+  width: 110px;
+  height: 60px;
+  background: none;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.destination button:hover {
+  border: 1.5px solid #2b54c4;
+}
+
+.destination button.start {
+  color: #000;
+}
+
+.destination button.arrival {
+  color: #767676;
+}
+
+
+.destination button > span:first-child {
+  display: block;
+  font-family: "MaplestoryOTFBold";
+  font-size: 30px;
+}
+
+.destination button > span:last-child {
+  font-family: "MaplestoryOTFLight";
+  font-size: 15px;
+}
+
+.destination > .route {
+  display: flex;
+  width: 230px;
+  height: 90px;
+}
+
+.destination .route > div:nth-child(2n-1) {
+  width: 80px;
+  height: 44px;
+  border-bottom: 1px dashed #61b3ff;
+}
+
+.destination .route > div:nth-child(2) {
+  align-self: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+}
+
+.destination .route > div:nth-child(2) > img {
+  width: 100%;
+  height: 100%;
 }
 
 .tab_content .planner {
   width: 401px;
-  height: 200px;
   border: 1px solid red;
 }
 
 .tab_content .personnel {
   width: 338px;
-  height: 200px;
   border: 1px solid red;
 }
