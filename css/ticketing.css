@@ -262,6 +262,7 @@ button.planner_btn span.img_box > img {
 
 /* personnel - button */
 .personnel > button {
+  position: relative;
   display: block;
   width: 290px;
   height: 55px;
@@ -271,6 +272,8 @@ button.planner_btn span.img_box > img {
   text-align: left;
   cursor: pointer;
 }
+
+
 
 .personnel > button > div {
   color: #767676;
@@ -299,4 +302,23 @@ button.planner_btn span.img_box > img {
 
 .personnel > button:hover > div:nth-child(3) {
   visibility: hidden;
+}
+
+/* personnel - button - img_box */
+.personnel > button .img_box {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s;
+}
+
+.personnel > button .img_box img {
+  width: 100%;
+  height: 100%;
+}
+
+.personnel > button:hover .img_box {
+  transform: translateX(-8px);
 }
