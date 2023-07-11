@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+button,
+iframe,
+th,
+td,
+a,
+select,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: "MaplestoryOTFBold";
+  font-weight: normal;
+  font-size: 15px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+div {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* side_menu */
+.menu_icon {
+  display: none;
+}
+
+.menu_icon + label {
+  display: block;
+  float: right;
+  width: 60px;
+  height: 50px;
+  position: relative;
+  margin: 30px;
+  cursor: pointer;
+}
+
+.menu_icon + label span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  border-radius: 30px;
+  background-color: #000;
+  transition: all 0.35s;
+}
+
+.menu_icon + label span:nth-child(1) {
+  top: 0;
+}
+
+.menu_icon + label span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu_icon + label span:nth-child(3) {
+  bottom: 0;
+}
+
+.menu_icon:checked + label {
+  z-index: 2;
+}
+
+.menu_icon:checked + label span {
+  background-color: #fff;
+}
+
+.menu_icon:checked + label span:nth-child(1) {
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.menu_icon:checked + label span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu_icon:checked + label span:nth-child(3) {
+  bottom: 50%;
+  transform: translateY(50%) rotate(-45deg);
+}
+
+.menu_icon:checked + label + div {
+  right: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -500px;
+  z-index: 1;
+  width: 500px;
+  height: 100%;
+  background-color: #4e4e4e;
+  transition: all 0.3s;
+}
+
+.sidebar > .menu_box_1 {
+  
+}

@@ -1,0 +1,1259 @@
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaplestoryOTFlight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+p,
+button,
+iframe,
+th,
+td,
+a,
+select,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  font-family: "MaplestoryOTFBold";
+  font-weight: normal;
+  font-size: 15px;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+div {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* option_banner */
+.option_banner {
+  width: 1903px;
+  margin: 0 auto;
+  margin-bottom: 107px;
+}
+
+.option_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 911px;
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.option_wrapper > div {
+  margin-bottom: 10px;
+}
+
+.option_wrapper span {
+  color: #000;
+  font-family: "MaplestoryOTFlight";
+  font-size: 34px;
+}
+
+/* select_area */
+.select_box {
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  border-radius: 4px;
+}
+
+.select_box .select {
+  border: none;
+  border-bottom: 2.5px solid #000;
+  padding: 10px;
+  margin-left: 5px;
+  margin-right: 8px;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.select_box .select option {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* option_banner_button_area */
+.option_banner .btn_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 911px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.btn_box > button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 0 16px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-family: "MaplestoryOTFlight";
+  cursor: pointer;
+}
+
+.option_banner .reset_btn {
+  width: 176px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  color: #000;
+}
+
+.reset_btn > span:first-child {
+  width: 105px;
+}
+
+.reset_btn > span:last-child {
+  width: 19px;
+  height: 19px;
+  transform: rotate(25.887deg);
+}
+
+.reset_btn > span:last-child > img {
+  width: 100%;
+  height: 100%;
+}
+
+.option_banner .search_btn {
+  width: 200px;
+  background-color: #000;
+  color: #fff;
+}
+
+.search_btn > span:first-child {
+  width: 120px;
+}
+
+.search_btn > span:last-child {
+  width: 20px;
+  height: 20px;
+}
+
+/* section_banner */
+.section_banner {
+  position: relative;
+  margin: 0 auto;
+  width: 1903px;
+}
+
+.section_wrapper {
+  position: relative;
+  width: 1255px;
+  height: 630px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.sections {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: left 0.5s ease-out;
+}
+
+.sections li:not(:last-child) {
+  float: left;
+  margin-right: 30px;
+}
+
+.last_section {
+  margin-right: 30px;
+}
+
+.controls > div {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #1c1c1c;
+  border-radius: 80px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls .img_box {
+  width: 44px;
+  height: 44px;
+}
+
+.controls .img_box img {
+  width: 100%;
+  height: 100%;
+}
+
+.controls div.prev,
+.controls div.next {
+  position: absolute;
+  top: 276px;
+}
+
+.controls div.prev {
+  left: 9%;
+}
+
+.controls div.next {
+  right: 9%;
+}
+
+.controls div.none,
+.controls div.none {
+  display: none;
+}
+
+.prev:hover .img_box img,
+.next:hover .img_box img {
+  animation: prev 1.2s infinite;
+}
+
+@keyframes prev {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes next {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* section_box */
+.section_box {
+  width: 395px;
+  height: 615px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.section_box .img_box {
+  width: 100%;
+  height: 310px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+
+.section_box .img_box > img {
+  width: 100%;
+  height: 100%;
+}
+
+.section_box .des {
+  display: flex;
+  width: 100%;
+  height: 315px;
+  flex-direction: column;
+}
+
+.section_box .des > h1 {
+  width: 342px;
+  margin: 47px 26px 0;
+  font-family: "MaplestoryOTFlight";
+  font-size: 28px;
+}
+
+.section_box .des > p {
+  width: 332px;
+  height: 61px;
+  margin: 20px 31px 31px;
+  color: #666;
+  font-family: "MaplestoryOTFlight";
+  font-size: 15px;
+}
+
+.section_box .des .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 162px;
+  height: 30px;
+  text-align: center;
+}
+
+.section_box .des .button a {
+  width: 100%;
+  font-family: "MaplestoryOTFlight";
+}
+
+/* slide */
+.slide_wrapper {
+  width: 1903px;
+  overflow: hidden;
+  height: 480px;
+  margin: auto;
+  position: relative;
+  top: 50px;
+}
+
+.slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+
+.slides li {
+  width: 350px;
+  height: 480px;
+  margin-right: 10px;
+}
+
+.best_prev {
+  position: absolute;
+  left: 2%;
+  top: 57%;
+  width: 50px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 0.3rem 1rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #1c1c1c;
+}
+
+.best_prev::after {
+  content: "";
+  position: absolute;
+  width: 37px;
+  height: 20px;
+  top: 39%;
+  left: 32%;
+  background: url(../images/icon_arrow_prev.svg) no-repeat;
+}
+
+.best_next {
+  position: absolute;
+  right: 2%;
+  top: 57%;
+  width: 50px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #fff;
+  padding: 0.3rem 1rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid #1c1c1c;
+}
+
+.best_next::after {
+  content: "";
+  position: absolute;
+  width: 37px;
+  height: 20px;
+  top: 39%;
+  right: 28%;
+  background: url(../images/icon_arrow_next.svg) no-repeat;
+}
+
+.best_prev:hover::after {
+  animation: best_prev 1.2s infinite;
+}
+@keyframes best_prev {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.best_next:hover::after {
+  animation: best_next 1.2s infinite;
+}
+
+@keyframes best_next {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+/* Best 여행지 */
+.best_box {
+  width: 1903px;
+  height: auto;
+  position: relative;
+  background-color: #f7f7f7;
+}
+
+.best_text {
+  width: 100%;
+  text-align: center;
+  padding: 150px 0 90px;
+}
+
+.best_text p {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: -3px;
+}
+
+.best_cb {
+  width: 1903px;
+  height: 700px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.best_cb .slides > li .best_card {
+  width: 350px;
+  height: 480px;
+  border-radius: 10px 0 10px 10px;
+  margin: 0 10px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+}
+
+.best_cb .slides #best_img1 {
+  background: url(../images/img06.jpg) no-repeat;
+}
+
+.best_cb .slides #best_img2 {
+  background: url(../images/img14.jpg) no-repeat;
+}
+
+.best_cb .slides #best_img3 {
+  background: url(../images/img03.jpg) no-repeat;
+}
+
+.best_cb .slides #best_img4 {
+  background: url(../images/지우펀.jpg) no-repeat;
+}
+
+.best_cb .slides #best_img5 {
+  background: url(../images/Frame\ 3.png) no-repeat;
+}
+.best_cb .slides #best_img6 {
+  background: url(../images/Frame\ 5.png) no-repeat;
+}
+
+.best_cb .best_card::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 160px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+}
+
+.best_cb .best_card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card_top_mid {
+  padding: 50px 30px;
+}
+
+.best_card .card_top p {
+  font-family: "MaplestoryOTFLight";
+  font-size: 22px;
+  letter-spacing: -0.88px;
+  position: relative;
+  z-index: 2;
+}
+
+.best_card .card_mid {
+  margin-top: 10px;
+}
+
+.best_card .card_mid p {
+  font-size: 15px;
+  letter-spacing: -0.45px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+}
+
+.best_card .card_bot {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+
+.best_card .card_bot p {
+  font-size: 42px;
+  font-weight: 800;
+  letter-spacing: -1.68px;
+  position: relative;
+}
+
+.best_card .rank {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: #e63c2c;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.best_card .rank p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 70px;
+  font-family: "MaplestoryOTFLight";
+}
+
+/* reservation */
+.res_inner {
+  width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.res_title {
+  font-size: 34px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 110px;
+}
+
+.res_menu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.res_menu li {
+  width: 213.33px;
+  height: 62px;
+  list-style: none;
+  text-align: center;
+  line-height: 62px;
+}
+
+.res_li1 {
+  border-right: 1px solid #ccc;
+}
+
+.res_menu li a {
+  font-family: "MaplestoryOTFlight";
+  font-size: 16px;
+  color: #888;
+  display: block;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-bottom: 2px solid #1c1c1c;
+}
+
+.res_menu li a.active_menu {
+  color: #1c1c1c;
+  font-weight: 700;
+  border-top: 2px solid #1c1c1c;
+  border-left: 2px solid #1c1c1c;
+  border-right: 2px solid #1c1c1c;
+  border-bottom: none;
+}
+
+.res_items {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  height: 300px;
+}
+
+.res_items .res_item {
+  width: 297px;
+  height: 300px;
+  cursor: pointer;
+}
+
+.res_item .img {
+  width: 297px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+#res_menu1 .res_item:nth-child(1) .img {
+  background: url(../images/Rectangle\ 102.png) no-repeat center bottom;
+}
+
+#res_menu1 .res_item:nth-child(2) .img {
+  background: url(../images/Rectangle\ 103.png) no-repeat center bottom;
+}
+
+#res_menu1 .res_item:nth-child(3) .img {
+  background: url(../images/Rectangle\ 104.png) no-repeat center bottom;
+}
+
+#res_menu1 .res_item:nth-child(4) .img {
+  background: url(../images/Rectangle\ 105.png) no-repeat center bottom;
+}
+
+#res_menu2 .res_item:nth-child(1) .img {
+  background: url(../images/Frame\ 6.png) no-repeat center bottom;
+}
+
+#res_menu2 .res_item:nth-child(2) .img {
+  background: url(../images/japan2.png) no-repeat center bottom;
+}
+
+#res_menu2 .res_item:nth-child(3) .img {
+  background: url(../images/japan3.png) no-repeat center bottom;
+}
+
+#res_menu2 .res_item:nth-child(4) .img {
+  background: url(../images/japan4.png) no-repeat center bottom;
+}
+
+#res_menu3 .res_item:nth-child(1) .img {
+  background: url(../images/Saipan1.png) no-repeat center bottom;
+}
+
+#res_menu3 .res_item:nth-child(2) .img {
+  background: url(../images/Saipan2.png) no-repeat center bottom;
+}
+
+#res_menu3 .res_item:nth-child(3) .img {
+  background: url(../images/Saipan3.png) no-repeat center bottom;
+}
+
+#res_menu3 .res_item:nth-child(4) .img {
+  background: url(../images/Saipan4.png) no-repeat center bottom;
+}
+
+#res_menu4 .res_item:nth-child(1) .img {
+  background: url(../images/europe1.png) no-repeat center bottom;
+}
+
+#res_menu4 .res_item:nth-child(2) .img {
+  background: url(../images/europe2.png) no-repeat center bottom;
+}
+
+#res_menu4 .res_item:nth-child(3) .img {
+  background: url(../images/europe3.png) no-repeat center bottom;
+}
+
+#res_menu4 .res_item:nth-child(4) .img {
+  background: url(../images/europe4.png) no-repeat center bottom;
+}
+
+#res_menu5 .res_item:nth-child(1) .img {
+  background: url(../images/china1.png) no-repeat center bottom;
+}
+
+#res_menu5 .res_item:nth-child(2) .img {
+  background: url(../images/china2.png) no-repeat center bottom;
+}
+
+#res_menu5 .res_item:nth-child(3) .img {
+  background: url(../images/china3.png) no-repeat center bottom;
+}
+
+#res_menu5 .res_item:nth-child(4) .img {
+  background: url(../images/china4.png) no-repeat center bottom;
+}
+
+#res_menu6 .res_item:nth-child(1) .img {
+  background: url(../images/Asia1.png) no-repeat center bottom;
+}
+
+#res_menu6 .res_item:nth-child(2) .img {
+  background: url(../images/Asia2.png) no-repeat center bottom;
+}
+
+#res_menu6 .res_item:nth-child(3) .img {
+  background: url(../images/Asia3.png) no-repeat center bottom;
+}
+
+#res_menu6 .res_item:nth-child(4) .img {
+  background: url(../images/Asia4.png) no-repeat center bottom;
+}
+
+.res_item .res_text {
+  padding-top: 10px;
+}
+
+.res_item .res_text p {
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.res_item .res_text span {
+  font-family: "MaplestoryOTFlight";
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+.res_item .res_text h4 {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.res_content > div {
+  box-sizing: border-box;
+  display: none;
+}
+
+.res_btn {
+  display: block;
+  text-align: center;
+  width: 1280px;
+  height: 48px;
+  line-height: 48px;
+  border: 1px solid #ccc;
+  font-family: "MaplestoryOTFlight";
+  font-size: 15px;
+  color: #666;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  margin-top: 50px;
+  position: relative;
+}
+
+.res_btn::after {
+  content: "";
+  position: absolute;
+  top: 46.5%;
+  right: 45.7%;
+  width: 12px;
+  height: 12px;
+  margin-top: -4px;
+  background-image: url(../images/icon_arrow.png);
+  background-size: 100% auto;
+}
+
+/* Review */
+.review_box {
+  width: 100%;
+  height: auto;
+  border-top: solid 1px #1c1c1c;
+  padding: 150px 75px;
+  padding-bottom: 0;
+}
+
+.review_inner {
+  width: 1800px;
+  margin: 0 auto;
+}
+
+.review_text {
+  width: 100%;
+}
+
+.review_text > p {
+  font-size: 50px;
+  font-weight: 800;
+  padding-bottom: 58px;
+  letter-spacing: -3px;
+  text-align: center;
+}
+
+.review_more {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.review_more p {
+  margin-right: 50px;
+  font-size: 19px;
+  letter-spacing: -0.76px;
+}
+
+.review_more::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 37px;
+  height: 20px;
+  vertical-align: -2px;
+  background: url(../images/ico_next_02.png);
+  top: 5%;
+}
+
+.review_more:hover::after {
+  animation: arrow 1.5s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.review_flex {
+  display: flex;
+  margin-top: 50px;
+}
+
+.review_cont {
+  width: 33.3%;
+  height: auto;
+}
+
+.review_item {
+  width: 93%;
+  margin: 0 auto;
+}
+
+.review_cont .review_img {
+  width: 100%;
+  height: 311px;
+  cursor: pointer;
+}
+
+.review_cont .review_img2 {
+  width: 100%;
+  height: 311px;
+  cursor: pointer;
+}
+
+.review_cont .review_img3 {
+  width: 100%;
+  height: 311px;
+  cursor: pointer;
+}
+
+.review_cont .review_img span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../images/img01.jpg) no-repeat;
+}
+
+.review_cont .review_img2 span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../images/img13.jpg) no-repeat;
+}
+
+.review_cont .review_img3 span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: url(../images/img10.jpg) no-repeat center center;
+}
+
+.review_bottom {
+  display: flex;
+  margin-top: 20px;
+}
+
+.review_bottom span {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../images/emoji_face_main_01.svg) no-repeat center center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.review_bottom_text {
+  cursor: pointer;
+}
+
+.review_bottom h4 {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.review_bottom p {
+  color: #1c1c1c;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+/* contact_box */
+.contact_box {
+  width: 1903px;
+  height: 465px;
+}
+
+.contact_box > .contact_wrapper {
+  display: flex;
+  width: 1570px;
+  height: 498px;
+  margin-top: 247px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #000;
+}
+
+.contact_wrapper h1 {
+  width: 100%;
+  height: 67px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: -3.75px;
+}
+
+/* contact_row */
+.contact_wrapper > .contact_row_1 {
+  position: relative;
+  width: 658px;
+  height: 100%;
+}
+
+.contact_row_1 > .notice a {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  height: 41px;
+  padding: 11px 0;
+  border-bottom: 1px solid #d9d9d9;
+  line-height: 1.4;
+  font-family: "MaplestoryOTFlight";
+  font-size: 17px;
+  letter-spacing: -0.42px;
+  box-sizing: initial;
+}
+
+.notice span {
+  position: absolute;
+  right: 20px;
+}
+
+.contact_row_1 > .link_wrapper {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 63px;
+}
+
+.link_wrapper > .link_box {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.link_box > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* contact_row_2 */
+.contact_wrapper > .contact_row_2 {
+  width: 827px;
+  height: 100%;
+  margin-left: 85px;
+}
+
+.contact_row_2 > .help_wrapper {
+  display: flex;
+  width: 100%;
+  height: 376px;
+}
+
+.help_wrapper > .help_row_1 {
+  width: 360px;
+  height: 191px;
+}
+
+/* tel_box */
+.help_row_1 > div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.help_row_1 > .tel_box_1 {
+  height: 41px;
+}
+
+.tel_box_1 > span {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.help_row_1 > .tel_box_2 {
+  width: 100%;
+  height: 39px;
+  margin-top: 12px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.help_row_1 > .tel_box_3 {
+  width: 100%;
+  height: 56px;
+  margin-top: 38px;
+  color: #666;
+  font-family: "MaplestoryOTFlight";
+  font-weight: 500;
+  letter-spacing: -1.42px;
+  line-height: 25px;
+}
+
+/* .help_row_2 */
+.help_wrapper .help_row_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 467px;
+  height: 191px;
+}
+
+.help_row_2 > .help_btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 240px;
+  height: 29px;
+  margin-top: 5px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.help_btn > a {
+  color: #000;
+  font-size: 20px;
+  font-family: "MaplestoryOTFlight";
+}
+
+.help_btn > span {
+  width: 21px;
+  height: 21px;
+}
+
+.help_btn > span > img {
+  width: 100%;
+  height: 100%;
+}
+
+.help_btn:hover img {
+  animation: help_btn 1.2s infinite;
+}
+
+@keyframes help_btn {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* footer_box */
+.footer_box {
+  width: 1903px;
+  height: 440px;
+}
+
+.footer_box > .footer_wrapper {
+  width: 1570px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* footer_app_nav */
+.footer_wrapper .footer_app_nav {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  width: 100%;
+  height: 34px;
+}
+
+.footer_app_nav > ul {
+  display: flex;
+}
+
+.footer_app_nav li {
+  margin-right: 15px;
+}
+
+.footer_app_nav li a {
+  font-family: "MaplestoryOTFlight";
+  font-size: 15px;
+}
+
+/* fotter_content */
+.footer_wrapper .footer_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 183px;
+  margin-top: 65px;
+}
+
+.footer_content > div {
+  width: 400px;
+  height: 100%;
+}
+
+.footer_content > div:last-child {
+  margin-right: 30px;
+}
+
+.footer_content h1 {
+  color: #000;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.footer_content li {
+  color: #666;
+  font-family: "MaplestoryOTFlight";
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/* .footer_br_line */
+.footer_wrapper > .footer_br_line {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(102, 102, 102, 0.5);
+}
+
+/* footer_award */
+.footer_wrapper > .footer_award {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  margin-top: 40px;
+}
+
+.footer_award > .award_box {
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 100%;
+  margin-right: 51px;
+  cursor: pointer;
+}
+
+.award_box > div {
+  margin-right: 15px;
+}
+
+.award_box > #award_img_box_1 {
+  width: 50px;
+  height: 44px;
+}
+
+.award_box > #award_img_box_2 {
+  width: 50px;
+  height: 45px;
+}
+
+.award_box > #award_img_box_3 {
+  width: 50px;
+  height: 49px;
+}
+
+.award_box > #award_img_box_4 {
+  width: 50px;
+  height: 50px;
+}
+
+.award_box > #award_img_box_6 {
+  width: 60px;
+  height: 46px;
+}
+
+.award_img_box > img {
+  width: 100%;
+  height: 100%;
+}
+
+.award_box > .award_text_box {
+  color: #999;
+  font-size: 13px;
+  font-weight: 400;
+}

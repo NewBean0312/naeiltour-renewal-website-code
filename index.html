@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- option_banner -->
+    <div class="option_banner">
+      <div class="option_wrapper">
+        <div>
+          <span>나는</span>
+          <div class="select_box">
+            <select name="who" class="select" id="who">
+              <option value="child">👶아이와 함께</option>
+              <option value="friend">👥친구와 함께</option>
+              <option value="couple">👫연인과 함께</option>
+              <option value="parents">👪부모님과 함께</option>
+              <option value="alone">😎나혼자</option>
+            </select>
+          </div>
+          <div class="select_box">
+            <select name="where" class="select" id="where">
+              <option value="child">🏖️동남아에서</option>
+              <option value="friend">⛩️일본/중국/홍콩/대만에서</option>
+              <option value="couple">🗺️유럽에서</option>
+              <option value="parents">🏙️미국/캐나다/대양주에서</option>
+              <option value="alone">🏝️괌/사이판에서</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <div class="select_box">
+            <select name="how" class="select">
+              <option value="tourism">📷휴식보다는 알찬 관광을</option>
+              <option value="holiday">🥂관광보다는 휴식과 여유를</option>
+              <option value="activity">🪂액티비티가 특화된 여행을</option>
+              <option value="shoping">🛍️쇼핑이 특화된 여행을</option>
+              <option value="history">🖼️역사/문화 특화 여행을</option>
+              <option value="shoping">🏞️천혜 자연경관을</option>
+              <option value="beach">🌊바다와 함께 휴식과 여유를</option>
+              <option value="waterpark">🛶워터파크 리조트에서 물놀이를</option>
+            </select>
+          </div>
+          <span>즐기고 싶어요</span>
+        </div>
+      </div>
+      <div class="btn_box">
+        <button class="reset_btn">
+          <span>다른 취향 보기</span>
+          <span><img src="./images/reset_logo.jpg" alt="" /></span>
+        </button>
+        <button class="search_btn">
+          <span>내 취향 여행 보기</span>
+          <span><img src="./images/search_logo.png" alt="" /></span>
+        </button>
+      </div>
+    </div>
+    <!-- section_banner -->
+    <div class="section_banner">
+      <div class="controls">
+        <div class="prev">
+          <div class="img_box">
+            <img src="./images/system_uicons_arrow_prev.png" alt="" />
+          </div>
+        </div>
+        <div class="next">
+          <div class="img_box">
+            <img src="./images/system_uicons_arrow_next.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="section_wrapper">
+        <ul class="sections">
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img01.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>[쉼표가 있는][힐링여행]#오키나와 #5카후리조트#···</h1>
+                <p>노팁! 노쇼핑! 전일자유 플랜테이션베이 완벽호캉스 패키지</p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img02.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>[호캉스도 즐길수 있다낭]#푸라마리조트 #5성급#···</h1>
+                <p>
+                  ①리조트 조/중/석식포함 ②매일 음료(주류) 무료 제공
+                  ③하이반라운지 무료이용 ④2DAY 자유일정
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img03.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>[완벽한 호캉스]#보라카이 #헤난가든리조트#···</h1>
+                <p>
+                  인기 특급 헤난 가든or파크 리조트 / 여유로운 자유일정은 물론
+                  호핑투어까지 포함된 알찬 여행
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img04.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>자연의 신비[多 보이지,라오스] 비엔티엔/루앙프···</h1>
+                <p>
+                  비엔티엔-루앙프라방 편도 국내선 이동, 비엔티엔 관광 &
+                  루앙프라방 쾅시폭포, 야시장 & 방비엥···
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img05.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>#마리나럭셔리요트투어# [AMAZING] 두바이/아부···</h1>
+                <p>
+                  AMAZING 한 두바이 & 아부다비, AMAZING 한 호텔, AMAZING 한
+                  항공!! 화려한 볼거리와 다···
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img06.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>#화려한 두바이 분수쇼가 포함된 여행# [DO!드림···</h1>
+                <p>
+                  - 사막위의 기적, 영화 속 그 장소! 두바이 시티 투어 -
+                  황금동선으로 더 즐겁고, 더 편안한 스페···
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img07.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>[라이프전용][사랑하니까;코사무이] 노쇼핑 허니문···</h1>
+                <p>
+                  ★교원라이프 399/599 1구좌 여행전환 전용 상품★ KC 리조트
+                  (럭셔리 씨뷰) 2박 + W 더블유···
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img08.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>#미서부정복 #옐로스톤국립공원 ♡옐로스톤은 처···</h1>
+                <p>
+                  [진짜 호주를 만날 시간] 시드니 BEST Spot 일정 6일/7일 자연과
+                  시티투어가 함께하는! 이게 바···
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img09.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>[쉼이숨시는]#보홀#헤난 타왈라 VS 알로나 리조트···</h1>
+                <p>
+                  ① 특급리조트 헤난타왈라 OR 헤난알로나비치 리조트 택1 ②
+                  자유일정 포함 ③ 보홀시티투어
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box">
+              <div class="img_box">
+                <img src="./images/section_img10.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>[디스커버리 시드니 6/7일] #코카투아일랜드#포트···</h1>
+                <p>
+                  시드니 하버를 한 눈에 담아내다! 패키지 최초, 코카투 아일랜드
+                  디스커버리 투어! 한 번의 여행···
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="section_box last_section">
+              <div class="img_box">
+                <img src="./images/section_img11.jpg" alt="" />
+              </div>
+              <div class="des">
+                <h1>#절경#하이킹 #BBC 추천[숨겨진 알프스를 찾아]···</h1>
+                <p>
+                  로이커바트온천+월드체인호텔포함4성", 마테호른일출보기
+                  수네가#리기등정#겜미패스 까지···
+                </p>
+                <div class="button"><a href="#">자세히 보기</a></div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- best 여행지 -->
+    <div class="best_box">
+      <div class="best_text">
+        <p>가장 사랑받는 월간 Best 여행지!</p>
+      </div>
+      <div class="best_cb slide_wrapper">
+        <ul class="slides">
+          <li>
+            <div class="best_card" id="best_img1">
+              <div class="card_top_mid">
+                <div class="card_top">
+                  <p>큐슈 3일</p>
+                </div>
+                <div class="card_mid">
+                  <p>#名品료칸 #특급힐튼 #카이세키 #나카스 크루즈</p>
+                </div>
+              </div>
+              <div class="card_bot">
+                <p>Japan</p>
+              </div>
+              <div class="rank">
+                <p>1 위</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="best_card" id="best_img2">
+              <div class="card_top_mid">
+                <div class="card_top">
+                  <p>스위스 9일</p>
+                </div>
+                <div class="card_mid">
+                  <p>#융프라우산악열차 #자유시간 #마테호른뷰</p>
+                </div>
+              </div>
+              <div class="card_bot">
+                <p>Europe</p>
+              </div>
+              <div class="rank">
+                <p>2 위</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="best_card" id="best_img3">
+              <div class="card_top_mid">
+                <div class="card_top">
+                  <p>서유럽 4국 12일</p>
+                </div>
+                <div class="card_mid">
+                  <p>#런던4DAY# #에펠탑#루브르박물관#해리포터</p>
+                </div>
+              </div>
+              <div class="card_bot">
+                <p>Europe</p>
+              </div>
+              <div class="rank">
+                <p>3 위</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="best_card" id="best_img4">
+              <div class="card_top_mid">
+                <div class="card_top">
+                  <p>대만 4일</p>
+                </div>
+                <div class="card_mid">
+                  <p>#지우펀 #예류 #대만맛집여행 #101타워</p>
+                </div>
+              </div>
+              <div class="card_bot">
+                <p>Taiwan</p>
+              </div>
+              <div class="rank">
+                <p>4 위</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="best_card" id="best_img5">
+              <div class="card_top_mid">
+                <div class="card_top">
+                  <p>오사카 3일</p>
+                </div>
+                <div class="card_mid">
+                  <p>#호센인액자정원 #도톤보리 #기모노체험#교토</p>
+                </div>
+              </div>
+              <div class="card_bot">
+                <p>Japan</p>
+              </div>
+              <div class="rank">
+                <p>5 위</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="best_card" id="best_img6">
+              <div class="card_top_mid">
+                <div class="card_top">
+                  <p>방콕&파타야 5일</p>
+                </div>
+                <div class="card_mid">
+                  <p>#5성급리조트 #마사지 #SNS맛집</p>
+                </div>
+              </div>
+              <div class="card_bot">
+                <p>Thailnad</p>
+              </div>
+              <div class="rank">
+                <p>6 위</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 버튼영역 -->
+      <span class="best_prev"></span>
+      <span class="best_next"></span>
+    </div>
+    <!-- reservation -->
+    <div class="res_inner">
+      <div class="res_title">긴급모객! 예약하면 출발 가능!</div>
+      <ul class="res_menu">
+        <li><a href="#res_menu1" class="active_menu">코타키나발루</a></li>
+        <li><a href="#res_menu2">일본</a></li>
+        <li><a href="#res_menu3">괌/사이판</a></li>
+        <li><a href="#res_menu4">유럽</a></li>
+        <li><a href="#res_menu5">중국</a></li>
+        <li><a href="#res_menu6" class="res_li1">태국/필리핀</a></li>
+      </ul>
+      <div class="res_content">
+        <div id="res_menu1">
+          <div class="res_items">
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [멜리아 빈펄 깜란 비치] 나트랑 풀빌라 3박 5일#전 객실 풀빌라
+                </p>
+                <span>3박5일 | 인천 출발 | 티웨이항공 | 노쇼핑</span>
+                <h4><b>549,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[코타키나발루 골프 5일] 샹그릴리조트/ 달릿베이CC 54홀</p>
+                <span>3박5일 | 인천 출발 | 진에어 | 쇼핑3회</span>
+                <h4><b>960,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [코타키나발루 5일] 샹그릴라 탄중아루☆호핑+반딧불 22시
+                  체크아웃!
+                </p>
+                <span>3박5일 | 인천 출발 | 진에어 | 쇼핑3회</span>
+                <h4><b>934,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[코타키나발루]밍가든 호핑+발마사지+나이트투어</p>
+                <span>3박5일 | 부산 출발 | 에어부산 | 쇼핑3회</span>
+                <h4><b>529,000</b>원~</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="res_menu2">
+          <div class="res_items">
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[오사카3일] 오사카+나라+유니버셜스튜디오</p>
+                <span>2박3일 | 인천 출발 | 티웨이항공</span>
+                <h4><b>759,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[북해도 4일] 여름향기+온천2박+도야유람선/후라노</p>
+                <span>3박4일 | 인천 출발 | 진에어</span>
+                <h4><b>854,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[큐슈온천3일] #벳부하나미즈키료칸숙박 #모지항 #감성여행</p>
+                <span>2박3일 | 인천 출발 | 진에어</span>
+                <h4><b>399,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [후쿠오카] 티웨이 항공 2박3일 자유여행- 야오지
+                  호텔/대욕탕/세미더블
+                </p>
+                <span>2박3일 | 인천 출발 | 티웨이항공</span>
+                <h4><b>255,000</b>원~</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="res_menu3">
+          <div class="res_items">
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [사이판 오후5일] ★프리미어디럭스룸★ 사이판 켄싱턴
+                  ALL_티웨이항공
+                </p>
+                <span>4박5일 | 인천 출발 | 티웨이항공</span>
+                <h4><b>1,279,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[괌_오후출발 5일] 두짓타니+호텔조식+미니바1회_제주항공</p>
+                <span>4박5일 | 인천 출발 | 제주 항공</span>
+                <h4><b>1,138,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [사이판 5일] #패밀리팩＃ PIC
+                  GOLD★레이트체크아웃+마나가하섬_티웨이항공
+                </p>
+                <span>4박5일 | 인천 출발 | 티웨이항공</span>
+                <h4><b>645,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[괌_오전출발 4일] 롯데호텔+파셜오션디럭스+조식_제주항공</p>
+                <span>3박4일 | 인천 출발 | 제주항공</span>
+                <h4><b>837,000</b>원~</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="res_menu4">
+          <div class="res_items">
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [26석/크로아티아+동유럽 5국9일] 대한항공
+                  직항_전일4성호텔/2대야간+자유시간
+                </p>
+                <span>7박9일 | 인천 출발 | 대한항공 | 쇼핑자유</span>
+                <h4><b>2,699,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [영국/프랑스/스위스/이탈리아 12일] 스위스3대전망대+버로우 마켓
+                  자유시간
+                </p>
+                <span>10박12일 | 인천 출발 | 아시아나항공 | 쇼핑자유</span>
+                <h4><b>4,099,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[유럽허니문] 체코 오스트리아 헝가리 7박10일</p>
+                <span>7박10일 | 인천 출발 | 에미레이트항공 | 쇼핑자유</span>
+                <h4><b>549,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[유럽허니문] 프랑스일주 5박7일 로맨틱</p>
+                <span>5박7일 | 인천 출발 | 에어 프랑스 | 쇼핑자유</span>
+                <h4><b>2,990,000</b>원~</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="res_menu5">
+          <div class="res_items">
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [북경-천진 4일] 정성가득/노팁노옵션+용경협+금면왕조_아시아나
+                </p>
+                <span>3박4일 | 김포 출발 | 아시아나항공 | 쇼핑3회</span>
+                <h4><b>699,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[미리 예약하는 23년 중국 봄] 황산+산위숙박 4일</p>
+                <span>3박4일 | 인천 출발 | 아시아나항공 | 노쇼핑</span>
+                <h4><b>1,790,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [백두산 4일] 백두산 서파+북파/노팁노쇼핑+발마사지
+                  4일_아시아나항공
+                </p>
+                <span>3박4일 | 인천 출발 | 아시아나항공 | 노쇼핑</span>
+                <h4><b>799,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[중국의 명산]서안/태항산 6일 (4성/태항대협곡/왕망령)</p>
+                <span>3박5일 | 인천 출발 | 에어부산 | 노쇼핑</span>
+                <h4><b>920,000</b>원~</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="res_menu6">
+          <div class="res_items">
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [치앙마이 5일] 필수일정 몽땅포함! 새벽사원 배탑승+파타야
+                  야시장 5일
+                </p>
+                <span>3박5일 | 인천 출발 | 에어부산 | 쇼핑3회</span>
+                <h4><b>289,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[다낭 5일] 골프+관광+휴양 럭셔리 3색 골프 3박 5일</p>
+                <span>3박5일 | 인천 출발 | 티웨이항공 | 노쇼핑</span>
+                <h4><b>999,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>
+                  [보라카이/자유여행] ▶휴 리조트◀ 왕복픽업+현지투어 택1
+                  4일_필리핀항공
+                </p>
+                <span>3박4일 | 인천 출발 | 필리핀항공 | 노쇼핑</span>
+                <h4><b>409,000</b>원~</h4>
+              </div>
+            </div>
+            <div class="res_item">
+              <div class="img"></div>
+              <div class="res_text">
+                <p>[세부5일] ★황금연휴출발 리조트택 1_세미패키지 세부퍼시픽</p>
+                <span>4박5일 | 인천 출발 | 세부 퍼시픽 항공 | 노쇼핑</span>
+                <h4><b>635,000</b>원~</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="res_btn">
+        <span>상품 더보기</span>
+      </button>
+    </div>
+    <!-- Review -->
+    <div class="review_box">
+      <div class="review_inner">
+        <div class="review_text">
+          <p>내일 투어 Review</p>
+        </div>
+        <div class="review_more">
+          <p>더보기</p>
+        </div>
+        <div class="review_flex">
+          <div class="review_cont">
+            <div class="review_item">
+              <div class="review_img">
+                <span></span>
+              </div>
+              <div class="review_bottom">
+                <span></span>
+                <div class="review_bottom_text">
+                  <h4>[발리] 모든게 완벽했던 5박7일 모녀여행</h4>
+                  <p>채*경</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review_cont">
+            <div class="review_item">
+              <div class="review_img2">
+                <span></span>
+              </div>
+              <div class="review_bottom">
+                <span></span>
+                <div class="review_bottom_text">
+                  <h4>
+                    [스위스] 두 딸과 함께한 서유럽 여행!! 환상적인 8박10일!!
+                    인생여행!!
+                  </h4>
+                  <p>임*식</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="review_cont">
+            <div class="review_item">
+              <div class="review_img3">
+                <span></span>
+              </div>
+              <div class="review_bottom">
+                <span></span>
+                <div class="review_bottom_text">
+                  <h4>
+                    [베트남] 완벽 그 자체 베트남 여행! 강추! 하루라도 일찍 여행
+                    떠나요!
+                  </h4>
+                  <p>임*희</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="contact_box">
+      <div class="contact_wrapper">
+        <div class="contact_row_1">
+          <h1>알려드립니다.</h1>
+          <div class="notice">
+            <a href="#">
+              [당첨자 발표] 당신의 여행 이야기를 들려주세요!
+              <span>2023-06-23</span></a
+            >
+          </div>
+          <div class="notice">
+            <a href="#">
+              [이벤트] 일본 홋카이 숨은보석 소도시 여행
+              <span>2023-06-14</span></a
+            >
+          </div>
+          <div class="notice">
+            <a href="#">
+              [이벤트] ♥심장아 나대지마 카카오톡 이모티콘 받기♥
+              <span>2023-05-19</span></a
+            >
+          </div>
+          <div class="link_wrapper">
+            <div class="link_box">
+              <a href="#"
+                ><img src="./images/icon_sns_facebook.svg" alt=""
+              /></a>
+            </div>
+            <div class="link_box">
+              <a href="#"
+                ><img src="./images/icon_sns_instagram.svg" alt=""
+              /></a>
+            </div>
+            <div class="link_box">
+              <a href="#"><img src="./images/icon_sns_youtube.svg" alt="" /></a>
+            </div>
+            <div class="link_box">
+              <a href="#"><img src="./images/icon_sns_kakao.svg" alt="" /></a>
+            </div>
+            <div class="link_box">
+              <a href="#"><img src="./images/icon_sns_blog.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="contact_row_2">
+          <h1>도와드릴까요?</h1>
+          <div class="help_wrapper">
+            <div class="help_row_1">
+              <div class="tel_box_1">
+                <span><img src="./images/ico_help1.png" alt="" /></span>
+                내일투어 대표번호
+              </div>
+              <div class="tel_box_2">02-6262-5000</div>
+              <div class="tel_box_3">
+                부산지사 및 부산대 일시적 본사 통합운영 <br />
+                운영시간 : 평일 9시~18시 (토,일 및 공휴일 휴무)
+              </div>
+            </div>
+            <div class="help_row_2">
+              <div class="help_btn">
+                <a href="#">문의별 번호 안내</a>
+                <span>
+                  <img src="./images/help_btn_arrow.png" alt="" />
+                </span>
+              </div>
+              <div class="help_btn">
+                <a href="#">1:1문의하기</a>
+                <span>
+                  <img src="./images/help_btn_arrow.png" alt="" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_box">
+      <div class="footer_wrapper">
+        <div class="footer_app_nav">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">사회공헌</a></li>
+            <li><a href="#">수상내역</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">여행약관</a></li>
+            <li><a href="#">B2B제휴문의</a></li>
+            <li><a href="#">WMALL</a></li>
+            <li><a href="#">사이트맵</a></li>
+          </ul>
+        </div>
+        <div class="footer_content">
+          <div>
+            <h1>Address & Contact</h1>
+            <ul>
+              <li>(주)내일투어</li>
+              <li>주소 : [본사] 서울시 중구 세종대로11길 43 내일투어 빌딩</li>
+              <li>대표전화 : 본사 02-6262-5000</li>
+              <li>팩스 : 본사 02-6262-5901</li>
+            </ul>
+          </div>
+          <div>
+            <h1>내일투어 Information</h1>
+            <ul>
+              <li>(주)내일투어 대표이사:이진석</li>
+              <li>주소 : [본사] 서울시 중구 세종대로11길 43 내일투어 빌딩</li>
+              <li>사업자 등록번호: 110-81-33092</li>
+              <li>통신판매업신고번호: 중구 제03285호</li>
+              <li>관광사업자등록번호: 중구 제2001-07호</li>
+              <li>개인정보관리책임자 : 김경윤</li>
+            </ul>
+          </div>
+          <div>
+            <h1>Follow Us</h1>
+            <ul>
+              <li>일반여행업 보증보험가입</li>
+              <li>기획여행업 보증보험가입</li>
+              <li>master@naeiltour.co.kr</li>
+              <li>Copyrightⓒ NAEIL Tour Co.,Ltd. All rights reserved.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer_br_line"></div>
+        <div class="footer_award">
+          <div class="award_box">
+            <div id="award_img_box_1">
+              <img src="./images/award_img_03.png" alt="" />
+            </div>
+            <div class="award_text_box">
+              2017 여행신문 소비자 조사 <br />12년 연속 개별여행 브랜드 1위
+            </div>
+          </div>
+          <div class="award_box">
+            <div id="award_img_box_2">
+              <img src="./images/award_img_04.png" alt="" />
+            </div>
+            <div class="award_text_box">
+              2017 행복더함 사회공헌 대상<br />
+              복지사회공헌 부문 '3년 연속' 대상
+            </div>
+          </div>
+          <div class="award_box">
+            <div id="award_img_box_3">
+              <img src="./images/award_img_01.png" alt="" />
+            </div>
+            <div class="award_text_box">
+              2019 고객사랑 브랜드 대상<br />
+              7년 연속 수상
+            </div>
+          </div>
+          <div class="award_box">
+            <div id="award_img_box_4">
+              <img src="./images/award_img_02.png" alt="" />
+            </div>
+            <div class="award_text_box">
+              2019-2020 우수여행상품<br />
+              6년 연속 인증 획득
+            </div>
+          </div>
+          <div class="award_box">
+            <div id="award_img_box_6">
+              <img src="./images/award_img_05.png" alt="" />
+            </div>
+            <div class="award_text_box">
+              2019-2020 우수여행상품<br />
+              6년 연속 인증 획득
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
