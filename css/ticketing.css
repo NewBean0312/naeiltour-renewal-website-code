@@ -134,13 +134,18 @@ header {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 15px 0;
   border: 1px solid #000;
   border-radius: 25px;
 }
 
 .content_box > div {
-  height: 170px;
+  height: 160px;
+}
+
+.content_box div button {
+  background: none;
+  border: none;
+  border-radius: 10px;
 }
 
 .content_box div button:hover {
@@ -152,8 +157,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 541px;
-  height: 100%;
+  width: 551px;
   border-right: 1px dashed #767676;
 }
 
@@ -161,18 +165,15 @@ header {
 .destination button {
   width: 110px;
   height: 60px;
-  background: none;
-  border: none;
-  border-radius: 10px;
   text-align: center;
   cursor: pointer;
 }
 
-.destination button.start {
+.destination button.start_btn {
   color: #000;
 }
 
-.destination button.arrival {
+.destination button.arrival_btn {
   color: #767676;
 }
 
@@ -216,48 +217,86 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 401px;
+  width: 391px;
   border-right: 1.5px dashed #767676;
 }
 
-.planner button {
+/* planner - button */
+.planner button.planner_btn {
   width: 160px;
   height: 60px;
-  background: none;
-  border: none;
-  border-radius: 10px;
   color: #767676;
   cursor: pointer;
 }
 
-.planner button > div:first-child {
+button.planner_btn > div:first-child {
   margin-left: 35px;
   font-size: 13px;
   font-family: "MaplestoryOTFLight";
   text-align: left;
 }
 
-.planner button > div:last-child {
+button.planner_btn > div:last-child {
   display: flex;
   align-items: center;
   font-size: 17px;
   letter-spacing: 2.5px;
 }
 
-.planner span.img_box {
+button.planner_btn span.img_box {
   display: inline-block;
   width: 30px;
   height: 30px;
   margin-right: 5px;
 }
 
-.planner span.img_box > img {
+button.planner_btn span.img_box > img {
   width: 100%;
   height: 100%;
 }
 
-
+/* personnel */
 .tab_content .personnel {
   width: 338px;
-  border: 1px solid red;
+}
+
+/* personnel - button */
+.personnel > button {
+  display: block;
+  width: 290px;
+  height: 55px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  cursor: pointer;
+}
+
+.personnel > button > div {
+  color: #767676;
+  font-family: "MaplestoryOTFLight";
+}
+
+.personnel > button > div:nth-child(1) {
+  margin-top: 5px;
+  font-size: 11px;
+}
+
+.personnel > button > div:nth-child(2) {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.personnel > button.passenger_btn > div:nth-child(2) {
+  color: #000;
+}
+
+.personnel > button > div:nth-child(3) {
+  height: 1px;
+  background-color: black;
+  margin-top: 10px;
+}
+
+.personnel > button:hover > div:nth-child(3) {
+  visibility: hidden;
 }
