@@ -59,7 +59,6 @@ a {
 /* option_banner */
 .option_banner {
   width: 1903px;
-  margin: 0 auto;
   margin-bottom: 107px;
 }
 
@@ -175,7 +174,6 @@ a {
 /* section_banner */
 .section_banner {
   position: relative;
-  margin: 0 auto;
   width: 1903px;
 }
 
@@ -574,6 +572,11 @@ a {
 }
 
 /* reservation */
+.res_wrapper {
+  width: 1903px;
+  height: auto;
+}
+
 .res_inner {
   width: 1280px;
   height: 100vh;

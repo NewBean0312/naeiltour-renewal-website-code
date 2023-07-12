@@ -130,6 +130,10 @@ header {
   border-radius: 50%;
 }
 
+.tab_menu > li:hover .outside_circle {
+  border: 1px solid #2b54c4;
+}
+
 .outside_circle > .inside_circle {
   width: 12px;
   height: 12px;
@@ -143,7 +147,6 @@ header {
 .tab_menu li a.active + .outside_circle > .inside_circle {
   background-color: #000;
 }
-
 
 /* tab_content */
 .tab_content > div {
@@ -159,7 +162,11 @@ header {
   align-items: center;
   width: 100%;
   height: 100%;
-  border: 1px solid #000;
+  border-top: 4px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(to right, #61b3ff 0%, #00256c 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
   border-radius: 25px;
 }
 
@@ -243,7 +250,7 @@ header {
   justify-content: center;
   align-items: center;
   width: 391px;
-  border-right: 1.5px dashed #767676;
+  border-right: 1px dashed #767676;
 }
 
 /* planner - button */
@@ -297,8 +304,6 @@ button.planner_btn span.img_box > img {
   text-align: left;
   cursor: pointer;
 }
-
-
 
 .personnel > button > div {
   color: #767676;
@@ -363,4 +368,59 @@ button.planner_btn span.img_box > img {
   font-family: "MaplestoryOTFLight";
   font-size: 18px;
   cursor: pointer;
+}
+
+/* tab3 CSS */
+.tab_content #tab3 {
+  height: 400px;
+}
+
+.tab_content #tab3 > .content_box {
+  display: flex;
+}
+
+/* content_box_row_1 */
+.tab_content #tab3 .content_box_row_1 {
+  display: block;
+  width: 942px;
+  height: 370px;
+  border-right: 1px dashed #767676;
+}
+
+.content_box_row_1 > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 185px;
+}
+
+.content_box_row_1 .journey {
+  position: absolute;
+  top: -20px;
+  left: 80px;
+  color: #767676;
+  font-family: "MaplestoryOTFLight";
+  font-size: 13px;
+  letter-spacing: 1.5px;
+}
+
+.tab_content #tab3 div.destination,
+.tab_content #tab3 div.planner {
+  position: relative;
+  border: none;
+  height: 50%;
+}
+
+.content_box_row_1 > .dashed_line {
+  width: 890px;
+  height: 1px;
+  margin: 0 auto;
+  border-top: 1px dashed #767676;
+}
+
+.content_box .content_box_row_2 {
+  display: flex;
+  align-items: start;
+  width: 338px;
+  height: 370px;
 }
