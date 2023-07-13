@@ -10,8 +10,82 @@ let sections = document.querySelector(".sections"),
   // 무작위 배열 변수 설정
   searchBtn = document.querySelector(".search_btn"),
   array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-  shuffledArray = 0;
+  shuffledArray = 0,
+  mainBg = document.querySelector(".main_container"),
+  bgWrap = document.querySelector(".mv_bg_wrap"),
+  bgImg = document.querySelectorAll(".mv_bg_wrap > li"),
+  mainBtnPrev = document.getElementsByClassName("main_prev")[0], //이전
+  mainBtnNext = document.getElementsByClassName("main_next")[0], //다음
+  mainImgNum = bgImg.length; // li
+let currentBg = 0;
 
+// 메인 배경 이미지 슬라이드
+// 배경이미지 가로배열
+if (mainImgNum > 0) {
+  for (let x = 0; x < mainImgNum; x++) {
+    bgImg[x].style.left = 100 * x + "%";
+  }
+}
+
+// 배경화면의 left값 조절하여 넘어가도록
+function goBg(idx) {
+  bgWrap.style.left = -100 * idx + "%";
+  currentBg = idx;
+  updateBg();
+}
+
+function updateBg() {
+  currentBg = currentBg % bgImg.length;
+  bgWrap.style.left = -100 * currentBg + "%";
+}
+mainBtnPrev.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (currentBg === 0) {
+    goBg(bgImg.length - 1);
+  } else {
+    goBg(currentBg - 1);
+  }
+});
+
+mainBtnNext.addEventListener("click", function (e) {
+  e.preventDefault();
+  goBg(currentBg + 1);
+});
+
+//텍스트 슬라이드
+let sloganWrap = document.querySelector(".slogan_wrap"), //.slider_wrap (ul)
+  sloganSlide = sloganWrap.querySelectorAll(".slogan_wrap > li"), //.slide (li)
+  sloganslideCount = sloganSlide.length; //slides개수
+
+if (sloganslideCount > 0) {
+  for (let i = 0; i < sloganslideCount; i++) {
+    sloganSlide[i].style.left = 100 * i + "%";
+  }
+}
+mainBtnPrev.addEventListener("click", function (event) {
+  event.preventDefault();
+  if (currentIndex === 0) {
+    goToSlide(sloganslideCount - 1);
+  } else {
+    goToSlide(currentIndex - 1);
+  }
+});
+
+mainBtnNext.addEventListener("click", function (event) {
+  event.preventDefault();
+  goToSlide(currentIndex + 1);
+});
+// 슬라이드 넘어가게 하는 함수
+function goToSlide(index) {
+  sloganWrap.style.left = -100 * index + "%";
+  currentIndex = index;
+  updateSlide();
+}
+
+function updateSlide() {
+  currentIndex = currentIndex % sloganslideCount;
+  sloganWrap.style.left = -100 * currentIndex + "%";
+}
 // 슬라이더 길이 지정
 sections.style.width =
   (sectionWidth + sectionMargin) * sectionCount - sectionMargin + -5 + "px";

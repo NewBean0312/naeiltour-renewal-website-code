@@ -1,0 +1,588 @@
+/*검색 */
+#search {
+	position: relative;
+	width:450px;
+	margin-top:30px;
+	float:left;
+	text-align:right;
+}
+#search .naeil_window {
+	display:-moz-inline-block;
+	display:-moz-inline-box;
+	display:inline-block;
+	width:250px;
+	_width /**/:256px;
+	height:27px;
+	_height /**/:33px;
+	border:3px solid #0a653b;
+	background-color:#fff;
+}
+#search .input_text {
+	width:240px;
+	height:21px;
+	line-height:22px;
+	margin:3px 0 0 3px;
+	border:0 none;
+	font-weight:bold;
+	font-size:14px;
+	color:#000;
+*ime-mode:active;
+	outline:none;
+}
+#search .btn {
+	margin-left:-4px;
+	position:relative;
+	vertical-align:top;
+}
+#sublayer {
+	width:315px;
+	border:#0a653b solid 1px;
+	background-color:#FFF;
+}
+#search_cont {
+	width:282px;
+	float:left;
+	height:100%;
+	padding:5px;
+	margin:0;
+	background-color:#fff;
+	text-align:left;
+}
+#search_bottom {
+	width:284px;
+	border-top:1px solid #c9c9c9;
+	padding:7px 5px 3px 5px;
+	background-color:#eee;
+	height:20px;
+	float:left;
+	text-align:left;
+}
+
+#search_bottom ul li {
+	display:inline-block;
+	height:20px;
+	float:left;
+	margin:0;
+	padding:0;
+	}
+
+#search_bottom ul li.close {
+	float:right;
+	width:36px;
+	}
+/* 상단 */
+#head_naeil21 {
+	height: 123px;
+	position: relative;
+	z-index:20000;
+	width:100%;
+	margin:0;
+	padding:0;
+	left:0;
+	top:0;
+}
+#head_naeil21 .bg {
+	height: 79px;
+	width:100%;
+	margin:0 auto;
+	background:#FFF;
+}
+#head {
+	height: 113px;
+	position: relative;
+	z-index:20000;
+	width:100%;
+	margin:0;
+	padding:0;
+	left:0;
+	top:0;
+}
+#head .bg {
+	height: 79px;
+	width:100%;
+	margin:0 auto;
+	background:#FFF;
+}
+li {
+	list-style:none;
+}
+#top {
+    position:relative;
+	height:79px;
+	width:995px;
+	margin:0 auto;
+	background:#FFF;
+}
+/* 로고
+#logo {
+	position: relative;
+	top:0;
+	left:0px;
+	width:186px;
+	height:79px;
+	float:left;
+}
+상단 배너
+#banner {
+	position: relative;
+	width:459px;
+	float:left;
+	text-align:right;
+}
+#top_menu {
+	height:79px;
+	width:350px;
+	float:right;
+} 
+*/
+/* 로그인메뉴- 로그인,회원가입,마이페이지등 */
+/* 아래의 css는 충돌이 되는 부분이 심하여서 주석으로 해놓고 아래의 해당되는 페이지에 css를 각각 따로 제어해 둠. - 20160204 김민정 */
+/* 
+#top_menu .login ul, li{
+    display:inline;
+    padding-left:10px;
+}
+*/
+/*
+#top_menu .menu ul, li{
+    display:inline;
+    padding-left:10px;
+} 
+*/
+
+#top_menu .login {
+	text-align:right;
+	width:350px;
+	height:22px;
+}
+/* 상단메뉴- 이벤트,프리미엄서비스, 커뮤니티, 사회공헌 */	
+#top_menu .menu {
+	text-align:right;
+	width:350px;
+	clear:both;
+	padding-top:23px;
+}
+/* @media screen and (-webkit-min-device-pixel-ratio:0){#top_menu .menu{padding-top:0}} */ /* Chrome */
+#top_menu .menu .bar {
+	background:url(../images/gnb_img/top_menu_bar.gif) no-repeat top;
+	width:19px;
+}
+/* 메인메뉴 */
+#gnb {
+	height:40px;
+	background:url(../images/gnb_img/bar_bg.gif) repeat-x top;
+	width:100%;
+	clear:both;
+	padding:0;
+	margin:0;
+}
+#gnb_nav {
+	width:1010px;
+	margin:0 auto;
+	padding:0px;
+}
+#gnb_nav li {
+	font-size:0;
+	text-align:center;
+	padding:0;
+	margin:0;
+	display:inline;
+	float:left;
+}
+#gnb_nav .busan {
+	text-align:right;
+	padding:0px;
+	margin:0px;
+	float:right;
+}
+#gnb_nav .bar {
+	text-align:center;
+	padding-left:15px;
+	padding-right:15px;
+}
+/* 서브메뉴 */
+#gnb_submenu {
+	width:100%;
+	height:126px;
+	background:url(../images/gnb_img/shadow.png) repeat-x bottom;
+	margin-top:112px;
+	left:0;
+	top:0;
+	padding:0;
+	position:absolute;
+	z-index:10000;
+}
+#gnb_submenu .menu {
+	width:1000px;
+	height:108px;
+	margin:0 auto;
+	padding-top:19px;
+}
+#gnb_sub_nav {
+	width:1000px;
+	height:108px;
+	margin:0 auto;
+	padding-top:19px;
+}
+#gnb_submenu .menu .title {
+	width:255px;
+	float:left;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+#gnb_submenu .menu .sub {
+	width:475px;
+	height:97px;
+	float:left;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+#gnb_submenu .menu .sub li {
+	float:left;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+#gnb_submenu .menu .banner {
+	width:261px;
+	float:right;
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+/* 서브메뉴 - 부산대구출발 페이지 */
+#gnb_submenu_bd {
+	width:100%;
+	height:126px;
+	background:url(../images/gnb_img/shadow.png) repeat-x bottom;
+	margin-top:112px;
+	left:0;
+	top:0;
+	padding:0;
+	position:absolute;
+	z-index:10000;
+}
+#gnb_submenu_bd .menu {
+	width:1000px;
+	height:108px;
+	margin:0 auto;
+	padding-top:19px;
+}
+#gnb_submenu_bd .menu .title {
+	width:230px;
+	float:left;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+#gnb_submenu_bd .menu .sub {
+	width:470px;
+	height:97px;
+	float:left;
+	margin:0;
+	padding:0;
+	text-align:left;
+}
+#gnb_submenu_bd .menu .sub li {
+	float:left;
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+#gnb_submenu_bd .menu .banner {
+	width:261px;
+	float:right;
+	margin:0;
+	padding:0;
+	text-align:right;
+}
+/* 테이블 라운딩보더 */
+
+/* 서울메인 */
+ .table_main {/*
+	border:10px solid #006536;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #006536;
+	behavior: url(/css/PIE.htc);*/
+}
+*:first-child + html .table_main{width:1000px}
+/* 금까기 */
+.table_b {
+	border:12px solid #464f7a;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #464f7a;
+	behavior: url(/css/PIE.htc);
+}
+/* 배낭여행,항공권패스 */
+.table_383f61 {
+	border:12px solid #383f61;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #383f61;
+	behavior: url(/css/PIE.htc);
+}
+/* 호텔 */
+.table_343f5d {
+	border:12px solid #343f5d;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #343f5d;
+	behavior: url(/css/PIE.htc);
+}
+/* 이벤트 */
+.table_7f1a5a {
+	border:12px solid #7f1a5a;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #7f1a5a;
+	behavior: url(/css/PIE.htc);
+}
+/* 프리미엄 */
+.table_5f2b64 {
+	border:12px solid #5f2b64;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #5f2b64;
+	behavior: url(/css/PIE.htc);
+}
+/* 로그인 */
+.table_464f79 {
+	border:12px solid #464f79;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #464f79;
+	behavior: url(/css/PIE.htc);
+	width: 924px;
+	margin-left:auto; margin-right:auto; 
+}
+/* 부산 */
+.table_busan {
+	border:12px solid #006536;
+	text-align: center;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	background: #006536;
+	behavior: url(/css/PIE.htc);
+}
+/* 내일스페셜 */
+ .table_sp {
+	border:1px solid #cccccc;
+	text-align: center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #ffffff;
+	behavior: url(/css/PIE.htc);
+}
+/* 컨텐츠 */
+#content-area {
+	padding-top:18px;
+	width:1000px;
+	margin:0 auto;
+}
+#content-area-900 {
+	padding-top:18px;
+	width:900px;
+	margin:0 auto;
+}
+
+#content-area_friday {
+	padding-top:18px;
+	width:1250px;
+	margin:0 auto;
+}
+#pcontent-area {
+	padding-top:18px;
+	width:100%;
+	margin:0 auto;
+}
+#content-area_21 {
+	padding-top:120px;
+	width:1000px;
+	margin:0 auto;
+}
+#content {
+	padding: 0;
+	width:900px;
+	margin:0;
+	float:left;
+}
+#pcontent {
+	padding: 0;
+	width:100%;
+	margin:0;
+	float:left;
+}
+#sky {
+	padding:0;
+	float:right;
+	display:inline;
+	text-align:right;
+}
+#content-area_backpacktour {
+	padding-top:18px;
+	width:1004px;
+	margin: 0 auto;
+	height:100%;
+	max-height:100%;
+}
+/* 내일로가는 배낭여행 기획전 */
+#content_backpacktour {
+	padding: 0;
+	margin:0;
+	float:left;
+	width:1004px;
+	max-height:100%;
+	height:100%;
+}
+#backpacktour-left {
+	width:162px;
+	float:left;
+	background-color:#373b3c;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#backpacktour-left li {
+	padding:0;
+	margin:0;
+}
+#backpacktour-right2 {
+	width:200px;
+	float:right;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+#backpacktour-right {
+	width:842px;
+	float:left;
+	margin:0;
+	padding:0;
+	background-color:#ffffff;
+	background:url(/event/new_backpacktour/images/contents_bg.png) repeat-y top;
+	height:100%;
+}
+#backpacktour-right li {
+	padding:0;
+	margin:0;
+	float:left;
+}
+#backpacktour-right .sub li {
+	padding:0;
+	margin:0;
+}
+#backpacktour-right .contents {
+	padding-left:17px;
+	margin:0;
+	width:803px;
+	float:left;
+}
+#backpacktour-right .contents .title {
+	padding:0;
+	margin:0;
+	width:803px;
+	height:46px;
+	background:url(/event/new_backpacktour/images/eu/title1.gif) no-repeat left;
+	color:#000000;
+}
+#backpacktour-copy {
+	width:803px;
+	float:left;
+	margin-left:17px;
+	padding-top:30px;
+}
+/* UI Object */
+#backpacktour-right .lst_type {
+	overflow:hidden;
+	width:803px;
+	border:0;
+	padding-top:10px;
+	margin:0 auto;
+}
+#backpacktour-right .lst_type li {
+	display:inline;
+	float:left;
+	width:185px;
+	height:215px;
+	margin:0;
+	padding:7px;
+	text-align:center;
+	letter-spacing:-1px;
+	font-family:'돋움', Dotum;
+	color:#666666;
+	list-style:none;
+	background:url(/event/new_backpacktour/images/eu/text_bg.gif) no-repeat bottom;
+}
+#backpacktour-right .lst_type li a {
+	text-decoration:none;
+	color:#666666;
+	font-family:'돋움', Dotum;
+}
+#backpacktour-right .lst_type li a:hover {
+	text-decoration:none;
+	color:#666666;
+	font-family:'돋움', Dotum;
+}
+#backpacktour-right .lst_type li img {
+	display:block;
+	margin-bottom:15px;
+	border:none
+}
+/*/UI Object */
+
+
+
+
+.FRIDAYINPUT {
+	COLOR: #595959;
+	FONT-FAMILY: "굴림";
+	FONT-SIZE: 9pt;
+	PADDING-LEFT:3;
+	PADDING-TOP:2;
+	BACKGROUND-COLOR:#FFFFFF;
+	BORDER:1  SOLID #D9D9D9;
+	BORDER-TOP-COLOR: #D9D9D9;
+	BORDER-RIGHT-COLOR: #D9D9D9;
+	BORDER-BOTTOM-COLOR: #D9D9D9;
+	BORDER-LEFT-COLOR: #D9D9D9;
+}
+.NAEILINPUT {
+	COLOR: #595959;
+	FONT-FAMILY: "굴림";
+	FONT-SIZE: 9pt;
+	PADDING-LEFT:3;
+	PADDING-TOP:2;
+	BACKGROUND-COLOR:#FFFFFF;
+	BORDER:1  SOLID #D9D9D9;
+	BORDER-TOP-COLOR: #D9D9D9;
+	BORDER-RIGHT-COLOR: #D9D9D9;
+	BORDER-BOTTOM-COLOR: #D9D9D9;
+	BORDER-LEFT-COLOR: #D9D9D9;
+}
+
+/* "ul, li" css 잘못 된거 다시 정렬 20160203 김민정 - 2015_gnb.css 중에서 line 138 ~ line 150 (css 충돌문제) */
+#top_menu .login ul,#top_menu .login li,#top_menu .menu ul,#top_menu .menu li
+{
+    display:inline;
+    padding-left:10px;
+}

@@ -1,0 +1,118 @@
+jQuery(document).ready(function($) {
+	//depth1
+	$(".prod-menu li").on('mouseenter', function(){
+		var i = $(this).index();
+
+		if( i < 7 ){
+			$('#mainNavi .in_navi').eq(i).addClass('d2_over').siblings().removeClass('d2_over');
+			$(this).addClass('on').siblings().removeClass('on');
+			$('#mainNavi-wrap').addClass('active');
+			$('.prod-menu li.active a').css('background-color', '#0d7d27');
+
+			if( $('#mainNavi .in_navi').hasClass('d2_on') ){
+				 $('#mainNavi .in_navi.d2_on').css('display', 'none');
+			}
+		}
+		if( i == 0 ){
+			 $("#naviTour #tm01").find(".depth2-wrap").css({
+				 'display': 'block',
+				 'visibility': 'visible'
+			 });
+		}
+
+		$("#header-wrap").addClass("active");
+
+	}).on('mouseleave', function(){
+		$(this).removeClass('on');
+		$('#mainNavi-wrap').removeClass('active');
+		//$('#mainNavi-wrap').css('height', );
+		$('.prod-menu li.active a').css('background-color', '');
+		$("#naviTour #tm01").find(".depth2-wrap").css({
+			'display': '',
+			'visibility': ''
+		});
+	});
+
+	//depth2
+	$("#mainNavi").on('mouseenter', function(){
+		$('#mainNavi-wrap').addClass('active');
+
+		var overIndex = $('#mainNavi .in_navi.d2_over').index();
+		if( overIndex > 0 ){
+			$('.prod-menu li').eq(overIndex).addClass('on');
+			$('.prod-menu li.active a').css('background-color', '#0d7d27');
+		}
+
+	}).on('mouseleave', function(){
+		$('#mainNavi-wrap').removeClass('active');
+		$('.prod-menu li').removeClass('on');
+		$('.prod-menu li.active a').css('background-color', '');
+
+		//reset
+		$('#mainNavi .in_navi').removeClass('d2_over');
+		$('#mainNavi .in_navi.d2_on').css('display', '');
+	});
+	//depth2_금까기
+	$("#naviTour li").on('mouseenter', function(){
+		$(this).addClass('sub_on').siblings().removeClass('sub_on');
+	}).on('mouseleave', function(){
+		$(this).removeClass('sub_on');
+	});
+	$("#naviTour").on('mouseenter', function(){
+		$('.prod-menu li:first-child').addClass('on');
+		$('.prod-menu li.active a').css('background-color', '#0d7d27');
+	}).on('mouseleave', function(){
+		$('.prod-menu li:first-child').removeClass('on');
+		$('.prod-menu li.active a').css('background-color', '');
+	});
+	//depth2_reset
+	$(".header_top, .prod-menu .link").on('mouseenter', function(){
+		$('#mainNavi .in_navi').removeClass('d2_over');
+		$('#mainNavi .in_navi.d2_on').css('display', '');
+		$("#header-wrap").removeClass("active");
+	});
+	$(".gnb_menu_wrap").on('mouseleave', function(){
+		$('#mainNavi .in_navi').removeClass('d2_over');
+		$('#mainNavi .in_navi.d2_on').css('display', '');
+		$("#header-wrap").removeClass("active");
+	});
+
+	//depth3
+	$("#mainNavi #topmenu > li").on('mouseover', function(){
+		var tmIndex = $(this).index()-1;
+		$(this).parents().next('.depth2-wrap').find('.menu').find('.tit').removeClass('tmactive');
+		$(this).parents().next('.depth2-wrap').find('.menu').find('.tit').eq(tmIndex).addClass('tmactive');
+
+		//우리만
+		if(tmIndex<8){
+			$("#uriman_a").css("display","");
+			$("#uriman_b").css("display","none");
+		}else{
+			$("#uriman_a").css("display","none");
+			$("#uriman_b").css("display","");
+		}
+	});
+	//depth3_부산/대구 출발
+	$("#mainNavi #topmenu > li.titbusan").on('mouseover', function(){
+		var tmIndex = $(this).index();
+		$(this).parents().next('.depth2-wrap').find('.menu').find('.tit').removeClass('tmactive');
+		$(this).parents().next('.depth2-wrap').find('.menu').find('.title').removeClass('tmactive');
+		$(this).parents().next('.depth2-wrap').find('.menu').find('.title').eq(0).addClass('tmactive');
+	});
+	$("#mainNavi #topmenu > li.titdaegu").on('mouseover', function(){
+		var tmIndex = $(this).index();
+		$(this).parents().next('.depth2-wrap').find('.menu').find('.tit').removeClass('tmactive');
+		$(this).parents().next('.depth2-wrap').find('.menu').find('.title').removeClass('tmactive');
+		$(this).parents().next('.depth2-wrap').find('.menu').find('.title').eq(1).addClass('tmactive');
+	});
+
+	$(".topmenu li:first-child").on('mouseover', function(){
+		$('.menu').find('.tit').removeClass('tmactive');
+	});
+	$("#mainNavi #topmenu > li").on('mouseleave', function(){
+		$('.tit').removeClass('tmactive');
+		$('.tittit').removeClass('tmactive');
+		$('.title').removeClass('tmactive');
+	});
+
+});

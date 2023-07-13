@@ -1,0 +1,39 @@
+@charset "euc-kr";
+
+/*** !!!!!!!!!!필수!!!!!!!!!! ***/
+body{line-height:normal !important;}
+#quick-menu{display:none;}
+
+/* 공통 */
+.container{text-align:center; position:relative}
+.event_iframe_wrap{width:1108px; margin:0 auto;}
+
+/* 메인Visual Banner */
+.main_visual {position:relative; width:100%; min-width:1200px; height:1043px; overflow:hidden; margin:0 auto; text-align:center; z-index:1; pointer-events:none;}
+.main_visual .list_visual_box .list_visual {position:absolute; top:0; left:50%; margin-left:-960px; overflow:hidden; width:1920px; height:1059px; min-width:1200px;}
+.main_visual .list_visual_box .list_visual li {float:left;}
+
+
+/* 콘텐츠 */
+.pc_cont01_bg{background-color:#3641a9;}
+.pc_cont02_bg{background-color:#f2f4f6;}
+.pc_cont04_bg{background-color:#f2f4f6;}
+.pc_goods_bg{background-color:#3641a9;}
+
+
+.cs{margin-top:0px; margin-bottom:30px;}
+
+/* 고정 배너 */
+.fix_banner{position:fixed; bottom:300px; right:55%; margin-right:-735px; z-index:999;}
+/* .fix_banner.fixed a {position:fixed; top:50%; margin-top:-110px;} */
+/*.fix_banner a{display:block; width:271px; height:72px; margin-bottom:7px;}
+
+/* 하단 이니셜 */
+.copyright_sig {width:1100px; margin:0 auto; padding:10px 0 20px; color:#777; text-align:right;}
+
+/* 고정 배너 */
+.fix_banner{position:fixed; bottom:300px; right:45%; margin-right:-735px; z-index:999;}
+
+/* top */
+.top_page {position:fixed; bottom:100px; right:50%; margin-right:-735px; z-index:999; display:none;}
+.top_page span{display:block; cursor:pointer;}

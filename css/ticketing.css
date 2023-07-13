@@ -558,6 +558,9 @@ button.planner_btn span.img_box > img {
 
 /* mobile_screen_midea */
 @media screen and (max-width: 500px) {
+  header {
+    height: 70px;
+  }
   /* ticketing_wrapper */
   .ticketing_wrapper {
     width: 500px;

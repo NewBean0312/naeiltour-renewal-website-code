@@ -1,0 +1,65 @@
+$(window).load(function(){
+    //메인롤링
+	$('.visual_slider').slick({
+		  infinite: true,
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  speed: 1000,
+		  autoplaySpeed: 3000,
+		  fade:true,
+		  pauseOnHover:false,
+		  arrows: false
+	});
+
+    topScroll();    //위로가기
+});
+
+
+
+
+
+function topScroll() {
+	$('.fix_banner a').click(function(e){
+        e.preventDefault();
+        var anchor = $(this);
+        $('html,body').stop().animate({scrollTop:$(anchor.attr('href')).offset().top}, 800)
+    })
+
+    $('.top_page').click(function(){
+      $('html,body').animate({scrollTop : 0}, 800);
+    })
+
+    $(window).on('scroll', function(){
+        var windowH = $(window).height();
+        var scrollTop = $(window).scrollTop();
+        var footerTop = $("#footer-wrap").offset().top
+        var pageH = scrollTop + windowH;
+        var topBottom = pageH - footerTop;
+
+        if( scrollTop >= 400 ) {
+            //$('.fix_banner').fadeIn();
+            $('.top_page').fadeIn();
+        }else {
+            //$('.fix_banner').fadeOut();
+            $('.top_page').fadeOut();
+        }
+
+        if( pageH >= footerTop ) {
+            $('.top_page').css('bottom', topBottom + 100);
+            $('.fix_banner').css('bottom', topBottom + 180);
+        }else {
+            $('.top_page').css('bottom', '');
+        }
+    });
+}
+
+
+
+//상품리스트 아이프레임
+function iframeHeight(i){
+    var iframeHeight=(i).contentWindow.document.body.scrollHeight;
+    (i).height=iframeHeight;
+}
+
+

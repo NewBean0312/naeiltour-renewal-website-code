@@ -1,0 +1,33 @@
+function appsend(){
+	if(document.getElementById('cpnumber').value=="" || document.getElementById('cpnumber').value=="휴대폰 번호를 입력해주세요."){
+		alert("앱문자를 받을 연락처를 입력해주세요.");
+		document.getElementById('cpnumber').value="";
+		document.getElementById('cpnumber').focus();
+		return false;
+	}
+
+	var cpnum = document.getElementById('cpnumber').value ;
+	appifm.location.href='/inc/sms_exe.asp?cpnumber='+cpnum ;
+	document.getElementById('cpnumber').value="";
+	document.getElementById('AppDownLayerWrap').style.display="none";
+}
+
+function appsendtop(){
+	if(document.getElementById('cpnumber').value=="" || document.getElementById('cpnumber').value=="휴대폰 번호를 입력해주세요."){
+		alert("앱문자를 받을 연락처를 입력해주세요.");
+		document.getElementById('cpnumber').value="";
+		document.getElementById('cpnumber').focus();
+		return;
+	}
+
+	if(document.getElementById('sms_check').checked == false){
+		alert("개인정보 수집 및 이용 동의에 체크해주세요.");
+		document.getElementById('sms_check').focus();
+		return;
+	}
+
+	var cpnum = document.getElementById('cpnumber').value ;
+	appifm.location.href='/inc/sms_exe.asp?cpnumber='+cpnum ;
+	document.getElementById('cpnumber').value="";
+	//document.getElementById('AppDownLayerWrap').style.display="none";
+};
