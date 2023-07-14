@@ -1,5 +1,5 @@
-var targetLink = document.querySelectorAll(".tab_menu a");
-var tabContent = document.querySelectorAll(".tab_content > div");
+var targetLink = document.querySelectorAll(".tab_menu a"),
+  tabContent = document.querySelectorAll(".tab_content > div");
 
 for (var i = 0; i < targetLink.length; i++) {
   targetLink[i].addEventListener("click", function (e) {
@@ -26,6 +26,7 @@ for (var i = 0; i < targetLink.length; i++) {
       targetLink[k].classList.remove("active");
       e.target.classList.add("active");
     }
+
   });
 }
 

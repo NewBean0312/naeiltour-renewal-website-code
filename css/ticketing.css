@@ -398,18 +398,25 @@ button.planner_btn span.img_box > img {
 .content_box_row_1 .journey {
   position: absolute;
   top: -20px;
-  left: 80px;
   color: #767676;
   font-family: "MaplestoryOTFLight";
-  font-size: 13px;
+  font-size: 11px;
   letter-spacing: 1.5px;
 }
 
-.tab_content #tab3 div.destination,
+.tab_content #tab3 div.destination {
+  height: 70%;
+}
+
+#tab3 div.destination .route > div:nth-child(2) {
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+
 .tab_content #tab3 div.planner {
-  position: relative;
+  height: 30%;
   border: none;
-  height: 50%;
 }
 
 .content_box_row_1 > .dashed_line {
@@ -563,15 +570,21 @@ button.planner_btn span.img_box > img {
   header {
     width: 500px;
     height: 70px;
+    margin: 0 auto;
   }
   /* ticketing_wrapper */
   .ticketing_wrapper {
     width: 500px;
-    height: auto;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #f1f3f6;
     /* 임시 */
-    background-color: lightcoral;
     border-radius: 25px;
+  }
+
+  .ticketing_wrapper.tab3_height {
+    height: 800px;
   }
 
   .ticketing_box > h1 {
@@ -661,6 +674,14 @@ button.planner_btn span.img_box > img {
     height: 1px;
     border-bottom: 1px dashed #767676;
     content: "";
+  }
+
+  .destination button.start_btn {
+    margin-left: 10px;
+  }
+
+  .destination button.arrival_btn {
+    margin-right: 10px;
   }
 
   .destination > .route {
@@ -773,58 +794,65 @@ button.planner_btn span.img_box > img {
 
   /* tab3 CSS */
   .tab_content #tab3 {
-    height: 400px;
+    height: 100%;
   }
 
   .tab_content #tab3 > .content_box {
-    display: flex;
+    display: block;
   }
 
   /* content_box_row_1 */
   .tab_content #tab3 .content_box_row_1 {
     display: block;
-    width: 942px;
-    height: 370px;
-    border-right: 1px dashed #767676;
+    width: 100%;
+    height: auto;
+    border: none;
   }
 
   .content_box_row_1 > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 185px;
+    display: block;
+    height: 200px;
   }
 
   .content_box_row_1 .journey {
     position: absolute;
-    top: -20px;
-    left: 80px;
-    color: #767676;
-    font-family: "MaplestoryOTFLight";
-    font-size: 13px;
-    letter-spacing: 1.5px;
+    top: 20px;
+    left: 10px;
+    color: #000;
   }
 
-  .tab_content #tab3 div.destination,
-  .tab_content #tab3 div.planner {
-    position: relative;
-    border: none;
-    height: 50%;
+  .content_box_row_1 .route > div:nth-child(2n-1) {
+    display: block;
+    border-bottom: 1px dashed #61b3ff;
+  }
+
+  .content_box_col_1 div.destination {
+    height: 70%;
+  }
+
+  .content_box_col_1 div.planner {
+    height: 30%;
+    border-radius: 0;
   }
 
   .content_box_row_1 > .dashed_line {
-    width: 890px;
-    height: 1px;
-    margin: 0 auto;
-    border-top: 1px dashed #767676;
+    width: 100%;
+    border-top: 1px solid #bbb;
+  }
+
+  .content_box_col_2 div.destination {
+    border-radius: 0;
+  }
+
+  .content_box_col_2 div.planner {
+    border-radius: 0 0 25px 25px;
   }
 
   /* content_box_row_2 */
   .content_box .content_box_row_2 {
-    display: flex;
-    align-items: start;
-    width: 338px;
-    height: 370px;
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   /* footer_box */
