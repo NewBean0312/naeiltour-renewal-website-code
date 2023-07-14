@@ -1467,6 +1467,7 @@ nav .main_gnb li a {
 
 .contact_box > .contact_wrapper {
   display: flex;
+  justify-content: space-between;
   width: 1570px;
   height: 498px;
   margin-top: 247px;
@@ -1487,7 +1488,7 @@ nav .main_gnb li a {
 /* contact_row */
 .contact_wrapper > .contact_row_1 {
   position: relative;
-  width: 658px;
+  width: 700px;
   height: 100%;
 }
 
@@ -1537,9 +1538,8 @@ nav .main_gnb li a {
 
 /* contact_row_2 */
 .contact_wrapper > .contact_row_2 {
-  width: 827px;
+  width: 700px;
   height: 100%;
-  margin-left: 85px;
 }
 
 .contact_row_2 > .help_wrapper {
@@ -1605,7 +1605,7 @@ nav .main_gnb li a {
   width: 240px;
   height: 29px;
   margin-top: 5px;
-  margin-left: 50px;
+  margin-left: 100px;
   cursor: pointer;
 }
 
