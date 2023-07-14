@@ -175,7 +175,7 @@ header {
 }
 
 .content_box div button {
-  background: none;
+  background-color: #fff;
   border: none;
   border-radius: 10px;
 }
@@ -256,7 +256,8 @@ header {
 /* planner - button */
 .planner button.planner_btn {
   width: 160px;
-  height: 60px;
+  height: 50px;
+  margin: 5px 0;
   color: #767676;
   cursor: pointer;
 }
@@ -557,14 +558,19 @@ button.planner_btn span.img_box > img {
 }
 
 /* mobile_screen_midea */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
+  /* 임시 */
   header {
+    width: 500px;
     height: 70px;
   }
   /* ticketing_wrapper */
   .ticketing_wrapper {
     width: 500px;
+    height: auto;
     background-color: #f1f3f6;
+    /* 임시 */
+    background-color: lightcoral;
     border-radius: 25px;
   }
 
@@ -617,6 +623,7 @@ button.planner_btn span.img_box > img {
   /* tab_content */
   .tab_content {
     width: 460px;
+    height: 500px;
     margin: 0 auto;
   }
 
@@ -627,10 +634,9 @@ button.planner_btn span.img_box > img {
   .tab_content .content_box {
     display: block;
     width: 100%;
-    height: 100%;
+    height: auto;
     border: none;
     border-radius: 0;
-    background-color: #f1f3f6;
     background-image: none;
   }
 
@@ -642,6 +648,7 @@ button.planner_btn span.img_box > img {
   .tab_content .destination {
     position: relative;
     width: 100%;
+    height: 130px;
     border: none;
     border-radius: 25px 25px 0 0;
     background-color: #fff;
@@ -654,16 +661,6 @@ button.planner_btn span.img_box > img {
     height: 1px;
     border-bottom: 1px dashed #767676;
     content: "";
-  }
-
-  /* destination - button */
-  .destination button > span:first-child {
-    font-size: 35px;
-  }
-
-  .destination button > span:last-child {
-    padding-top: 20px;
-    font-size: 17px;
   }
 
   .destination > .route {
@@ -691,75 +688,58 @@ button.planner_btn span.img_box > img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 391px;
-    border-right: 1px dashed #767676;
+    width: 100%;
+    border: none;
+    border-radius: 0 0 25px 25px;
+    background-color: #fff;
   }
 
   /* planner - button */
   .planner button.planner_btn {
-    width: 160px;
-    height: 60px;
-    color: #767676;
-    cursor: pointer;
+    width: 120px;
   }
 
   button.planner_btn > div:first-child {
-    margin-left: 35px;
-    font-size: 12px;
-    font-family: "MaplestoryOTFLight";
-    text-align: left;
+    display: none;
   }
 
   button.planner_btn > div:last-child {
-    display: flex;
-    align-items: center;
-    font-size: 17px;
-    letter-spacing: 2.5px;
+    font-family: "MaplestoryOTFlight";
+    font-size: 15px;
+    letter-spacing: 0;
   }
 
   button.planner_btn span.img_box {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    margin-right: 5px;
-  }
-
-  button.planner_btn span.img_box > img {
-    width: 100%;
-    height: 100%;
+    width: 26px;
+    height: 26px;
   }
 
   /* personnel */
   .tab_content .personnel {
-    width: 338px;
+    width: 100%;
   }
 
   /* personnel - button */
   .personnel > button {
     position: relative;
-    display: block;
-    width: 290px;
-    height: 55px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    cursor: pointer;
+    width: 100%;
+    height: 80px;
+    margin: 0;
+    margin-top: 12px;
+    background-color: #fff;
   }
 
   .personnel > button > div {
-    color: #767676;
-    font-family: "MaplestoryOTFLight";
+    margin: 0 15px;
   }
 
   .personnel > button > div:nth-child(1) {
-    margin-top: 5px;
-    font-size: 11px;
+    font-size: 14px;
   }
 
   .personnel > button > div:nth-child(2) {
-    margin-top: 10px;
-    font-size: 14px;
+    margin-top: 5px;
+    font-size: 18px;
   }
 
   .personnel > button.passenger_btn > div:nth-child(2) {
@@ -767,22 +747,16 @@ button.planner_btn span.img_box > img {
   }
 
   .personnel > button > div:nth-child(3) {
-    height: 1px;
-    border-bottom: 1px solid #000;
-    margin-top: 10px;
-  }
-
-  .personnel > button:hover > div:nth-child(3) {
-    visibility: hidden;
+    display: none;
   }
 
   /* personnel - button - img_box */
   .personnel > button .img_box {
     position: absolute;
-    top: 10px;
+    top: 25px;
     right: 0;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s;
   }
 
@@ -791,25 +765,10 @@ button.planner_btn span.img_box > img {
     height: 100%;
   }
 
-  .personnel > button:hover .img_box {
-    transform: translateX(-8px);
-  }
-
   /* airplane_search_btn */
   .tab_content .airplane_search_btn {
-    display: block;
-    width: 300px;
-    height: 60px;
-    margin-top: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    border: none;
-    border-radius: 10px;
-    background-color: #00256c;
-    color: #fff;
-    font-family: "MaplestoryOTFLight";
-    font-size: 18px;
-    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
   }
 
   /* tab3 CSS */
