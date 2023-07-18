@@ -841,6 +841,10 @@ nav .main_gnb li a {
   background-color: #fff;
 }
 
+.section_box:hover {
+  box-shadow: 5px 5px 5px #f3f3f3;
+}
+
 .section_box .img_box {
   width: 100%;
   height: 310px;
@@ -999,7 +1003,6 @@ nav .main_gnb li a {
   width: 1903px;
   height: auto;
   position: relative;
-  background-color: #f7f7f7;
 }
 
 .best_text {
