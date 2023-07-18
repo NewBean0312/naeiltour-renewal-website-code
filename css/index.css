@@ -181,17 +181,17 @@ nav .main_sub_menu > li > a {
 }
 
 .main_sub_menu_2 > div:nth-child(2) {
-  width: 66%;
+  width: 65%;
 }
 
 .main_sub_menu_2 > div:nth-child(3) {
-  width: 20%;
+  width: 21%;
   background-color: lightgoldenrodyellow;
 }
 
 /* sub_menu_2_title */
 .main_sub_menu_2 > .sub_menu_2_title > h1 {
-  margin: 40px 50px;
+  margin: 40px;
   color: #000;
   font-size: 30px;
 }
