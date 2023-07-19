@@ -50,200 +50,24 @@
 
   .where_when {
     display: block;
-    position: absolute;
     left: 15%;
-    bottom: 48px;
   }
 
   .where {
     font-family: "MaplestoryOTFlight";
-    font-size: 25px;
-    position: relative;
-    width: 344px;
-    height: 46px;
-    display: block;
-    padding-bottom: 10px;
-    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
   }
-  .where:hover {
-    border-bottom-color: rgba(255, 255, 255, 1);
-    transition-duration: 0.6s;
-  }
-  .where:hover.where i {
-    animation: where_arrow 1s infinite;
-  }
-  @keyframes where_arrow {
-    0% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(40%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-  .where i {
-    position: absolute;
-    right: 0;
-  }
+
   .when {
-    display: block;
-    position: relative;
-    width: 344px;
-    height: 46px;
-    padding-bottom: 10px;
     margin-top: 20px;
     margin-left: 0;
     font-family: "MaplestoryOTFlight";
-    font-size: 25px;
-
-    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
-  }
-  .when:hover {
-    border-bottom-color: rgba(255, 255, 255, 1);
-    transition-duration: 0.6s;
-  }
-  .when:hover.when i {
-    animation: where_arrow 1s infinite;
-  }
-  @keyframes where_arrow {
-    0% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(40%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-  .when i {
-    position: absolute;
-    right: 0;
-  }
-  .main_prev {
-    position: absolute;
-    top: 50%;
-    left: 3%;
-    z-index: 10;
-    padding-bottom: 35px;
-    font-size: 18px;
-    color: #fff;
-    background: transparent;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  .main_prev::after {
-    content: "";
-    position: absolute;
-    left: 10px;
-    top: 40px;
-    width: 14px;
-    height: 14px;
-    border-top: solid 1px #fff;
-    border-left: solid 1px #fff;
-    transform: rotate(-45deg);
-    transform-origin: center center;
-  }
-  .main_prev::before {
-    content: "";
-    position: absolute;
-    left: 9px;
-    top: 47px;
-    width: 24px;
-    height: 1px;
-    background: #fff;
-  }
-  .main_next {
-    position: absolute;
-    top: 50%;
-    right: 3%;
-    z-index: 10;
-    padding-bottom: 35px;
-    font-size: 18px;
-    color: #fff;
-    background: transparent;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  .main_next::after {
-    content: "";
-    position: absolute;
-    right: 10px;
-    top: 40px;
-    width: 14px;
-    height: 14px;
-    border-top: solid 1px #fff;
-    border-right: solid 1px #fff;
-    transform: rotate(45deg);
-  }
-  .main_next::before {
-    content: "";
-    position: absolute;
-    right: 9px;
-    top: 47px;
-    width: 24px;
-    height: 1px;
-    background: #fff;
-  }
-  .main_prev:hover::after {
-    animation: main_prev_after 1.2s infinite;
-  }
-  @keyframes main_prev_after {
-    0% {
-      transform: rotate(-45deg) translate(0%, 0%);
-    }
-    50% {
-      transform: rotate(-45deg) translate(-40%, -40%);
-    }
-    100% {
-      transform: rotate(-45deg) translate(0%, 0%);
-    }
-  }
-  .main_prev:hover::before {
-    animation: main_prev_before 1.2s infinite;
-  }
-  @keyframes main_prev_before {
-    0% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(-40%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
-  .main_next:hover::after {
-    animation: main_next_after 1.2s infinite;
-  }
-  @keyframes main_next_after {
-    0% {
-      transform: rotate(45deg) translate(0%, 0%);
-    }
-    50% {
-      transform: rotate(45deg) translate(40%, -40%);
-    }
-    100% {
-      transform: rotate(45deg) translate(0%, 0%);
-    }
-  }
-  .main_next:hover::before {
-    animation: main_next_before 1.2s infinite;
-  }
-  @keyframes main_next_before {
-    0% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(40%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
   }
 
+  /* mobile_utill */
+  .menu_icon + label {
+    display: block;
+  }
+  
   /* best */
   .slide_wrapper {
     width: 500px;
