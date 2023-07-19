@@ -14,7 +14,7 @@
   font-style: normal;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   /* main */
   .main_container {
     width: 500px;
@@ -224,20 +224,73 @@
   .res_btn::after {
     right: 38%;
   }
+  
   /* review */
   .review_box {
     border-top: 0px;
+    padding: 200px 0;
+  }
+  .review_inner {
+    width: 100%;
+    height: 60px;
+  }
+  .review_text {
+    position: relative;
+    top: 50%;
+  }
+  .review_text > p {
+    font-size: 33px;
+    text-align: start;
+    padding-left: 35px;
+    padding-bottom: 0px;
+  }
+  .review_more {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin-right: 10px;
+  }
+  .review_more p {
+    font-size: 12px;
+  }
+  .review_more::after {
+    margin-right: 7px;
+    transform: scale(0.7);
+    top: -3px;
+  }
+  @keyframes arrow {
+    0% {
+      transform: scale(0.7) translateX(0%);
+    }
+    50% {
+      transform: scale(0.7) translateX(30%);
+    }
+    100% {
+      transform: scale(0.7) translateX(0%);
+    }
+  }
+
+  .review_item {
+    width: 97%;
+  }
+  .review_cont .review_img {
+    height: 245px;
+  }
+  .review_cont .review_img2 {
+    height: 245px;
+  }
+  .review_cont .review_img3 {
+    height: 245px;
   }
 
   /* contact */
   /* contact_box */
   .contact_box {
     width: 500px;
-    height: 800px;
+    height: 900px;
     margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
-    background-color: lightcoral;
   }
 
   .contact_box > .contact_wrapper_1 {
@@ -290,20 +343,18 @@
   /* contact_row_2 */
   .contact_wrapper_1 > .contact_row_2 {
     width: 100%;
-    height: 100%;
+    height: 400px;
   }
 
   .contact_row_2 > .help_wrapper {
     display: block;
     height: 300px;
-    background-color: lightblue;
   }
 
   .help_wrapper > .help_row_1 {
-    width: 89%;
+    width: 90%;
     height: 200px;
     margin-left: 20px;
-    background-color: lightgreen;
   }
 
   /* tel_box */
@@ -314,63 +365,29 @@
 
   /* .help_row_2 */
   .help_wrapper .help_row_2 {
-    display: block;
     flex-direction: row;
-    justify-content: end;
+    justify-content: start;
     width: 90%;
     height: 80px;
     margin-left: 20px;
-    background-color: lightsalmon;
   }
 
   .help_row_2 > .help_btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 240px;
-    height: 29px;
-    margin-top: 5px;
-    margin-left: 100px;
-    cursor: pointer;
+    justify-content: start;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 0;
   }
 
-  .help_btn > a {
-    color: #000;
-    font-size: 20px;
-    font-family: "MaplestoryOTFLight";
-  }
-
-  .help_btn > span {
-    width: 21px;
-    height: 21px;
-  }
-
-  .help_btn > span > img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .help_btn:hover img {
-    animation: help_btn 1.2s infinite;
-  }
-
-  @keyframes help_btn {
-    0% {
-      transform: translateX(0%);
-    }
-    50% {
-      transform: translateX(30%);
-    }
-    100% {
-      transform: translateX(0%);
-    }
-  }
+  
 
   .contact_wrapper_2 {
     display: block;
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    height: 120px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
     border: none;
   }
 
@@ -423,9 +440,9 @@
   }
 
   /* contact_link */
-
   .contact_wrapper_2 > .link_wrapper {
     justify-content: center;
+    height: 50px;
     margin-top: 15px;
   }
 
@@ -433,23 +450,16 @@
     margin: 0 10px;
   }
 
-  .link_box > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-
   /* footer_box */
   .footer_box {
+    display: block;
     width: 500px;
-    margin-top: 40px;
+    height: 500px;
+    margin-top: 100px;
   }
 
   .footer_box > .footer_wrapper {
     width: 100%;
-    margin: 0;
   }
 
   /* footer_app_nav */
@@ -515,6 +525,4 @@
   .footer_wrapper > .footer_award {
     display: none;
   }
-
-  /* contact_row */
 }

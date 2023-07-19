@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "MaplestoryOTFLight";
+  font-family: "MaplestoryOTFlight";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff")
     format("woff");
   font-weight: normal;
@@ -57,13 +57,19 @@ a {
   color: inherit;
 }
 
+body > div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* main_container */
 .main_container {
   position: relative;
   z-index: 999;
   left: 0;
   width: 100%;
-  height: 850px;
+  height: 1520px;
+  height: auto;
   margin: 0 auto;
   color: #000;
   overflow-x: hidden;
@@ -462,385 +468,331 @@ nav .main_gnb li a {
   
 }
 
-/* ticketing_wrapper */
-.ticketing_wrapper {
-  width: 1903px;
-  height: auto;
-  margin-top: 200px;
+/* sub_page_customer */
+.sub_page_customer {
+  width: 100%;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  padding: 70px 0 110px;
+  min-height: 400px;
+  box-sizing: border-box;
 }
-
-.ticketing_box {
-  width: 1280px;
-  height: auto;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.customer_title {
+  width: 100%;
+  text-align: center;
 }
-
-.ticketing_box > h1 {
-  font-family: "MaplestoryOTFLight";
+.customer_title h2 {
   font-size: 30px;
+  letter-spacing: -1.5px;
 }
-
-/* tab_wrapper */
-.tab_wrapper {
-  width: 100%;
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.tab_menu {
-  display: flex;
-}
-
-.tab_menu li {
+.customer_inner {
+  width: 1180px;
+  margin: 0 auto;
+  padding-top: 65px;
   position: relative;
-  width: 70px;
-  height: 30px;
-  margin-right: 30px;
 }
-
-.tab_menu li a {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  padding-left: 30px;
-  color: gray;
-  font-family: "MaplestoryOTFLight";
-  font-size: 15px;
+.customer_help {
 }
-
-.tab_menu .outside_circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 7px;
-  left: 0;
-  z-index: -1;
-  width: 20px;
-  height: 20px;
-  border: 1px solid black;
-  border-radius: 50%;
+.customer_help h2 {
+  text-align: center;
+  font-size: 40px;
+  color: #1c1c1c;
+  letter-spacing: -2px;
 }
-
-.tab_menu > li:hover .outside_circle {
-  border: 1px solid #2b54c4;
-}
-
-.outside_circle > .inside_circle {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-}
-
-.tab_menu li a.active {
-  color: #000;
-}
-
-.tab_menu li a.active + .outside_circle > .inside_circle {
-  background-color: #000;
-}
-
-/* tab_content */
-.tab_content > div {
-  width: 100%;
-  height: 200px;
-  margin-top: 20px;
-  /* 안보이게 */
+.customer_help h2 br {
   display: none;
 }
-
-.tab_content .content_box {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  border-top: 4px solid transparent;
-  background-image: linear-gradient(#fff, #fff),
-    linear-gradient(to right, #61b3ff 0%, #00256c 100%);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  border-radius: 25px;
-}
-
-.content_box > div {
-  height: 160px;
-}
-
-.content_box div button {
-  background-color: #fff;
-  border: none;
-  border-radius: 10px;
-}
-
-.content_box div button:hover {
-  border: 1.5px solid #2b54c4;
-}
-
-/* destination */
-.tab_content .destination {
+.search_box {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 551px;
-  border-right: 1px dashed #767676;
-}
-
-/* destination - button */
-.destination button {
-  width: 110px;
-  height: 60px;
+  padding-top: 30px;
   text-align: center;
-  cursor: pointer;
 }
-
-.destination button.start_btn {
-  color: #000;
-}
-
-.destination button.arrival_btn {
-  color: #767676;
-}
-
-.destination button > span:first-child {
-  display: block;
-  font-family: "MaplestoryOTFBold";
-  font-size: 30px;
-}
-
-.destination button > span:last-child {
-  font-family: "MaplestoryOTFLight";
+.search_box .search_bar {
+  width: 500px;
+  height: 50px;
   font-size: 15px;
+  line-height: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  padding: 12px 20px;
+  min-height: 50px;
 }
-
-.destination > .route {
-  display: flex;
-  width: 230px;
-  height: 90px;
-}
-
-.destination .route > div:nth-child(2n-1) {
-  width: 80px;
-  height: 44px;
-  border-bottom: 1px dashed #61b3ff;
-}
-
-.destination .route > div:nth-child(2) {
-  align-self: center;
-  width: 50px;
+.search_box .search_btn {
+  margin-left: 6px;
+  width: 70px;
   height: 50px;
-  margin: 0 10px;
-}
-
-.destination .route > div:nth-child(2) > img {
-  width: 100%;
-  height: 100%;
-}
-
-/* planner */
-.tab_content .planner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 391px;
-  border-right: 1px dashed #767676;
-}
-
-/* planner - button */
-.planner button.planner_btn {
-  width: 160px;
-  height: 50px;
-  margin: 5px 0;
-  color: #767676;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  border: 0;
+  background: #1c1c1c url(../images/icon_search_white.svg) 50% 50%/18px
+    no-repeat;
   cursor: pointer;
 }
-
-button.planner_btn > div:first-child {
-  margin-left: 35px;
-  font-size: 12px;
-  font-family: "MaplestoryOTFLight";
-  text-align: left;
+.search_bar:hover {
+  padding: 11px 19px;
+  border: 2px solid #1c1c1c;
 }
-
-button.planner_btn > div:last-child {
+.customer_menu {
   display: flex;
-  align-items: center;
-  font-size: 17px;
-  letter-spacing: 2.5px;
+  justify-content: space-around;
+  margin-top: 35px;
+  text-align: center;
 }
 
-button.planner_btn span.img_box {
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  margin-right: 5px;
-}
-
-button.planner_btn span.img_box > img {
-  width: 100%;
-  height: 100%;
-}
-
-/* personnel */
-.tab_content .personnel {
-  width: 338px;
-}
-
-/* personnel - button */
-.personnel > button {
-  position: relative;
-  display: block;
-  width: 290px;
-  height: 55px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
+.customer_menu span {
+  font-size: 20px;
   cursor: pointer;
 }
-
-.personnel > button > div {
-  color: #767676;
-  font-family: "MaplestoryOTFLight";
+.cs_menu {
+  cursor: pointer;
 }
-
-.personnel > button > div:nth-child(1) {
-  margin-top: 5px;
-  font-size: 11px;
+.cs_menu span br {
+  display: none;
 }
-
-.personnel > button > div:nth-child(2) {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.personnel > button.passenger_btn > div:nth-child(2) {
-  color: #000;
-}
-
-.personnel > button > div:nth-child(3) {
-  height: 1px;
-  border-bottom: 1px solid #000;
-  margin-top: 10px;
-}
-
-.personnel > button:hover > div:nth-child(3) {
-  visibility: hidden;
-}
-
-/* personnel - button - img_box */
-.personnel > button .img_box {
-  position: absolute;
-  top: 10px;
-  right: 0;
-  width: 25px;
-  height: 25px;
-  transition: transform 0.3s;
-}
-
-.personnel > button .img_box img {
-  width: 100%;
-  height: 100%;
-}
-
-.personnel > button:hover .img_box {
-  transform: translateX(-8px);
-}
-
-/* airplane_search_btn */
-.tab_content .airplane_search_btn {
+.cs_menu:nth-child(1) .cs_icon {
+  margin: 0 auto 15px;
   display: block;
-  width: 300px;
+  width: 72px;
   height: 60px;
-  margin-top: 60px;
-  margin-left: auto;
-  margin-right: auto;
-  border: none;
-  border-radius: 10px;
-  background-color: #00256c;
-  color: #fff;
-  font-family: "MaplestoryOTFLight";
-  font-size: 18px;
+  background: url(../images/ico_cust_menu_01.svg) no-repeat center center;
+}
+.cs_menu:nth-child(2) .cs_icon {
+  margin: 0 auto 15px;
+  display: block;
+  width: 72px;
+  height: 60px;
+  background: url(../images/ico_cust_menu_06.svg) no-repeat center center;
+}
+.cs_menu:nth-child(3) .cs_icon {
+  margin: 0 auto 15px;
+  display: block;
+  width: 72px;
+  height: 60px;
+  background: url(../images/ico_cust_menu_02.svg) no-repeat center center;
+}
+.cs_menu:nth-child(4) .cs_icon {
+  margin: 0 auto 15px;
+  display: block;
+  width: 72px;
+  height: 60px;
+  background: url(../images/ico_cust_menu_03.svg) no-repeat center center;
+}
+.cs_menu:nth-child(5) .cs_icon {
+  margin: 0 auto 15px;
+  display: block;
+  width: 72px;
+  height: 60px;
+  background: url(../images/ico_cust_menu_04.svg) no-repeat center center;
+}
+.cs_menu:nth-child(6) .cs_icon {
+  margin: 0 auto 15px;
+  display: block;
+  width: 72px;
+  height: 60px;
+  background: url(../images/ico_cust_menu_05.svg) no-repeat center center;
+}
+.question_box {
+  padding-top: 90px;
+}
+.question_title {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #1c1c1c;
+  padding-bottom: 20px;
+}
+.question_title h2 {
+  font-size: 26px;
+  letter-spacing: -0.78px;
+  line-height: 28px;
+}
+.question_title .question_more {
+  position: relative;
+  padding-right: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  line-height: 28px;
+  letter-spacing: -0.56px;
+}
+.question_title .question_more::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  background: url(../images/icon_arrow_right_05.svg) 100% 50%/16px auto
+    no-repeat;
+}
+.question_more:hover.question_more::after {
+  animation: qe_arrow 1s infinite;
+}
+@keyframes qe_arrow {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.q_area {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.q_icon {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #ccc;
+  transition: color 0.2s;
   cursor: pointer;
 }
-
-/* tab3 CSS */
-.tab_content #tab3 {
-  height: 400px;
+.q_area.active .q_icon.active {
+  color: #1c1c1c;
 }
-
-.tab_content #tab3 > .content_box {
+.q_title {
   display: flex;
+  padding: 1.5rem;
+  cursor: pointer;
+  border-bottom: 1px solid #e5e5e5;
+  position: relative;
 }
-
-/* content_box_row_1 */
-.tab_content #tab3 .content_box_row_1 {
-  display: block;
-  width: 942px;
-  height: 370px;
-  border-right: 1px dashed #767676;
-}
-
-.content_box_row_1 > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 185px;
-}
-
-.content_box_row_1 .journey {
-  position: absolute;
-  top: -20px;
-  color: #767676;
-  font-family: "MaplestoryOTFLight";
-  font-size: 11px;
-  letter-spacing: 1.5px;
-}
-
-.tab_content #tab3 div.destination {
-  height: 70%;
-}
-
-#tab3 div.destination .route > div:nth-child(2) {
+.q_arrow {
+  content: "";
   width: 20px;
   height: 20px;
-  transform: rotate(45deg);
+  background: url(../images/icon_arrow_down.svg) 50% 50%/20px no-repeat;
+  position: absolute;
+  right: 14px;
+  top: 24px;
+  transition: 0.15s;
 }
-
-.tab_content #tab3 div.planner {
-  height: 30%;
-  border: none;
+.q_area.active .q_arrow.active {
+  transform: rotate(-180deg);
 }
-
-.content_box_row_1 > .dashed_line {
-  width: 890px;
-  height: 1px;
-  margin: 0 auto;
-  border-top: 1px dashed #767676;
+.q_title h2 {
+  font-size: 16px;
+  color: #1c1c1c;
+  font-weight: 500;
+  letter-spacing: -0.48px;
+  line-height: 22px;
+  width: 95px;
+  margin-left: 50px;
 }
-
-/* content_box_row_2 */
-.content_box .content_box_row_2 {
+.q_title p {
+  font-size: 14px;
+  color: #1c1c1c;
+  letter-spacing: -0.42px;
+  line-height: 20px;
+}
+.a_area {
+  height: 0;
+  overflow: hidden;
+  background: #f7f7f7;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  position: relative;
+}
+.a_area::after {
+  content: "A";
+  position: absolute;
+  left: 20px;
+  top: 28px;
+  font-size: 25px;
+  line-height: 25px;
+  color: #1c1c1c;
+}
+.q_area.active .a_area {
+  height: auto;
+  padding: 1.5rem 75px;
+  line-height: 1.5rem;
+}
+/* 공지사항 */
+.customer_notice {
+  padding-top: 90px;
+}
+.notice_tit {
   display: flex;
-  align-items: start;
-  width: 338px;
-  height: 370px;
+  justify-content: space-between;
+  position: relative;
+}
+.notice_tit h2 {
+  font-size: 26px;
+  letter-spacing: -0.78px;
+  line-height: 28px;
+}
+.notice_more {
+  padding-right: 25px;
+  line-height: 28px;
+  font-size: 14px;
+  color: #666;
+  letter-spacing: -0.56px;
+  cursor: pointer;
+}
+.notice_tit::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 18px;
+  height: 18px;
+  margin-top: -9px;
+  background: url(../images/icon_arrow_right_05.svg) 100% 50%/16px auto
+    no-repeat;
+}
+.notice_tit:hover.notice_tit::after {
+  animation: qe_arrow 1s infinite;
+}
+@keyframes qe_arrow {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.notice_lis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.notice_lis_item {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+.notice_lis_item:hover {
+  border: 1px solid #1c1c1c;
+}
+.notice_lis_item p {
+  font-size: 14px;
+  color: #999;
+}
+.notice_lis_item h3 {
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 /* contact_box */
 .contact_box {
   width: 1903px;
   height: 63px;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 40px;
 }
 
 .contact_box > .contact_wrapper {

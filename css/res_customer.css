@@ -1,0 +1,433 @@
+@media (max-width: 500px) {
+  /* main */
+  .main_container {
+    width: 500px;
+  }
+
+  .main_header {
+    height: 62px;
+    padding: 0;
+    /* 임시 */
+    background-color: lightcoral;
+  }
+
+  .main_logo {
+    position: absolute;
+    top: 12.5%;
+    left: 5%;
+  }
+
+  .main_logo a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: url(../images/main_logo_2.png);
+  }
+
+  nav {
+    padding-left: 0;
+  }
+
+  nav .main_sub_menu {
+    display: none;
+    justify-content: space-between;
+    padding-top: 42px;
+  }
+
+  nav .main_gnb {
+    display: none;
+  }
+
+  .aside {
+    display: flex;
+  }
+
+  .slogan,
+  .aside .utill,
+  .aside .aside_btn {
+    display: none;
+  }
+
+  .where_when {
+    display: block;
+    left: 15%;
+  }
+
+  .where {
+    font-family: "MaplestoryOTFLight";
+  }
+
+  .when {
+    margin-top: 20px;
+    margin-left: 0;
+    font-family: "MaplestoryOTFLight";
+  }
+
+  /* mobile_utill */
+  .menu_icon + label {
+    display: block;
+  }
+
+  /* ticketing_wrapper */
+  .ticketing_wrapper {
+    width: 500px;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f1f3f6;
+    /* 임시 */
+    border-radius: 25px;
+  }
+
+  .ticketing_wrapper.tab3_height {
+    height: 800px;
+  }
+
+  .ticketing_box > h1 {
+    padding-top: 20px;
+  }
+
+  .ticketing_box {
+    width: 480px;
+  }
+
+  /* tab_menu */
+  .tab_menu {
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .tab_menu li {
+    position: relative;
+    width: auto;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .tab_menu li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: gray;
+    font-family: "MaplestoryOTFLight";
+    padding-left: 0;
+    font-size: 17px;
+  }
+
+  .tab_menu .outside_circle,
+  .outside_circle > .inside_circle {
+    display: none;
+  }
+
+  .tab_menu li a.active {
+    font-family: "MaplestoryOTFBold";
+    color: #2b54c4;
+    border-bottom: 3px solid #00256c;
+  }
+
+  .customer_title {
+    display: none;
+  }
+  .customer_inner {
+    width: 500px;
+  }
+  .customer_help h2 {
+    text-align: left;
+    font-size: 40px;
+    color: #1c1c1c;
+    letter-spacing: -2px;
+    font-weight: 500;
+    line-height: 47px;
+    padding-left: 20px;
+  }
+  .customer_help h2 br {
+    display: block;
+  }
+  .search_box .search_bar {
+    width: 390px;
+  }
+  .search_box .search_btn {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .customer_menu {
+    margin-top: 20px;
+    width: 99%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .cs_menu {
+    width: calc((90% - 20px) / 3);
+    background: #f7f7f7;
+    text-align: center;
+    height: 100px;
+  }
+  .cs_menu .cs_icon {
+    margin-top: 20px;
+  }
+  .customer_menu span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 11px;
+    margin-bottom: 10px;
+  }
+  .cs_menu:nth-child(1) .cs_icon {
+    margin: 10px auto -5px;
+    display: block;
+    width: 72px;
+    height: 60px;
+    transform: scale(0.5);
+    background: url(../images/ico_cust_menu_01.svg) no-repeat center center;
+  }
+  .cs_menu:nth-child(2) .cs_icon {
+    margin: 10px auto -10px;
+    display: block;
+    width: 72px;
+    height: 60px;
+    transform: scale(0.5);
+    background: url(../images/ico_cust_menu_06.svg) no-repeat center center;
+  }
+  .cs_menu:nth-child(3) .cs_icon {
+    margin: 10px auto -10px;
+    display: block;
+    width: 72px;
+    height: 60px;
+    transform: scale(0.5);
+    background: url(../images/ico_cust_menu_02.svg) no-repeat center center;
+  }
+  .cs_menu:nth-child(4) .cs_icon {
+    margin: 10px auto -5px;
+    display: block;
+    width: 72px;
+    height: 60px;
+    transform: scale(0.5);
+    background: url(../images/ico_cust_menu_03.svg) no-repeat center center;
+  }
+  .cs_menu:nth-child(5) .cs_icon {
+    margin: 10px auto -5px;
+    display: block;
+    width: 72px;
+    height: 60px;
+    transform: scale(0.5);
+    background: url(../images/ico_cust_menu_04.svg) no-repeat center center;
+  }
+  .cs_menu:nth-child(6) .cs_icon {
+    margin: 10px auto -5px;
+    display: block;
+    width: 72px;
+    height: 60px;
+    transform: scale(0.5);
+    background: url(../images/ico_cust_menu_05.svg) no-repeat center center;
+  }
+  .cs_menu span br {
+    display: block;
+  }
+  .question_box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .q_title {
+    flex-direction: column;
+  }
+  .q_icon {
+    font-size: 15px;
+    top: 25px;
+  }
+  .q_title h2 {
+    margin-left: 30px;
+  }
+  .q_title p {
+    margin-left: 30px;
+  }
+  .a_area p {
+    font-size: 14px;
+  }
+  .a_area::after {
+    font-size: 15px;
+  }
+  .q_area.active .a_area {
+    padding: 1.5rem 55px;
+  }
+  .customer_notice {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .notice_lis {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .notice_lis_item {
+    width: 100%;
+    padding: 1rem;
+  }
+  .notice_lis_item p {
+    font-size: 12px;
+  }
+  .notice_lis_item h3 {
+    font-size: 15px;
+  }
+
+  /* contact_box */
+  .contact_box {
+    width: 500px;
+    height: 100px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact_box > .contact_wrapper {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .contact_wrapper .contact_nav {
+    display: block;
+    width: 500px;
+    height: 45px;
+  }
+
+  .contact_nav > ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .contact_nav > ul > li {
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+  }
+
+  .contact_nav > ul > li:first-child > a::after {
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 40%;
+    background-color: #999;
+    content: "";
+  }
+
+  .contact_nav > ul > li:last-child > a::before {
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 40%;
+    background-color: #999;
+    content: "";
+  }
+
+  .contact_nav > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "MaplestoryOTFLight";
+    font-size: 13px;
+  }
+
+  /* contact_row */
+  .contact_wrapper > .link_wrapper {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .link_wrapper > .link_box {
+    margin: 0 10px;
+  }
+
+  .link_box > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* footer_box */
+  .footer_box {
+    width: 500px;
+    margin-top: 40px;
+  }
+
+  .footer_box > .footer_wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* footer_app_nav */
+  .footer_wrapper .footer_app_nav {
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+
+  .footer_app_nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+  }
+
+  .footer_app_nav li {
+    height: 10px;
+    margin-right: 15px;
+  }
+
+  .footer_app_nav li a {
+    font-size: 12px;
+  }
+
+  /* fotter_content */
+  .footer_wrapper .footer_content {
+    display: block;
+    width: 100%;
+    height: 430px;
+    margin-top: 40px;
+  }
+
+  .footer_content > div {
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .footer_content > div:last-child {
+    margin-right: 0;
+  }
+
+  .footer_content h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .footer_content li {
+    font-family: "MaplestoryOTFLight";
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /* .footer_br_line */
+  .footer_wrapper > .footer_br_line {
+    display: none;
+  }
+
+  /* footer_award */
+  .footer_wrapper > .footer_award {
+    display: none;
+  }
+}

@@ -1,0 +1,511 @@
+@media screen and (max-width: 500px) {
+    /* main */
+    .main_container {
+      width: 500px;
+    }
+  
+    .main_header {
+      height: 62px;
+      padding: 0;
+      /* 임시 */
+      background-color: lightcoral;
+    }
+  
+    .main_logo {
+      position: absolute;
+      top: 12.5%;
+      left: 5%;
+    }
+  
+    .main_logo a {
+      display: block;
+      width: 40px;
+      height: 40px;
+      background: url(../images/main_logo_2.png);
+    }
+  
+    nav {
+      padding-left: 0;
+    }
+  
+    nav .main_sub_menu {
+      display: none;
+      justify-content: space-between;
+      padding-top: 42px;
+    }
+  
+    nav .main_gnb {
+      display: none;
+    }
+  
+    .aside {
+      display: flex;
+    }
+  
+    .slogan,
+    .aside .utill,
+    .aside .aside_btn {
+      display: none;
+    }
+  
+    .where_when {
+      display: block;
+      left: 15%;
+    }
+  
+    .where {
+      font-family: "MaplestoryOTFLight";
+    }
+  
+    .when {
+      margin-top: 20px;
+      margin-left: 0;
+      font-family: "MaplestoryOTFLight";
+    }
+  
+    /* mobile_utill */
+    .menu_icon + label {
+      display: block;
+    }
+  
+    /* ticketing_wrapper */
+    .ticketing_wrapper {
+      width: 500px;
+      height: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #f1f3f6;
+      /* 임시 */
+      border-radius: 25px;
+    }
+  
+    .ticketing_wrapper.tab3_height {
+      height: 800px;
+    }
+  
+    .ticketing_box > h1 {
+      padding-top: 20px;
+    }
+  
+    .ticketing_box {
+      width: 480px;
+    }
+  
+    /* tab_menu */
+    .tab_menu {
+      display: flex;
+      justify-content: space-around;
+      width: 200px;
+      margin: 0 auto;
+    }
+  
+    .tab_menu li {
+      position: relative;
+      width: auto;
+      height: 30px;
+      margin-right: 10px;
+    }
+  
+    .tab_menu li a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      color: gray;
+      font-family: "MaplestoryOTFLight";
+      padding-left: 0;
+      font-size: 17px;
+    }
+  
+    .tab_menu .outside_circle,
+    .outside_circle > .inside_circle {
+      display: none;
+    }
+  
+    .tab_menu li a.active {
+      font-family: "MaplestoryOTFBold";
+      color: #2b54c4;
+      border-bottom: 3px solid #00256c;
+    }
+  
+    /* tab_content */
+    .tab_content {
+      width: 460px;
+      height: 500px;
+      margin: 0 auto;
+    }
+  
+    .tab_content > div {
+      margin-top: 10px;
+    }
+  
+    .tab_content .content_box {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: none;
+      border-radius: 0;
+      background-image: none;
+    }
+  
+    .content_box > div {
+      height: auto;
+    }
+  
+    /* destination */
+    .tab_content .destination {
+      position: relative;
+      width: 100%;
+      height: 130px;
+      border: none;
+      border-radius: 25px 25px 0 0;
+      background-color: #fff;
+    }
+  
+    .tab_content .destination::before {
+      position: absolute;
+      bottom: 0;
+      width: 94%;
+      height: 1px;
+      border-bottom: 1px dashed #767676;
+      content: "";
+    }
+  
+    .destination button.start_btn {
+      margin-left: 10px;
+    }
+  
+    .destination button.arrival_btn {
+      margin-right: 10px;
+    }
+  
+    .destination > .route {
+      justify-content: center;
+    }
+  
+    .destination .route > div:nth-child(2n-1) {
+      display: none;
+    }
+  
+    .destination .route > div:nth-child(2) {
+      align-self: center;
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+    }
+  
+    .destination .route > div:nth-child(2) > img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    /* planner */
+    .tab_content .planner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border: none;
+      border-radius: 0 0 25px 25px;
+      background-color: #fff;
+    }
+  
+    /* planner - button */
+    .planner button.planner_btn {
+      width: 120px;
+    }
+  
+    button.planner_btn > div:first-child {
+      display: none;
+    }
+  
+    button.planner_btn > div:last-child {
+      font-family: "MaplestoryOTFLight";
+      font-size: 15px;
+      letter-spacing: 0;
+    }
+  
+    button.planner_btn span.img_box {
+      width: 26px;
+      height: 26px;
+    }
+  
+    /* personnel */
+    .tab_content .personnel {
+      width: 100%;
+    }
+  
+    /* personnel - button */
+    .personnel > button {
+      position: relative;
+      width: 100%;
+      height: 80px;
+      margin: 0;
+      margin-top: 12px;
+      background-color: #fff;
+    }
+  
+    .personnel > button > div {
+      margin: 0 15px;
+    }
+  
+    .personnel > button > div:nth-child(1) {
+      font-size: 14px;
+    }
+  
+    .personnel > button > div:nth-child(2) {
+      margin-top: 5px;
+      font-size: 18px;
+    }
+  
+    .personnel > button.passenger_btn > div:nth-child(2) {
+      color: #000;
+    }
+  
+    .personnel > button > div:nth-child(3) {
+      display: none;
+    }
+  
+    /* personnel - button - img_box */
+    .personnel > button .img_box {
+      position: absolute;
+      top: 25px;
+      right: 0;
+      width: 30px;
+      height: 30px;
+      transition: transform 0.3s;
+    }
+  
+    .personnel > button .img_box img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    /* airplane_search_btn */
+    .tab_content .airplane_search_btn {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    /* tab3 CSS */
+    .tab_content #tab3 {
+      height: 100%;
+    }
+  
+    .tab_content #tab3 > .content_box {
+      display: block;
+    }
+  
+    /* content_box_row_1 */
+    .tab_content #tab3 .content_box_row_1 {
+      display: block;
+      width: 100%;
+      height: auto;
+      border: none;
+    }
+  
+    .content_box_row_1 > div {
+      display: block;
+      height: 200px;
+    }
+  
+    .content_box_row_1 .journey {
+      position: absolute;
+      top: 20px;
+      left: 10px;
+      color: #000;
+    }
+  
+    .content_box_row_1 .route > div:nth-child(2n-1) {
+      display: block;
+      border-bottom: 1px dashed #61b3ff;
+    }
+  
+    .content_box_col_1 div.destination {
+      height: 70%;
+    }
+  
+    .content_box_col_1 div.planner {
+      height: 30%;
+      border-radius: 0;
+    }
+  
+    .content_box_row_1 > .dashed_line {
+      width: 100%;
+      border-top: 1px solid #bbb;
+    }
+  
+    .content_box_col_2 div.destination {
+      border-radius: 0;
+    }
+  
+    .content_box_col_2 div.planner {
+      border-radius: 0 0 25px 25px;
+    }
+  
+    /* content_box_row_2 */
+    .content_box .content_box_row_2 {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  
+    /* contact_box */
+    .contact_box {
+      width: 500px;
+      height: 100px;
+      margin-top: 80px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .contact_box > .contact_wrapper {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      border: none;
+    }
+  
+    .contact_wrapper .contact_nav {
+      display: block;
+      width: 500px;
+      height: 45px;
+    }
+  
+    .contact_nav > ul {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      border-top: 2px solid #000;
+      border-bottom: 1px solid #000;
+    }
+  
+    .contact_nav > ul > li {
+      position: relative;
+      flex-grow: 1;
+      height: 100%;
+    }
+  
+    .contact_nav > ul > li:first-child > a::after {
+      position: absolute;
+      right: 0;
+      width: 1px;
+      height: 40%;
+      background-color: #999;
+      content: "";
+    }
+  
+    .contact_nav > ul > li:last-child > a::before {
+      position: absolute;
+      left: 0;
+      width: 1px;
+      height: 40%;
+      background-color: #999;
+      content: "";
+    }
+  
+    .contact_nav > ul > li > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      font-family: "MaplestoryOTFLight";
+      font-size: 13px;
+    }
+  
+    /* contact_row */
+    .contact_wrapper > .link_wrapper {
+      justify-content: center;
+      margin-top: 15px;
+    }
+  
+    .link_wrapper > .link_box {
+      margin: 0 10px;
+    }
+  
+    .link_box > a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+  
+    /* footer_box */
+    .footer_box {
+      width: 500px;
+      margin-top: 40px;
+    }
+  
+    .footer_box > .footer_wrapper {
+      width: 100%;
+      margin: 0;
+    }
+  
+    /* footer_app_nav */
+    .footer_wrapper .footer_app_nav {
+      display: block;
+      width: 100%;
+      height: 40px;
+    }
+  
+    .footer_app_nav > ul {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 100%;
+      margin-left: 10px;
+    }
+  
+    .footer_app_nav li {
+      height: 10px;
+      margin-right: 15px;
+    }
+  
+    .footer_app_nav li a {
+      font-size: 12px;
+    }
+  
+    /* fotter_content */
+    .footer_wrapper .footer_content {
+      display: block;
+      width: 100%;
+      height: 430px;
+      margin-top: 40px;
+    }
+  
+    .footer_content > div {
+      width: 100%;
+      height: auto;
+      margin-left: 20px;
+      margin-bottom: 40px;
+    }
+  
+    .footer_content > div:last-child {
+      margin-right: 0;
+    }
+  
+    .footer_content h1 {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  
+    .footer_content li {
+      font-family: "MaplestoryOTFLight";
+      font-size: 12px;
+      line-height: 15px;
+    }
+  
+    /* .footer_br_line */
+    .footer_wrapper > .footer_br_line {
+      display: none;
+    }
+  
+    /* footer_award */
+    .footer_wrapper > .footer_award {
+      display: none;
+    }
+  }
