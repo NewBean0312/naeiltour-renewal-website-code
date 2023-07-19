@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "MaplestoryOTFBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MaplestoryOTFLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @media (max-width: 600px) {
   /* main */
   .main_container {
@@ -54,20 +70,20 @@
   }
 
   .where {
-    font-family: "MaplestoryOTFlight";
+    font-family: "MaplestoryOTFLight";
   }
 
   .when {
     margin-top: 20px;
     margin-left: 0;
-    font-family: "MaplestoryOTFlight";
+    font-family: "MaplestoryOTFLight";
   }
 
   /* mobile_utill */
   .menu_icon + label {
     display: block;
   }
-  
+
   /* best */
   .slide_wrapper {
     width: 500px;
@@ -212,4 +228,318 @@
   .review_box {
     border-top: 0px;
   }
+
+  /* contact */
+  /* contact_box */
+  .contact_box {
+    width: 500px;
+    height: 800px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightcoral;
+  }
+
+  .contact_box > .contact_wrapper_1 {
+    display: block;
+    width: 100%;
+    height: 400px;
+    border: none;
+  }
+
+  .contact_wrapper_1 h1 {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 0;
+    font-family: "MaplestoryOTFLight";
+    font-size: 30px;
+  }
+
+  /* contact_row */
+  .contact_wrapper_1 > .contact_row_1 {
+    width: 100%;
+  }
+
+  .contact_row_1 > .notice {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+
+  .contact_row_1 > .notice a {
+    width: 90%;
+    height: 41px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .notice span {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    color: #666;
+    font-size: 12px;
+  }
+
+  .contact_row_1 > .link_wrapper {
+    display: none;
+  }
+
+  /* contact_row_2 */
+  .contact_wrapper_1 > .contact_row_2 {
+    width: 700px;
+    height: 100%;
+  }
+
+  .contact_row_2 > .help_wrapper {
+    display: flex;
+    width: 100%;
+    height: 376px;
+  }
+
+  .help_wrapper > .help_row_1 {
+    width: 360px;
+    height: 191px;
+  }
+
+  /* tel_box */
+  .help_row_1 > div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  .help_row_1 > .tel_box_1 {
+    height: 41px;
+  }
+
+  .tel_box_1 > span {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .help_row_1 > .tel_box_2 {
+    width: 100%;
+    height: 39px;
+    margin-top: 12px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .help_row_1 > .tel_box_3 {
+    width: 100%;
+    height: 56px;
+    margin-top: 38px;
+    color: #666;
+    font-family: "MaplestoryOTFLight";
+    font-weight: 500;
+    letter-spacing: -1.42px;
+    line-height: 25px;
+  }
+
+  /* .help_row_2 */
+  .help_wrapper .help_row_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 467px;
+    height: 191px;
+  }
+
+  .help_row_2 > .help_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 240px;
+    height: 29px;
+    margin-top: 5px;
+    margin-left: 100px;
+    cursor: pointer;
+  }
+
+  .help_btn > a {
+    color: #000;
+    font-size: 20px;
+    font-family: "MaplestoryOTFLight";
+  }
+
+  .help_btn > span {
+    width: 21px;
+    height: 21px;
+  }
+
+  .help_btn > span > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .help_btn:hover img {
+    animation: help_btn 1.2s infinite;
+  }
+
+  @keyframes help_btn {
+    0% {
+      transform: translateX(0%);
+    }
+    50% {
+      transform: translateX(30%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .contact_wrapper_2 {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .contact_wrapper_2 .contact_nav {
+    display: block;
+    width: 500px;
+    height: 45px;
+  }
+
+  .contact_nav > ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #000;
+    border-bottom: 1px solid #000;
+  }
+
+  .contact_nav > ul > li {
+    position: relative;
+    flex-grow: 1;
+    height: 100%;
+  }
+
+  .contact_nav > ul > li:first-child > a::after {
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 40%;
+    background-color: #999;
+    content: "";
+  }
+
+  .contact_nav > ul > li:last-child > a::before {
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 40%;
+    background-color: #999;
+    content: "";
+  }
+
+  .contact_nav > ul > li > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: "MaplestoryOTFLight";
+    font-size: 13px;
+  }
+
+  /* contact_link */
+
+  .contact_wrapper_2 > .link_wrapper {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .link_wrapper > .link_box {
+    margin: 0 10px;
+  }
+
+  .link_box > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* footer_box */
+  .footer_box {
+    width: 500px;
+    margin-top: 40px;
+  }
+
+  .footer_box > .footer_wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* footer_app_nav */
+  .footer_wrapper .footer_app_nav {
+    display: block;
+    width: 100%;
+    height: 40px;
+  }
+
+  .footer_app_nav > ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-left: 10px;
+  }
+
+  .footer_app_nav li {
+    height: 10px;
+    margin-right: 15px;
+  }
+
+  .footer_app_nav li a {
+    font-size: 12px;
+  }
+
+  /* fotter_content */
+  .footer_wrapper .footer_content {
+    display: block;
+    width: 100%;
+    height: 430px;
+    margin-top: 40px;
+  }
+
+  .footer_content > div {
+    width: 100%;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .footer_content > div:last-child {
+    margin-right: 0;
+  }
+
+  .footer_content h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  .footer_content li {
+    font-family: "MaplestoryOTFLight";
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /* .footer_br_line */
+  .footer_wrapper > .footer_br_line {
+    display: none;
+  }
+
+  /* footer_award */
+  .footer_wrapper > .footer_award {
+    display: none;
+  }
+
+  /* contact_row */
 }

@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff")
     format("woff");
   font-weight: normal;
@@ -725,7 +725,7 @@ nav .main_gnb li a {
 
 .option_wrapper span {
   color: #000;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-size: 34px;
 }
 
@@ -775,7 +775,7 @@ nav .main_gnb li a {
   border-radius: 50px;
   color: rgb(255, 255, 255);
   font-size: 15px;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   cursor: pointer;
 }
 
@@ -953,7 +953,7 @@ nav .main_gnb li a {
 .section_box .des > h1 {
   width: 342px;
   margin: 47px 26px 0;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-size: 28px;
 }
 
@@ -962,7 +962,7 @@ nav .main_gnb li a {
   height: 61px;
   margin: 20px 31px 31px;
   color: #666;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-size: 15px;
 }
 
@@ -977,7 +977,7 @@ nav .main_gnb li a {
 
 .section_box .des .button a {
   width: 100%;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
 }
 
 /* slide */
@@ -1266,7 +1266,7 @@ nav .main_gnb li a {
 }
 
 .res_menu li a {
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-size: 16px;
   color: #888;
   display: block;
@@ -1410,7 +1410,7 @@ nav .main_gnb li a {
 }
 
 .res_item .res_text span {
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-size: 13px;
   padding-bottom: 10px;
 }
@@ -1432,7 +1432,7 @@ nav .main_gnb li a {
   height: 48px;
   line-height: 48px;
   border: 1px solid #ccc;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-size: 15px;
   color: #666;
   border-radius: 8px;
@@ -1590,7 +1590,7 @@ nav .main_gnb li a {
   height: 465px;
 }
 
-.contact_box > .contact_wrapper {
+.contact_box > .contact_wrapper_1 {
   display: flex;
   justify-content: space-between;
   width: 1570px;
@@ -1601,7 +1601,7 @@ nav .main_gnb li a {
   border-bottom: 1px solid #000;
 }
 
-.contact_wrapper h1 {
+.contact_wrapper_1 h1 {
   width: 100%;
   height: 67px;
   margin-bottom: 40px;
@@ -1611,7 +1611,7 @@ nav .main_gnb li a {
 }
 
 /* contact_row */
-.contact_wrapper > .contact_row_1 {
+.contact_wrapper_1 > .contact_row_1 {
   position: relative;
   width: 700px;
   height: 100%;
@@ -1626,7 +1626,7 @@ nav .main_gnb li a {
   padding: 11px 0;
   border-bottom: 1px solid #d9d9d9;
   line-height: 1.4;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-size: 17px;
   letter-spacing: -0.42px;
   box-sizing: initial;
@@ -1662,7 +1662,7 @@ nav .main_gnb li a {
 }
 
 /* contact_row_2 */
-.contact_wrapper > .contact_row_2 {
+.contact_wrapper_1 > .contact_row_2 {
   width: 700px;
   height: 100%;
 }
@@ -1708,7 +1708,7 @@ nav .main_gnb li a {
   height: 56px;
   margin-top: 38px;
   color: #666;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-weight: 500;
   letter-spacing: -1.42px;
   line-height: 25px;
@@ -1737,7 +1737,7 @@ nav .main_gnb li a {
 .help_btn > a {
   color: #000;
   font-size: 20px;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
 }
 
 .help_btn > span {
@@ -1764,6 +1764,33 @@ nav .main_gnb li a {
   100% {
     transform: translateX(0%);
   }
+}
+
+/* .contact_wrapper_2 */
+.contact_wrapper_2 {
+  display: none;
+}
+
+.contact_wrapper_2 > .link_wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.link_wrapper > .link_box {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px;
+  background-color: #000;
+  border-radius: 50%;
+}
+
+.link_box > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 /* footer_box */
@@ -1796,7 +1823,7 @@ nav .main_gnb li a {
 }
 
 .footer_app_nav li a {
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-size: 15px;
 }
 
@@ -1826,7 +1853,7 @@ nav .main_gnb li a {
 
 .footer_content li {
   color: #666;
-  font-family: "MaplestoryOTFlight";
+  font-family: "MaplestoryOTFLight";
   font-size: 14px;
   line-height: 21px;
 }
