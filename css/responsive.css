@@ -248,8 +248,9 @@
   }
 
   .contact_wrapper_1 h1 {
-    width: 100%;
+    width: 80%;
     height: 80px;
+    margin-left: 20px;
     margin-bottom: 0;
     font-family: "MaplestoryOTFLight";
     font-size: 30px;
@@ -288,64 +289,38 @@
 
   /* contact_row_2 */
   .contact_wrapper_1 > .contact_row_2 {
-    width: 700px;
+    width: 100%;
     height: 100%;
   }
 
   .contact_row_2 > .help_wrapper {
-    display: flex;
-    width: 100%;
-    height: 376px;
+    display: block;
+    height: 300px;
+    background-color: lightblue;
   }
 
   .help_wrapper > .help_row_1 {
-    width: 360px;
-    height: 191px;
+    width: 89%;
+    height: 200px;
+    margin-left: 20px;
+    background-color: lightgreen;
   }
 
   /* tel_box */
   .help_row_1 > div {
-    display: flex;
-    align-items: center;
     width: 100%;
-  }
-
-  .help_row_1 > .tel_box_1 {
-    height: 41px;
-  }
-
-  .tel_box_1 > span {
-    margin-right: 10px;
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .help_row_1 > .tel_box_2 {
-    width: 100%;
-    height: 39px;
-    margin-top: 12px;
-    font-size: 35px;
-    font-weight: 700;
-  }
-
-  .help_row_1 > .tel_box_3 {
-    width: 100%;
-    height: 56px;
-    margin-top: 38px;
-    color: #666;
     font-family: "MaplestoryOTFLight";
-    font-weight: 500;
-    letter-spacing: -1.42px;
-    line-height: 25px;
   }
 
   /* .help_row_2 */
   .help_wrapper .help_row_2 {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    flex-direction: row;
     justify-content: end;
-    width: 467px;
-    height: 191px;
+    width: 90%;
+    height: 80px;
+    margin-left: 20px;
+    background-color: lightsalmon;
   }
 
   .help_row_2 > .help_btn {
