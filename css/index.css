@@ -103,7 +103,6 @@ body > div {
 .main_inner {
   width: 100%;
   height: 100%;
-  position: relative;
   color: #fff;
   display: flex;
   justify-content: space-between;
