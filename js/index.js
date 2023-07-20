@@ -22,7 +22,7 @@ let currentBg = 0;
 // 모바일 버전 버튼 변수
 let mobileBtn = document.querySelector(".mobile_utill > input"),
   body = document.querySelector("body"),
-  mobileCheckBtn = document.querySelector("");
+  mobileBtnCount = 0;
 
 // 메인 배경 이미지 슬라이드
 // 배경이미지 가로배열
@@ -93,13 +93,24 @@ function updateSlide() {
 }
 
 // 모바일 버전 body 스크롤 정지 및 실행
-mobileBtn.addEventListener("click", function () {
-  body.style.overflow = "hidden";
-});
+function mobileBtnCountUp() {
+  mobileBtnCount++;
+}
 
-mobileCheckBtn.addEventListener("click", function () {
-  body.style.overflow = "scroll";
-})
+function mobileBtnCountDown() {
+  mobileBtnCount--;
+}
+
+mobileBtn.addEventListener("click", function () {
+  console.log(mobileBtnCount)
+  if (mobileBtnCount == 0) {
+    body.style.overflow = "hidden";
+    mobileBtnCountUp();
+  } else if (mobileBtnCount == 1) {
+    body.style.overflow = "scroll";
+    mobileBtnCountDown();
+  }
+});
 
 // 슬라이더 길이 지정
 sections.style.width =
