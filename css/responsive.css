@@ -15,6 +15,9 @@
 }
 
 @media (max-width: 500px) {
+  body {
+    overflow-x: hidden;
+  }
   /* main */
   .main_container {
     width: 500px;
@@ -23,8 +26,6 @@
   .main_header {
     height: 62px;
     padding: 0;
-    /* 임시 */
-    background-color: lightcoral;
   }
 
   .main_logo {

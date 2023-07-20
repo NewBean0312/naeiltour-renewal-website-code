@@ -19,6 +19,11 @@ let sections = document.querySelector(".sections"),
   mainImgNum = bgImg.length; // li
 let currentBg = 0;
 
+// 모바일 버전 버튼 변수
+let mobileBtn = document.querySelector(".mobile_utill > input"),
+  body = document.querySelector("body"),
+  mobileCheckBtn = document.querySelector("");
+
 // 메인 배경 이미지 슬라이드
 // 배경이미지 가로배열
 if (mainImgNum > 0) {
@@ -86,6 +91,16 @@ function updateSlide() {
   currentIndex = currentIndex % sloganslideCount;
   sloganWrap.style.left = -100 * currentIndex + "%";
 }
+
+// 모바일 버전 body 스크롤 정지 및 실행
+mobileBtn.addEventListener("click", function () {
+  body.style.overflow = "hidden";
+});
+
+mobileCheckBtn.addEventListener("click", function () {
+  body.style.overflow = "scroll";
+})
+
 // 슬라이더 길이 지정
 sections.style.width =
   (sectionWidth + sectionMargin) * sectionCount - sectionMargin + -5 + "px";
