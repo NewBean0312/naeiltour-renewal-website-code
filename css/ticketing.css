@@ -581,6 +581,128 @@ nav .main_gnb li a {
   border: 1.5px solid #2b54c4;
 }
 
+/* popup */
+.popupfocus {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+  z-index: -1;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 0;
+}
+
+.popupfocus:target + .popup {
+  opacity: 1;
+  z-index: 5;
+}
+
+.popupfocus:target + .popup + .dim {
+  opacity: 1;
+  z-index: 3;
+}
+
+/* .destination_pop_col_1 */
+.popup > .destination_pop_col_1 {
+  position: relative;
+  width: 95%;
+  height: 30px;
+  margin: 20px auto 0;
+}
+
+.destination_pop_col_1 > h1 {
+  font-size: 23px;
+}
+
+/* close_btn */
+.destination_pop_col_1 .close_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  float: right;
+  box-sizing: border-box;
+}
+
+.close_btn > a {
+  width: 100%;
+  height: 100%;
+}
+
+.close_btn img {
+  width: 100%;
+  height: 100%;
+}
+
+/* destination_pop_col_2 */
+.popup > .destination_pop_col_2 {
+  position: relative;
+  width: 95%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.destination_pop_col_2 > input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  margin-top: 30px;
+  border-bottom: 1px solid #000;
+  font-family: "MaplestoryOTFLight";
+  font-size: 20px;
+  transition: border 0.15s;
+}
+
+.destination_pop_col_2 > input:hover {
+  border: 2px solid #2b54c4;
+  box-shadow: 1px 1px 1px #ecf1ff;
+}
+
+.destination_pop_col_2 > a {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "MaplestoryOTFLight";
+  font-size: 17px;
+}
+
+.destination_pop_col_2 > a:hover {
+  border: 2px solid #2b54c4;
+}
+
+.destination_pop_col_2 > a > img {
+  margin: 0 10px;
+}
+
+.dim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
 /* destination */
 .tab_content .destination {
   display: flex;

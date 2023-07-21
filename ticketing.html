@@ -734,10 +734,35 @@
               <div id="tab1">
                 <div class="content_box">
                   <div class="destination">
-                    <button class="start_btn">
+                    <button
+                      class="start_btn"
+                      onclick="location.href='#start_pop'"
+                    >
                       <span>SEL</span>
                       <span>서울</span>
                     </button>
+                    <div class="popupfocus" id="start_pop"></div>
+                    <div class="popup" >
+                      <div class="destination_pop_col_1">
+                        <h1>출발지 검색</h1>
+                        <div class="close_btn">
+                          <a href="#none">
+                            <img src="./images/ring-box__close.svg" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="destination_pop_col_2">
+                        <input type="text" required placeholder="도시, 공항" />
+                        <a href="#none">
+                          <img
+                            src="./images/search-airport__local.svg"
+                            alt=""
+                          />
+                          모든 지역 보기
+                        </a>
+                      </div>
+                    </div>
+                    <div class="dim"></div>
                     <div class="route">
                       <div></div>
                       <div>
@@ -748,10 +773,35 @@
                       </div>
                       <div></div>
                     </div>
-                    <button class="arrival_btn">
-                      <span>To</span>
+                    <button
+                      class="arrival_btn"
+                      onclick="location.href='#arrival_pop'"
+                    >
+                      <span>TO</span>
                       <span>도착지</span>
                     </button>
+                    <div class="popupfocus" id="arrival_pop"></div>
+                    <div class="popup" >
+                      <div class="destination_pop_col_1">
+                        <h1>도착지 검색</h1>
+                        <div class="close_btn">
+                          <a href="#none">
+                            <img src="./images/ring-box__close.svg" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="destination_pop_col_2">
+                        <input type="text" required placeholder="도시, 공항" />
+                        <a href="#none">
+                          <img
+                            src="./images/search-airport__local.svg"
+                            alt=""
+                          />
+                          모든 지역 보기
+                        </a>
+                      </div>
+                    </div>
+                    <div class="dim"></div>
                   </div>
                   <div class="planner">
                     <button class="planner_btn">
