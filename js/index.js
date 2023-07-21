@@ -193,6 +193,7 @@ prevButton.addEventListener("click", function () {
 
 nextButton.addEventListener("click", function () {
   if (currentIndex < sectionCount - 8) {
+
     movesection(currentIndex + 1);
   }
 });
@@ -209,38 +210,38 @@ searchBtn.addEventListener("click", function () {
     section[i].style.order = shuffledArray[i];
   }
   sections.style.left = 0;
-  currentIdx = 0;
-  prevBtn.classList.add("none");
-  nextBtn.classList.remove("none");
+  currentIndex = 0;
+  prevButton.classList.add("none");
+  nextButton.classList.remove("none");
 });
 
 // 드래그(스와이프) 이벤트를 위한 변수 초기화
-// let sectionStartPoint = 0;
-// let sectionEndPoint = 0;
+let sectionStartPoint = 0;
+let sectionEndPoint = 0;
 
-// // section 드래그 이벤트
-// sections.addEventListener("mousedown", (e) => {
-//   console.log("mousedown", e.pageX);
-//   sectionStartPoint = e.pageX; // 마우스 드래그 시작 위치 저장
-// });
+// section 드래그 이벤트
+sections.addEventListener("mousedown", (e) => {
+  console.log("mousedown", e.pageX);
+  sectionStartPoint = e.pageX; // 마우스 드래그 시작 위치 저장
+});
 
-// sections.addEventListener("mouseup", (e) => {
-//   console.log("mouseup", e.pageX);
-//   sectionEndPoint = e.pageX; // 마우스 드래그 끝 위치 저장
-//   if (sectionStartPoint < sectionEndPoint) {
-//     // 마우스가 오른쪽으로 드래그 된 경우
-//     console.log("prev move");
-//     if (currentIndex > 0) {
-//       movesection(currentIndex - 1);
-//     }
-//   } else if (sectionStartPoint > sectionEndPoint) {
-//     // 마우스가 왼쪽으로 드래그 된 경우
-//     console.log("next move");
-//     if (currentIndex < sectionCount - 8) {
-//       movesection(currentIndex + 1);
-//     }
-//   }
-// });
+sections.addEventListener("mouseup", (e) => {
+  console.log("mouseup", e.pageX);
+  sectionEndPoint = e.pageX; // 마우스 드래그 끝 위치 저장
+  if (sectionStartPoint < sectionEndPoint) {
+    // 마우스가 오른쪽으로 드래그 된 경우
+    console.log("prev move");
+    if (currentIndex > 0) {
+      movesection(currentIndex - 1);
+    }
+  } else if (sectionStartPoint > sectionEndPoint) {
+    // 마우스가 왼쪽으로 드래그 된 경우
+    console.log("next move");
+    if (currentIndex < sectionCount - 8) {
+      movesection(currentIndex + 1);
+    }
+  }
+});
 
 //best변수
 let slides = document.querySelector(".slides"), //.slides
