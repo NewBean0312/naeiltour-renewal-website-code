@@ -1011,6 +1011,7 @@ div.login_box_btn > div > a{
   border: 1px solid #e5e5e5;
   border-radius: 20px;
   background-color: #fff;
+  user-select: none;
 }
 
 .section_box:hover {

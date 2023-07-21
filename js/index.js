@@ -1,25 +1,14 @@
-// 변수명 지정
-let sections = document.querySelector(".sections"),
-  section = document.querySelectorAll(".sections li"),
-  currentIndex = 0,
-  sectionCount = section.length,
-  sectionWidth = 396,
-  sectionMargin = 30,
-  prevButton = document.querySelector(".prev"),
-  nextButton = document.querySelector(".next"),
-  // 무작위 배열 변수 설정
-  searchBtn = document.querySelector(".search_btn"),
-  array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-  shuffledArray = 0,
-  mainBg = document.querySelector(".main_container"),
+// main js
+// main 변수명 지정
+let mainBg = document.querySelector(".main_container"),
   bgWrap = document.querySelector(".mv_bg_wrap"),
   bgImg = document.querySelectorAll(".mv_bg_wrap > li"),
   mainBtnPrev = document.getElementsByClassName("main_prev")[0], //이전
   mainBtnNext = document.getElementsByClassName("main_next")[0], //다음
-  mainImgNum = bgImg.length; // li
-let currentBg = 0;
+  mainImgNum = bgImg.length, // li
+  currentBg = 0;
 
-// 모바일 버전 버튼 변수
+// 반응형 햄버거 변수명 지정
 let mobileBtn = document.querySelector(".mobile_utill > input"),
   body = document.querySelector("body"),
   mobileBtnCount = 0;
@@ -80,6 +69,7 @@ mainBtnNext.addEventListener("click", function (event) {
   event.preventDefault();
   goToSlide(currentIndex + 1);
 });
+
 // 슬라이드 넘어가게 하는 함수
 function goToSlide(index) {
   sloganWrap.style.left = -100 * index + "%";
@@ -92,7 +82,47 @@ function updateSlide() {
   sloganWrap.style.left = -100 * currentIndex + "%";
 }
 
-// 모바일 버전 body 스크롤 정지 및 실행
+// 드래그(스와이프) 이벤트를 위한 변수 초기화
+let mainStartPoint = 0;
+let mainEndPoint = 0;
+
+// section 드래그 이벤트
+mainBg.addEventListener("mousedown", (e) => {
+  console.log("mousedown", e.pageX);
+  mainStartPoint = e.pageX; // 마우스 드래그 시작 위치 저장
+});
+
+mainBg.addEventListener("mouseup", (e) => {
+  console.log("mouseup", e.pageX);
+  mainEndPoint = e.pageX; // 마우스 드래그 끝 위치 저장
+  if (mainStartPoint < mainEndPoint) {
+    // 마우스가 오른쪽으로 드래그 된 경우
+    console.log("prev move");
+    if (currentBg === 0) {
+      goBg(bgImg.length - 1);
+    } else {
+      goBg(currentBg - 1);
+    }
+
+    if (currentIndex === 0) {
+      goToSlide(sloganslideCount - 1);
+    } else {
+      goToSlide(currentIndex - 1);
+    }
+  } else if (mainStartPoint > mainEndPoint) {
+    // 마우스가 왼쪽으로 드래그 된 경우
+    console.log("next move");
+    goBg(currentBg + 1);
+
+    if (currentIndex === 0) {
+      goToSlide(sloganslideCount - 1);
+    } else {
+      goToSlide(currentIndex - 1);
+    }
+  }
+});
+
+// 반응형 body 스크롤 정지 및 실행
 function mobileBtnCountUp() {
   mobileBtnCount++;
 }
@@ -102,7 +132,7 @@ function mobileBtnCountDown() {
 }
 
 mobileBtn.addEventListener("click", function () {
-  console.log(mobileBtnCount)
+  console.log(mobileBtnCount);
   if (mobileBtnCount == 0) {
     body.style.overflow = "hidden";
     mobileBtnCountUp();
@@ -111,6 +141,20 @@ mobileBtn.addEventListener("click", function () {
     mobileBtnCountDown();
   }
 });
+
+// section_banner js
+let sections = document.querySelector(".sections"),
+  section = document.querySelectorAll(".sections li"),
+  currentIndex = 0,
+  sectionCount = section.length,
+  sectionWidth = 396,
+  sectionMargin = 30,
+  prevButton = document.querySelector(".prev"),
+  nextButton = document.querySelector(".next"),
+  // 무작위 배열 변수 설정
+  searchBtn = document.querySelector(".search_btn"),
+  array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+  shuffledArray = 0;
 
 // 슬라이더 길이 지정
 sections.style.width =
@@ -169,6 +213,34 @@ searchBtn.addEventListener("click", function () {
   prevBtn.classList.add("none");
   nextBtn.classList.remove("none");
 });
+
+// 드래그(스와이프) 이벤트를 위한 변수 초기화
+// let sectionStartPoint = 0;
+// let sectionEndPoint = 0;
+
+// // section 드래그 이벤트
+// sections.addEventListener("mousedown", (e) => {
+//   console.log("mousedown", e.pageX);
+//   sectionStartPoint = e.pageX; // 마우스 드래그 시작 위치 저장
+// });
+
+// sections.addEventListener("mouseup", (e) => {
+//   console.log("mouseup", e.pageX);
+//   sectionEndPoint = e.pageX; // 마우스 드래그 끝 위치 저장
+//   if (sectionStartPoint < sectionEndPoint) {
+//     // 마우스가 오른쪽으로 드래그 된 경우
+//     console.log("prev move");
+//     if (currentIndex > 0) {
+//       movesection(currentIndex - 1);
+//     }
+//   } else if (sectionStartPoint > sectionEndPoint) {
+//     // 마우스가 왼쪽으로 드래그 된 경우
+//     console.log("next move");
+//     if (currentIndex < sectionCount - 8) {
+//       movesection(currentIndex + 1);
+//     }
+//   }
+// });
 
 //best변수
 let slides = document.querySelector(".slides"), //.slides

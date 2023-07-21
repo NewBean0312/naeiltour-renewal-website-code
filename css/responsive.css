@@ -225,7 +225,7 @@
   .res_btn::after {
     right: 38%;
   }
-  
+
   /* review */
   .review_box {
     border-top: 0px;
@@ -379,8 +379,6 @@
     margin-top: 50px;
     margin-left: 0;
   }
-
-  
 
   .contact_wrapper_2 {
     display: block;

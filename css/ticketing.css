@@ -458,10 +458,6 @@ nav .main_gnb li a {
   transition: all 0.3s;
 }
 
-.sidebar > .menu_box_1 {
-  
-}
-
 /* ticketing_wrapper */
 .ticketing_wrapper {
   width: 1903px;
@@ -568,6 +564,7 @@ nav .main_gnb li a {
   background-origin: border-box;
   background-clip: content-box, border-box;
   border-radius: 25px;
+  box-shadow: 7px 7px 7px #ecf1ff;
 }
 
 .content_box > div {
