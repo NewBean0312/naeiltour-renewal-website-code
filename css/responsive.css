@@ -18,6 +18,16 @@
   body {
     overflow-x: hidden;
   }
+
+  #gototop {
+    right: 15px;
+    bottom: 15px;
+  }
+  /* quick_menu */
+  .quick_menu {
+    display: none;
+  }
+
   /* main */
   .main_container {
     width: 500px;
@@ -59,10 +69,20 @@
     display: flex;
   }
 
-  .slogan,
   .aside .utill,
   .aside .aside_btn {
     display: none;
+  }
+  
+  .slogan_wrap li {
+    top: 400px;
+    left: 0;
+  }
+  .logan_txt {
+    font-size: 34px;
+  }
+  .sm_txt {
+    font-size: 17px;
   }
 
   .where_when {
@@ -84,6 +104,76 @@
   .menu_icon + label {
     display: block;
   }
+
+  /* option_banner */
+  .option_banner {
+    width: 500px;
+    text-align: center;
+  }
+  .option_wrapper {
+    width: 500px;
+    height: auto;
+    align-items: initial;
+  }
+  .option_wrapper span {
+    font-size: 20px;
+  }
+  .select_box .select {
+    font-size: 22px;
+    margin-left: none;
+    margin-right: none;
+  }
+  .whater_span {
+    display: block;
+  }
+  .option_banner .btn_box {
+    width: 500px;
+  }
+  .option_banner .reset_btn {
+    width: 217px;
+  }
+  .option_banner .search_btn {
+    width: 215px;
+  }
+
+  /* section_banner */
+  .section_banner {
+    width: 500px;
+  }
+
+  .section_wrapper {
+    width: 500px;
+    height: 500px;
+  }
+
+  .controls > div {
+    display: none;
+  }
+
+  .section_box {
+    height: 500px;
+  }
+
+  .section_box .img_box {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+  }
+
+  .section_box .des {
+    height: 250px;
+    flex-direction: column;
+  }
+
+  .section_box .des > h1 {
+    width: 342px;
+    margin-top: 30px;
+    font-family: "MaplestoryOTFLight";
+    font-size: 23px;
+  }
+
+  
 
   /* best */
   .slide_wrapper {

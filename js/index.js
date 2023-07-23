@@ -86,15 +86,15 @@ function updateSlide() {
 let mainStartPoint = 0;
 let mainEndPoint = 0;
 
-// section 드래그 이벤트
-mainBg.addEventListener("mousedown", (e) => {
-  console.log("mousedown", e.pageX);
-  mainStartPoint = e.pageX; // 마우스 드래그 시작 위치 저장
+// main 드래그 이벤트
+mainBg.addEventListener("touchstart", (e) => {
+  console.log("touchstart", e.touches[0].pageX);
+  mainStartPoint = e.touches[0].pageX; // 터치가 시작되는 위치 저장
 });
 
-mainBg.addEventListener("mouseup", (e) => {
-  console.log("mouseup", e.pageX);
-  mainEndPoint = e.pageX; // 마우스 드래그 끝 위치 저장
+mainBg.addEventListener("touchend", (e) => {
+  console.log("touchend", e.changedTouches[0].pageX);
+  mainEndPoint = e.changedTouches[0].pageX; // 터치가 끝나는 위치 저장
   if (mainStartPoint < mainEndPoint) {
     // 마우스가 오른쪽으로 드래그 된 경우
     console.log("prev move");
@@ -193,10 +193,11 @@ prevButton.addEventListener("click", function () {
 
 nextButton.addEventListener("click", function () {
   if (currentIndex < sectionCount - 8) {
-
     movesection(currentIndex + 1);
   }
 });
+
+// 반응형 버전일 때, section 슬라이드 설정
 
 // 무작위로 section 순서 지정
 function shuffle() {
@@ -220,6 +221,48 @@ let sectionStartPoint = 0;
 let sectionEndPoint = 0;
 
 // section 드래그 이벤트
+// sections.addEventListener("touchstart", (e) => {
+//   console.log("touchstart", e.touches[0].pageX);
+//   sectionStartPoint = e.touches[0].pageX; // 터치가 시작되는 위치 저장
+// });
+
+// sections.addEventListener("touchend", (e) => {
+//   console.log("touchend", e.changedTouches[0].pageX);
+//   sectionEndPoint = e.changedTouches[0].pageX; // 터치가 끝나는 위치 저장
+//   if (sectionStartPoint < sectionEndPoint) {
+//     // 마우스가 오른쪽으로 드래그 된 경우
+//     console.log("prev move");
+//     if (currentIndex > 0) {
+//       movesection(currentIndex - 1);
+//     }
+//   } else if (sectionStartPoint > sectionEndPoint) {
+//     // 마우스가 왼쪽으로 드래그 된 경우
+//     console.log("next move");
+//     if (currentIndex < sectionCount - 8) {
+//       movesection(currentIndex + 1);
+//     }
+//   }
+// });
+
+// 임시
+
+function adjustLayout() {
+  var width = window.innerWidth;
+
+  // 브라우저 너비에 따라 다른 설정을 적용
+  if (width <= 500) {
+    // 작은 화면에서 동작할 코드
+    if (currentIndex < sectionCount - 1) {
+      movesection(currentIndex + 1);
+    }
+  } else {
+    // 큰 화면에서 동작할 코드
+    if (currentIndex < sectionCount - 8) {
+      movesection(currentIndex + 1);
+    }
+  }
+}
+
 sections.addEventListener("mousedown", (e) => {
   console.log("mousedown", e.pageX);
   sectionStartPoint = e.pageX; // 마우스 드래그 시작 위치 저장
@@ -237,9 +280,7 @@ sections.addEventListener("mouseup", (e) => {
   } else if (sectionStartPoint > sectionEndPoint) {
     // 마우스가 왼쪽으로 드래그 된 경우
     console.log("next move");
-    if (currentIndex < sectionCount - 8) {
-      movesection(currentIndex + 1);
-    }
+    adjustLayout();
   }
 });
 
@@ -362,3 +403,55 @@ for (let i = 0; i < res_btn.length; i++) {
   });
 }
 document.getElementById("res_menu1").style.display = "block";
+
+// 변수지정, 버튼, 화면
+let btn = document.getElementById("gototop"),
+  imgBox = document.getElementsByClassName("img_box")[0],
+  docElem = document.documentElement,
+  scrollAmount;
+
+// 스크롤 이벤트 추가
+window.addEventListener("scroll", function () {
+  scrollAmount = docElem.scrollTop;
+  if (scrollAmount > 600) {
+    btn.className = "visible";
+  } else {
+    btn.classList.remove("visible");
+  }
+  // 스크롤이 600px이상되면 이미지 나타나고 이하면 사라진다
+  if (scrollAmount > 200) {
+    imgBox.className = "img_box show";
+  }
+});
+
+// 부드러운 스크롤 함수
+function smoothScrollToTop() {
+  let scrollInterval = setInterval(function () {
+    if (scrollAmount > 0) {
+      // 일정 간격마다 스크롤 위치를 조금씩 위로 올린다.
+      let scrollStep = Math.ceil(scrollAmount / 10);
+      docElem.scrollTop -= scrollStep;
+    } else {
+      // 스크롤 위치가 0이면 스크롤 이벤트를 종료한다.
+      clearInterval(scrollInterval);
+    }
+  }, 16); // 16ms 간격으로 실행하여 60fps로 부드러운 스크롤 효과를 만든다.
+}
+
+// 버튼 클릭 이벤트 추가
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+  // smoothScrollToTop 함수를 호출하여 부드러운 스크롤을 시작한다.
+  smoothScrollToTop();
+});
+
+/* aside */
+// JavaScript 코드
+document.addEventListener("DOMContentLoaded", function () {
+  const quickMenu = document.querySelector(".quick_menu");
+  const quickBtn = document.querySelector(".quick_btn");
+
+  quickBtn.addEventListener("click", function () {
+    quickMenu.classList.toggle("open");
+  });
+});

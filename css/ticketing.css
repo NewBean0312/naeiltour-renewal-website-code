@@ -95,7 +95,7 @@ a {
   display: block;
   width: 70px;
   height: 70px;
-  background: url(../images/);
+  background: url(../images/logo_bk.jpg);
 }
 nav {
   padding-left: 100px;
@@ -230,10 +230,15 @@ nav .main_sub_menu > li > a {
 }
 
 /* sub_menu_2_img */
+.sub_menu_2_img {
+  position: relative;
+}
 .main_sub_menu_2 > .sub_menu_2_img > .img_box {
-  width: 300px;
-  height: 200px;
-  margin-top: 40px;
+  position: absolute;
+  width: 431px;
+  height: 288px;
+  top: 70px;
+  right: 50px;
 }
 
 .main_sub_menu_2 > .sub_menu_2_img > .img_box > img {
@@ -242,12 +247,15 @@ nav .main_sub_menu > li > a {
 }
 
 .main_sub_menu_2 > .sub_menu_2_img > .img_text {
+  position: absolute;
   margin-top: 15px;
   margin-right: 35px;
   color: #000;
   font-family: "MaplestoryOTFLight";
   font-size: 15px;
   text-align: right;
+  top: 355px;
+  right: 25px;
 }
 
 .main_sub_menu_2 > .sub_menu_2_img > .img_text > span {
@@ -527,7 +535,7 @@ nav .main_gnb li a {
 }
 
 .tab_menu > li:hover .outside_circle {
-  border: 1px solid #2b54c4;
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
 }
 
 .outside_circle > .inside_circle {
@@ -889,6 +897,9 @@ button.planner_btn span.img_box > img {
   font-size: 18px;
   cursor: pointer;
 }
+.tab_content .airplane_search_btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
+}
 
 /* tab3 CSS */
 .tab_content #tab3 {
@@ -915,16 +926,19 @@ button.planner_btn span.img_box > img {
 }
 
 .content_box_row_1 .journey {
-  position: absolute;
-  top: -20px;
+  display: none;
   color: #767676;
   font-family: "MaplestoryOTFLight";
-  font-size: 11px;
+  font-size: 15px;
   letter-spacing: 1.5px;
 }
 
 .tab_content #tab3 div.destination {
   height: 70%;
+}
+
+.content_box_col_2 .destination button.start_btn {
+  color: #767676;
 }
 
 #tab3 div.destination .route > div:nth-child(2) {

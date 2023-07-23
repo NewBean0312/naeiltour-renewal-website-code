@@ -62,6 +62,222 @@ body > div {
   margin-right: auto;
 }
 
+/* gototop */
+#gototop {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 25px;
+  background: #fff url(../images/ico_top_btn.png) no-repeat 50% 50%;
+  background-size: 12px 16px;
+  box-shadow: 0 5px 12px 3px rgba(0, 0, 0, 0.15);
+  transform: translateY(20px);
+  transition: all 0.3s;
+  z-index: 999;
+}
+#gototop:hover {
+}
+#gototop.visible {
+  opacity: 1;
+  transform: translateY(-15px);
+}
+/* quick_menu */
+.quick_menu {
+  position: fixed;
+  top: 100px;
+  right: 0;
+  padding: 15px;
+  background-color: #1c1c1c;
+  box-sizing: border-box;
+  width: 90px;
+  z-index: 99;
+  transition: all 0.3s ease-out;
+  transform: translateX(calc(100% + 2px));
+}
+.quick_menu.open {
+  transform: translateX(0);
+}
+.quick_menu.open .quick_btn:before {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: 0;
+  margin-left: 0;
+  background: url(../images/btn_close.svg) 0 0/100% 100% no-repeat;
+}
+.quick_menu.open .quick_btn {
+  left: -20px;
+  width: 20px;
+}
+.quick_btn {
+  display: block;
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  margin-top: -32.5px;
+  font-size: 0;
+  color: transparent;
+  width: 30px;
+  height: 65px;
+  background: #1c1c1c;
+  border-radius: 4px 0 0 4px;
+  transition: all 0.25s ease-in-out;
+  border: 0;
+  cursor: pointer;
+}
+.quick_btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -4px;
+  top: 50%;
+  margin-top: -7px;
+  width: 8px;
+  height: 14px;
+  background: url(../images/btn_open.svg) 0 0/100% 100% no-repeat;
+}
+.quick_menu ul {
+}
+.quick_menu ul li {
+  position: relative;
+  display: block;
+  padding-top: 15px;
+  color: #e1e1e1;
+}
+.quick_menu ul li em {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  background-color: #f43d38;
+  border-radius: 15px;
+  color: #fff;
+  font-style: normal;
+}
+.quick_menu ul li span {
+  position: relative;
+  display: block;
+  margin-left: -5px;
+  margin-right: -5px;
+  padding-top: 40px;
+  font-size: 12px;
+  color: #7c7c7c;
+  text-align: center;
+  letter-spacing: -0.36px;
+  cursor: pointer;
+}
+.quick_menu ul li:nth-child(1) span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+.quick_menu ul li:nth-child(1) span::before {
+  background: url(../images/icon_watch_off.svg);
+}
+.quick_menu ul li:nth-child(1) span:hover::before {
+  background: url(../images/icon_watch_on.svg);
+}
+.quick_menu ul li:nth-child(2) span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+.quick_menu ul li:nth-child(2) span::before {
+  background: url(../images/icon_file_off.svg);
+}
+.quick_menu ul li:nth-child(2) span:hover::before {
+  background: url(../images/icon_file_on.svg);
+}
+.quick_menu ul li:nth-child(3) span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+.quick_menu ul li:nth-child(3) span::before {
+  background: url(../images/icon_likes_off.svg);
+}
+.quick_menu ul li:nth-child(3) span:hover::before {
+  background: url(../images/icon_likes_on.svg);
+}
+.quick_menu ul li:nth-child(4) span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+.quick_menu ul li:nth-child(4) span::before {
+  background: url(../images/icon_phone_off.svg);
+}
+.quick_menu ul li:nth-child(4) span:hover::before {
+  background: url(../images/icon_phone_on.svg);
+}
+.quick_menu ul li:nth-child(5) span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  transition: all 0.2s ease-in-out;
+}
+.quick_menu ul li:nth-child(5) span::before {
+  background: url(../images/icon_coupon_off.svg);
+}
+.quick_menu ul li:nth-child(5) span:hover::before {
+  background: url(../images/icon_coupon_on.svg);
+}
+
 /* main */
 .main_container {
   position: relative;
@@ -72,6 +288,8 @@ body > div {
   color: #fff;
   overflow-x: hidden;
   overflow-y: hidden;
+  /* 임시 */
+  user-select: none;
 }
 .mv_bg_wrap {
   position: absolute;
@@ -249,10 +467,15 @@ nav .main_sub_menu > li > a {
 }
 
 /* sub_menu_2_img */
+.sub_menu_2_img {
+  position: relative;
+}
 .main_sub_menu_2 > .sub_menu_2_img > .img_box {
-  width: 300px;
-  height: 200px;
-  margin-top: 40px;
+  position: absolute;
+  width: 431px;
+  height: 288px;
+  top: 70px;
+  right: 50px;
 }
 
 .main_sub_menu_2 > .sub_menu_2_img > .img_box > img {
@@ -261,12 +484,15 @@ nav .main_sub_menu > li > a {
 }
 
 .main_sub_menu_2 > .sub_menu_2_img > .img_text {
+  position: absolute;
   margin-top: 15px;
   margin-right: 35px;
   color: #000;
   font-family: "MaplestoryOTFLight";
   font-size: 15px;
   text-align: right;
+  top: 355px;
+  right: 25px;
 }
 
 .main_sub_menu_2 > .sub_menu_2_img > .img_text > span {

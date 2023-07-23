@@ -312,12 +312,14 @@
     }
   
     .content_box_row_1 .journey {
+      display: block;
       position: absolute;
       top: 20px;
       left: 10px;
       color: #000;
+      font-size: 11px;
     }
-  
+    
     .content_box_row_1 .route > div:nth-child(2n-1) {
       display: block;
       border-bottom: 1px dashed #61b3ff;
