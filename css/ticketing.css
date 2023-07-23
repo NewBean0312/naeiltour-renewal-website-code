@@ -635,7 +635,7 @@ nav .main_gnb li a {
 }
 
 /* close_btn */
-.destination_pop_col_1 .close_btn {
+.close_btn {
   position: absolute;
   top: 0;
   right: 0;
@@ -679,7 +679,7 @@ nav .main_gnb li a {
   box-shadow: 1px 1px 1px #ecf1ff;
 }
 
-.destination_pop_col_2 > a {
+.destination_pop_col_2 > div {
   display: flex;
   align-items: center;
   position: absolute;
@@ -690,13 +690,14 @@ nav .main_gnb li a {
   border-radius: 5px;
   font-family: "MaplestoryOTFLight";
   font-size: 17px;
+  cursor: pointer;
 }
 
-.destination_pop_col_2 > a:hover {
+.destination_pop_col_2 > div:hover {
   border: 2px solid #2b54c4;
 }
 
-.destination_pop_col_2 > a > img {
+.destination_pop_col_2 > div > img {
   margin: 0 10px;
 }
 
