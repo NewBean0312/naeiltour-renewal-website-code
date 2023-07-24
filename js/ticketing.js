@@ -26,9 +26,30 @@ for (var i = 0; i < targetLink.length; i++) {
       targetLink[k].classList.remove("active");
       e.target.classList.add("active");
     }
-
   });
 }
 
 // 시작 시, 처음 tab은 보이게 함
 document.getElementById("tab1").style.display = "block";
+
+// passenger 팝업 창 count
+function count(type) {
+  // 결과를 표시할 element
+  const resultElement = document.getElementById("result");
+
+  // 현재 화면에 표시된 값
+  let number = resultElement.innerText;
+
+  // 더하기/빼기
+  if (type === "plus") {
+    number = parseInt(number) + 1;
+  } else if (type === "minus") {
+    number = parseInt(number) - 1;
+    if (number < 0) {
+      number = 0;
+    }
+  }
+
+  // 결과 출력
+  resultElement.innerText = number;
+}

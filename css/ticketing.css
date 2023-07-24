@@ -712,6 +712,106 @@ nav .main_gnb li a {
   opacity: 0;
 }
 
+/* .destination_pop_col_1 */
+.popup > .passenger_pop_col_1 {
+  position: relative;
+  width: 95%;
+  height: 30px;
+  margin: 20px auto 0;
+}
+
+.passenger_pop_col_1 > h1 {
+  font-size: 23px;
+}
+
+.popup > .passenger_pop_col_2 {
+  display: flex;
+  position: relative;
+  width: 95%;
+  height: 150px;
+  margin: 20px auto 0;
+}
+
+.passenger_pop_col_2 > div {
+  width: 240.666667px;
+  height: 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.passenger_pop_col_2 > div > div {
+  display: flex;
+  width: 100%;
+}
+
+.passenger_pop_col_2 > div > div:first-child {
+  height: 30px;
+}
+
+.passenger_pop_col_2 > div > div:last-child {
+  height: 120px;
+}
+
+.passenger_pop_col_2 h3 {
+  margin-top: 5px;
+  font-family: "MaplestoryOTFLight";
+  font-size: 18px;
+}
+
+.passenger_pop_col_2 span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.passenger_pop_col_2 span:hover {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
+}
+
+/* count_box */
+.passenger_pop_col_2 .count_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+}
+
+.count_box > input {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #767676;
+  border-radius: 50%;
+  font-family: "MaplestoryOTFLight";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.passenger_pop_col_2 input:hover {
+  box-shadow: 0 0 0 4px #fff, 0 0 0 5.5px #0064de;
+}
+
+.count_box > div#result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border: none;
+  font-size: 25px;
+}
+
+.count_box > div#result:hover {
+  border: 1.5px solid #0064de;
+}
+
 /* destination */
 .tab_content .destination {
   display: flex;
