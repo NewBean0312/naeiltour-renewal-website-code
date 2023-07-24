@@ -35,21 +35,45 @@ document.getElementById("tab1").style.display = "block";
 // passenger 팝업 창 count
 function count(type) {
   // 결과를 표시할 element
-  const resultElement = document.getElementById("result");
+  const resultElement1 = document.getElementById("result_1"),
+    resultElement2 = document.getElementById("result_2"),
+    resultElement3 = document.getElementById("result_3");
 
   // 현재 화면에 표시된 값
-  let number = resultElement.innerText;
+  let number1 = resultElement1.innerText,
+    number2 = resultElement2.innerText,
+    number3 = resultElement3.innerText;
 
   // 더하기/빼기
-  if (type === "plus") {
-    number = parseInt(number) + 1;
-  } else if (type === "minus") {
-    number = parseInt(number) - 1;
-    if (number < 0) {
-      number = 0;
+  if (type === "plus1") {
+    number1 = parseInt(number1) + 1;
+  } else if (type === "minus1") {
+    number1 = parseInt(number1) - 1;
+    if (number1 < 0) {
+      number1 = 0;
+    }
+  }
+
+  if (type === "plus2") {
+    number2 = parseInt(number2) + 1;
+  } else if (type === "minus2") {
+    number2 = parseInt(number2) - 1;
+    if (number2 < 0) {
+      number2 = 0;
+    }
+  }
+
+  if (type === "plus3") {
+    number3 = parseInt(number3) + 1;
+  } else if (type === "minus3") {
+    number3 = parseInt(number3) - 1;
+    if (number3 < 0) {
+      number3 = 0;
     }
   }
 
   // 결과 출력
-  resultElement.innerText = number;
+  resultElement1.innerText = number1;
+  resultElement2.innerText = number2;
+  resultElement3.innerText = number3;
 }
