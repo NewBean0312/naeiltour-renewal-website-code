@@ -33,47 +33,137 @@ for (var i = 0; i < targetLink.length; i++) {
 document.getElementById("tab1").style.display = "block";
 
 // passenger 팝업 창 count
-function count(type) {
+function count1(type) {
   // 결과를 표시할 element
-  const resultElement1 = document.getElementById("result_1"),
-    resultElement2 = document.getElementById("result_2"),
-    resultElement3 = document.getElementById("result_3");
+  const tab1ResultElement1 = document.getElementById("tab_1_result_1"),
+    tab1ResultElement2 = document.getElementById("tab_1_result_2"),
+    tab1ResultElement3 = document.getElementById("tab_1_result_3");
 
   // 현재 화면에 표시된 값
-  let number1 = resultElement1.innerText,
-    number2 = resultElement2.innerText,
-    number3 = resultElement3.innerText;
+  let tab1Number1 = tab1ResultElement1.innerText,
+    tab1Number2 = tab1ResultElement2.innerText,
+    tab1Number3 = tab1ResultElement3.innerText;
 
   // 더하기/빼기
-  if (type === "plus1") {
-    number1 = parseInt(number1) + 1;
-  } else if (type === "minus1") {
-    number1 = parseInt(number1) - 1;
-    if (number1 < 0) {
-      number1 = 0;
+  if (type === "tab1plus1") {
+    tab1Number1 = parseInt(tab1Number1) + 1;
+  } else if (type === "tab1minus1") {
+    tab1Number1 = parseInt(tab1Number1) - 1;
+    if (tab1Number1 < 0) {
+      tab1Number1 = 0;
     }
   }
 
-  if (type === "plus2") {
-    number2 = parseInt(number2) + 1;
-  } else if (type === "minus2") {
-    number2 = parseInt(number2) - 1;
-    if (number2 < 0) {
-      number2 = 0;
+  if (type === "tab1plus2") {
+    tab1Number2 = parseInt(tab1Number2) + 1;
+  } else if (type === "tab1minus2") {
+    tab1Number2 = parseInt(tab1Number2) - 1;
+    if (tab1Number2 < 0) {
+      tab1Number2 = 0;
     }
   }
 
-  if (type === "plus3") {
-    number3 = parseInt(number3) + 1;
-  } else if (type === "minus3") {
-    number3 = parseInt(number3) - 1;
-    if (number3 < 0) {
-      number3 = 0;
+  if (type === "tab1plus3") {
+    tab1Number3 = parseInt(tab1Number3) + 1;
+  } else if (type === "tab1minus3") {
+    tab1Number3 = parseInt(tab1Number3) - 1;
+    if (tab1Number3 < 0) {
+      tab1Number3 = 0;
     }
   }
 
   // 결과 출력
-  resultElement1.innerText = number1;
-  resultElement2.innerText = number2;
-  resultElement3.innerText = number3;
+  tab1ResultElement1.innerText = tab1Number1;
+  tab1ResultElement2.innerText = tab1Number2;
+  tab1ResultElement3.innerText = tab1Number3;
+}
+
+function count2(type) {
+  // 결과를 표시할 element
+  const tab2ResultElement1 = document.getElementById("tab_2_result_1"),
+    tab2ResultElement2 = document.getElementById("tab_2_result_2"),
+    tab2ResultElement3 = document.getElementById("tab_2_result_3");
+
+  // 현재 화면에 표시된 값
+  let tab2Number1 = tab2ResultElement1.innerText,
+    tab2Number2 = tab2ResultElement2.innerText,
+    tab2Number3 = tab2ResultElement3.innerText;
+
+  // 더하기/빼기
+  if (type === "tab2plus1") {
+    tab2Number1 = parseInt(tab2Number1) + 1;
+  } else if (type === "tab2minus1") {
+    tab2Number1 = parseInt(tab2Number1) - 1;
+    if (tab2Number1 < 0) {
+      tab2Number1 = 0;
+    }
+  }
+
+  if (type === "tab2plus2") {
+    tab2Number2 = parseInt(tab2Number2) + 1;
+  } else if (type === "tab2minus2") {
+    tab2Number2 = parseInt(tab2Number2) - 1;
+    if (tab2Number2 < 0) {
+      tab2Number2 = 0;
+    }
+  }
+
+  if (type === "tab2plus3") {
+    tab2Number3 = parseInt(tab2Number3) + 1;
+  } else if (type === "tab2minus3") {
+    tab2Number3 = parseInt(tab2Number3) - 1;
+    if (tab2Number3 < 0) {
+      tab2Number3 = 0;
+    }
+  }
+
+  // 결과 출력
+  tab2ResultElement1.innerText = tab2Number1;
+  tab2ResultElement2.innerText = tab2Number2;
+  tab2ResultElement3.innerText = tab2Number3;
+}
+
+function count3(type) {
+  // 결과를 표시할 element
+  const tab3ResultElement1 = document.getElementById("tab_3_result_1"),
+    tab3ResultElement2 = document.getElementById("tab_3_result_2"),
+    tab3ResultElement3 = document.getElementById("tab_3_result_3");
+
+  // 현재 화면에 표시된 값
+  let tab3Number1 = tab3ResultElement1.innerText,
+    tab3Number2 = tab3ResultElement2.innerText,
+    tab3Number3 = tab3ResultElement3.innerText;
+
+  // 더하기/빼기
+  if (type === "tab3plus1") {
+    tab3Number1 = parseInt(tab3Number1) + 1;
+  } else if (type === "tab3minus1") {
+    tab3Number1 = parseInt(tab3Number1) - 1;
+    if (tab3Number1 < 0) {
+      tab3Number1 = 0;
+    }
+  }
+
+  if (type === "tab3plus2") {
+    tab3Number2 = parseInt(tab3Number2) + 1;
+  } else if (type === "tab3minus2") {
+    tab3Number2 = parseInt(tab3Number2) - 1;
+    if (tab3Number2 < 0) {
+      tab3Number2 = 0;
+    }
+  }
+
+  if (type === "tab3plus3") {
+    tab3Number3 = parseInt(tab3Number3) + 1;
+  } else if (type === "tab3minus3") {
+    tab3Number3 = parseInt(tab3Number3) - 1;
+    if (tab3Number3 < 0) {
+      tab3Number3 = 0;
+    }
+  }
+
+  // 결과 출력
+  tab3ResultElement1.innerText = tab3Number1;
+  tab3ResultElement2.innerText = tab3Number2;
+  tab3ResultElement3.innerText = tab3Number3;
 }

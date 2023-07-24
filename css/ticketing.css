@@ -601,8 +601,8 @@ nav .main_gnb li a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 800px;
-  height: 400px;
+  width: 880px;
+  height: 403px;
   z-index: -1;
   border-radius: 10px;
   background: #fff;
@@ -610,6 +610,10 @@ nav .main_gnb li a {
   box-sizing: border-box;
   padding: 20px;
   opacity: 0;
+}
+
+.popup_tab3 {
+  height: 611px;
 }
 
 .popupfocus:target + .popup {
@@ -712,30 +716,30 @@ nav .main_gnb li a {
   opacity: 0;
 }
 
-/* .destination_pop_col_1 */
+/* passenger_pop_col_1 */
 .popup > .passenger_pop_col_1 {
   position: relative;
   width: 95%;
   height: 30px;
-  margin: 20px auto 0;
+  margin: 20px auto;
 }
 
 .passenger_pop_col_1 > h1 {
   font-size: 23px;
 }
 
+/* passenger_pop_col_2 */
 .popup > .passenger_pop_col_2 {
   display: flex;
   position: relative;
   width: 95%;
   height: 150px;
-  margin: 20px auto 0;
+  margin: 20px auto;
 }
 
 .passenger_pop_col_2 > div {
-  width: 240.666667px;
+  width: 293.333333px;
   height: 100%;
-  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -746,10 +750,12 @@ nav .main_gnb li a {
 
 .passenger_pop_col_2 > div > div:first-child {
   height: 30px;
+  margin-top: 20px;
 }
 
 .passenger_pop_col_2 > div > div:last-child {
   height: 120px;
+  margin-top: 10px;
 }
 
 .passenger_pop_col_2 h3 {
@@ -778,7 +784,6 @@ nav .main_gnb li a {
   align-items: center;
   width: 100%;
   height: 70px;
-  background-color: lightblue;
 }
 
 .count_box > input {
@@ -796,7 +801,7 @@ nav .main_gnb li a {
   box-shadow: 0 0 0 4px #fff, 0 0 0 5.5px #0064de;
 }
 
-.count_box > div{
+.count_box > div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -809,6 +814,65 @@ nav .main_gnb li a {
 
 .count_box > div:hover {
   border: 1.5px solid #0064de;
+}
+
+/* notice_box */
+.popup > .notice_box {
+  width: 800px;
+  height: 160.46px;
+  padding: 30px 32px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8f9fc;
+  border-radius: 25px;
+}
+
+.notice_box > ul > li {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #555;
+  font-family: "MaplestoryOTFLight";
+  font-size: 14px;
+}
+
+.notice_box > ul > li::before {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #555;
+  content: "";
+}
+.notice_box > ul > li:nth-child(3)::after {
+  margin-left: 10px;
+  color: #0064de;
+  cursor: pointer;
+  content: "자세히 보기 >";
+}
+
+.notice_box > ul > li:last-child {
+  color: #0064de;
+}
+
+/* select_btn */
+.popup > .select_btn {
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin: 15px auto 0;
+  border: none;
+  background: #013066;
+  font-family: "MaplestoryOTFLight";
+  color: #fff;
+}
+
+.select_btn > a {
+  width: 100%;
+  height: 100%;
 }
 
 /* destination */
