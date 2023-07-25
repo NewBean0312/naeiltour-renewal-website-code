@@ -63,7 +63,7 @@ a {
   z-index: 999;
   left: 0;
   width: 100%;
-  height: 1950px;
+  height: 2100px;
   margin: 0 auto;
   color: #000;
   overflow-x: hidden;
@@ -612,8 +612,11 @@ nav .main_gnb li a {
   opacity: 0;
 }
 
-.popup_tab3 {
+.passenger_pop {
   height: 611px;
+}
+.rating_pop {
+  height: 470px;
 }
 
 .popupfocus:target + .popup {
@@ -622,6 +625,7 @@ nav .main_gnb li a {
 }
 
 .popupfocus:target + .popup + .dim {
+  display: block;
   opacity: 1;
   z-index: 3;
 }
@@ -706,10 +710,11 @@ nav .main_gnb li a {
 }
 
 .dim {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -999;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
@@ -873,6 +878,95 @@ nav .main_gnb li a {
 
 .popup > .select_btn:hover {
   box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
+}
+
+/* rating_pop_col_1 */
+.rating_pop_col_1 {
+  position: relative;
+  width: 95%;
+  height: 30px;
+  margin: 20px auto 0;
+}
+
+.rating_pop_col_1 > h1 {
+  font-size: 23px;
+}
+
+/* rating_pop_col_2 */
+.rating_pop_col_2 {
+  width: 95%;
+  height: 250px;
+  margin: 40px auto 0;
+}
+
+/* rating_select_box */
+.rating_select_box {
+  display: flex;
+  width: 100%;
+  height: 52px;
+}
+
+.rating_select_box > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-family: "MaplestoryOTFLight";
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.rating_select_box > div:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
+}
+
+/* upgrade_box */
+.rating_pop_col_2 > .upgrade_box {
+  width: 100%;
+  height: 100px;
+  margin-top: 60px;
+}
+
+.upgrade_box > div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.upgrade_box h3 {
+  margin-top: 5px;
+  font-family: "MaplestoryOTFLight";
+  font-size: 18px;
+}
+
+.upgrade_box span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.upgrade_box span:hover {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
+}
+
+/* select_btn */
+.popup > .select_btn {
+  display: block;
+  width: 240px;
+  height: 50px;
+  margin: 15px auto 0;
+  border: none;
+  background: #013066;
+  font-family: "MaplestoryOTFLight";
+  color: #fff;
+  cursor: pointer;
 }
 
 /* destination */
@@ -1067,7 +1161,7 @@ button.planner_btn span.img_box > img {
 
 /* tab3 CSS */
 .tab_content #tab3 {
-  height: 400px;
+  height: 500px;
 }
 
 .tab_content #tab3 > .content_box {
@@ -1078,7 +1172,7 @@ button.planner_btn span.img_box > img {
 .tab_content #tab3 .content_box_row_1 {
   display: block;
   width: 942px;
-  height: 370px;
+  height: 470px;
   border-right: 1px dashed #767676;
 }
 
@@ -1120,7 +1214,22 @@ button.planner_btn span.img_box > img {
   width: 890px;
   height: 1px;
   margin: 0 auto;
-  border-top: 1px dashed #767676;
+  border-top: 1px solid #767676;
+}
+
+/* content_box_col_3 */
+.content_box_row_1 > div.content_box_col_3 {
+  height: 90px;
+}
+
+.content_box_col_3 > .plan_add_btn {
+  display: block;
+  width: 890px;
+  height: 40px;
+  border: 1px solid #767676;
+  color: #767676;
+  font-family: "MaplestoryOTFLight";
+  font-size: 15px;
 }
 
 /* content_box_row_2 */
@@ -1128,7 +1237,7 @@ button.planner_btn span.img_box > img {
   display: flex;
   align-items: start;
   width: 338px;
-  height: 370px;
+  height: 470px;
 }
 
 /* experience */
