@@ -8,7 +8,6 @@
     height: 62px;
     padding: 0;
     /* 임시 */
-    background-color: lightcoral;
   }
 
   .main_logo {
@@ -21,7 +20,7 @@
     display: block;
     width: 40px;
     height: 40px;
-    background: url(../images/main_logo_2.png);
+    background: url(../images/logo_bk_2.png);
   }
 
   nav {
@@ -66,6 +65,194 @@
   /* mobile_utill */
   .menu_icon + label {
     display: block;
+  }
+
+  /* login_box */
+  .sidebar {
+    display: block;
+    overflow-y: scroll;
+    position: absolute;
+    top: 0;
+    right: -500px;
+    z-index: 20;
+    width: 500px;
+    height: 1000px;
+    background-color: #fff;
+    transition: all 0.3s;
+  }
+
+  .sidebar > .login_box {
+    width: 100%;
+    height: 270px;
+    background: #fff;
+    color: #fff;
+  }
+
+  .login_box > div:first-child {
+    width: 100%;
+    height: 200px;
+    padding-top: 60px;
+    margin: 0 auto;
+    background-color: #e63c2c;
+    font-family: "MaplestoryOTFLight";
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+  }
+
+  .login_box > div:first-child > button {
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .login_box > div > button:after {
+    margin-left: 10px;
+    content: ">";
+  }
+
+  .login_box > div.login_box_btn {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #b3291d;
+  }
+
+  div.login_box_btn > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    font-family: "MaplestoryOTFLight";
+    font-size: 20px;
+  }
+
+  div.login_box_btn > div:first-child::after {
+    width: 1px;
+    height: 30px;
+    background-color: #666;
+    content: "";
+  }
+
+  div.login_box_btn > div > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* menu_box_1 */
+  .sidebar > .menu_box_1 {
+    width: 100%;
+    height: auto;
+    background: #fff;
+  }
+
+  .menu_box_1 > div {
+    width: 95%;
+    height: 60px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .menu_box_1 > div > a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-family: "MaplestoryOTFLight";
+    font-size: 15px;
+  }
+  .res_menu_btn {
+    position: relative;
+    width: 100%;
+    height: 59px;
+    margin: 0 auto;
+    border: 0;
+    cursor: pointer;
+    text-align: start;
+    background-color: #fff;
+  }
+  .res_menu_btn::before {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 10px;
+    height: 6px;
+    margin-top: -3px;
+    background: url(../images/ico_arr_2.png) 0 0 no-repeat;
+    background-size: 10px auto;
+  }
+
+  .res_menu_btn a {
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-family: "MaplestoryOTFLight";
+  }
+
+  .res_menu_ul {
+    height: 0;
+    overflow: hidden;
+  }
+  .res_menu_btn.active .res_menu_ul {
+  }
+  .res_menu_btn.active::before {
+    transform: rotate(180deg);
+  }
+  .res_menu_ul li {
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 60px;
+    cursor: pointer;
+  }
+  .res_menu_ul li a {
+    font-family: "MaplestoryOTFLight";
+    color: #666;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    padding-left: 30px;
+  }
+  .res_menu_number {
+    padding: 40px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.56);
+    text-align: center;
+    height: 400px;
+    background-color: #e8e8e8;
+  }
+  .naeli_name {
+    font-family: "MaplestoryOTFLight";
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.56);
+  }
+  .naeli_num {
+    font-family: "MaplestoryOTFLight";
+    display: inline-block;
+    padding: 3px 0 5px 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.26);
+    font-size: 24px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  .naeli_time {
+    color: rgba(0, 0, 0, 0.56);
+    font-family: "MaplestoryOTFLight";
+    padding-top: 9px;
+    line-height: 1.4;
   }
 
   /* ticketing_wrapper */

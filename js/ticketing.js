@@ -1,3 +1,54 @@
+// aside js
+document.addEventListener("DOMContentLoaded", function () {
+  const quickMenu = document.querySelector(".quick_menu");
+  const quickBtn = document.querySelector(".quick_btn");
+
+  quickBtn.addEventListener("click", function () {
+    quickMenu.classList.toggle("open");
+  });
+});
+
+// res_menu btn
+const menuWrapper = document.getElementById("menuWrapper");
+const resMenuBtn = menuWrapper.querySelector(".res_menu_btn");
+const resMenuUl = menuWrapper.querySelector(".res_menu_ul");
+
+resMenuBtn.addEventListener("click", function () {
+  if (resMenuUl.style.height === "auto") {
+    resMenuUl.style.height = "0";
+    resMenuBtn.classList.remove("active");
+  } else {
+    resMenuUl.style.height = "auto";
+    resMenuBtn.classList.add("active");
+  }
+});
+
+// 반응형 햄버거 변수명 지정
+let mobileBtn = document.querySelector(".mobile_utill > input"),
+  body = document.querySelector("body"),
+  mobileBtnCount = 0;
+
+// 반응형 body 스크롤 정지 및 실행
+function mobileBtnCountUp() {
+  mobileBtnCount++;
+}
+
+function mobileBtnCountDown() {
+  mobileBtnCount--;
+}
+
+mobileBtn.addEventListener("click", function () {
+  console.log(mobileBtnCount);
+  if (mobileBtnCount == 0) {
+    body.style.overflowY = "hidden";
+    mobileBtnCountUp();
+  } else if (mobileBtnCount == 1) {
+    body.style.overflowY = "scroll";
+    mobileBtnCountDown();
+  }
+});
+
+// tab_banner js
 var targetLink = document.querySelectorAll(".tab_menu a"),
   tabContent = document.querySelectorAll(".tab_content > div");
 
@@ -32,7 +83,7 @@ for (var i = 0; i < targetLink.length; i++) {
 // 시작 시, 처음 tab은 보이게 함
 document.getElementById("tab1").style.display = "block";
 
-// passenger 팝업 창 count
+// passenger_popup_count js
 function count1(type) {
   // 결과를 표시할 element
   const tab1ResultElement1 = document.getElementById("tab_1_result_1"),

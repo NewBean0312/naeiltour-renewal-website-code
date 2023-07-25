@@ -8,11 +8,6 @@ let mainBg = document.querySelector(".main_container"),
   mainImgNum = bgImg.length, // li
   currentBg = 0;
 
-// 반응형 햄버거 변수명 지정
-let mobileBtn = document.querySelector(".mobile_utill > input"),
-  body = document.querySelector("body"),
-  mobileBtnCount = 0;
-
 // 메인 배경 이미지 슬라이드
 // 배경이미지 가로배열
 if (mainImgNum > 0) {
@@ -121,6 +116,11 @@ mainBg.addEventListener("touchend", (e) => {
     }
   }
 });
+
+// 반응형 햄버거 변수명 지정
+let mobileBtn = document.querySelector(".mobile_utill > input"),
+  body = document.querySelector("body"),
+  mobileBtnCount = 0;
 
 // 반응형 body 스크롤 정지 및 실행
 function mobileBtnCountUp() {
