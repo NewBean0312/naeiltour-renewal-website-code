@@ -246,6 +246,7 @@ let sectionEndPoint = 0;
 
 // 임시
 
+
 function adjustLayout() {
   var width = window.innerWidth;
 
@@ -454,4 +455,19 @@ document.addEventListener("DOMContentLoaded", function () {
   quickBtn.addEventListener("click", function () {
     quickMenu.classList.toggle("open");
   });
+});
+
+/* res_menu btn */
+const menuWrapper = document.getElementById("menuWrapper");
+const resMenuBtn = menuWrapper.querySelector(".res_menu_btn");
+const resMenuUl = menuWrapper.querySelector(".res_menu_ul");
+
+resMenuBtn.addEventListener("click", function () {
+  if (resMenuUl.style.height === "auto") {
+    resMenuUl.style.height = "0";
+    resMenuBtn.classList.remove("active");
+  } else {
+    resMenuUl.style.height = "auto";
+    resMenuBtn.classList.add("active");
+  }
 });

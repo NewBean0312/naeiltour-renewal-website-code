@@ -63,7 +63,7 @@ a {
   z-index: 999;
   left: 0;
   width: 100%;
-  height: 850px;
+  height: 1800px;
   margin: 0 auto;
   color: #000;
   overflow-x: hidden;
@@ -1131,6 +1131,121 @@ button.planner_btn span.img_box > img {
   height: 370px;
 }
 
+/* experience */
+.experience {
+  margin-top: 200px;
+  background: #d0e7f6;
+  padding: 5rem 2rem;
+}
+.exp_inner {
+  width: 1280px;
+  margin: auto;
+}
+.exp_inner p {
+  font-family: "MaplestoryOTFLight";
+  font-size: 28px;
+}
+.exp_inner ul {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+.exp_inner ul li {
+  width: 100%;
+  text-align: center;
+  height: 130px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: relative;
+  cursor: pointer;
+}
+.exp_inner ul li:hover {
+  background-color: #fff;
+}
+.exp_inner ul li:hover a {
+  text-decoration: underline;
+}
+.exp_inner ul li:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/air_img01.png) center center;
+  background-size: cover;
+}
+.exp_inner ul li:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/air_img02.png) center center;
+  background-size: cover;
+}
+.exp_inner ul li:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/air_img03.png) center center;
+  background-size: cover;
+}
+.exp_inner ul li:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/air_img04.png) center center;
+  background-size: cover;
+}
+.exp_inner ul li:nth-child(5)::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/air_img05.png) center center;
+  background-size: cover;
+}
+.exp_inner ul li:nth-child(6)::after {
+  content: "";
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/air_img06.png) center center;
+  background-size: cover;
+}
+.exp_inner ul li a {
+  font-size: 17px;
+  font-family: "MaplestoryOTFLight";
+}
+.exp_img {
+  height: 300px;
+  margin: -0.8px -0.2px 0;
+  background: url(../images/booking-visual--pc.jpg) 50% 50% / auto 100%
+    no-repeat;
+}
+.exp_img img {
+}
+
 /* contact_box */
 .contact_box {
   width: 1903px;
@@ -1304,4 +1419,182 @@ button.planner_btn span.img_box > img {
   color: #999;
   font-size: 13px;
   font-weight: 400;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 1903px;
+  background-color: #f3f4f8;
+}
+
+.content {
+  width: 33.33%;
+  display: inline-block;
+  margin: 0 50px;
+  position: relative;
+  height: 420px;
+  max-width: 300px;
+}
+
+.layer {
+  width: 600px;
+  height: 200px;
+  transition: all 0.4s;
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+
+.layer img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  width: 200px;
+  transform: translateY(-50%);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.circle:hover .circle_shine {
+  top: 330px;
+  left: -200px;
+}
+
+.circle_shine {
+  background: white;
+  width: 600px;
+  transition: 0.3s;
+  height: 200px;
+  opacity: 0.2;
+  top: -10px;
+  left: -90px;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: 2;
+}
+
+.circle:hover h2,
+.circle:hover h3 {
+  opacity: 1;
+  top: -36px;
+}
+
+.circle:hover .content_shadow {
+  transform: scale(1.1);
+  top: -22px;
+}
+
+.circle:hover h3 {
+  transition: all 0.2s 0.04s;
+}
+
+.circle:hover h2 {
+  transition: all 0.2s;
+}
+
+.circle .circle_inner__layer:nth-of-type(1) {
+  top: 0px;
+  left: 0px;
+}
+
+.circle .circle_inner__layer:nth-of-type(2) {
+  top: 0px;
+  left: -210px;
+}
+
+.circle .circle_inner__layer:nth-of-type(3) {
+  top: 0px;
+  left: -440px;
+}
+
+.circle_title {
+  text-align: center;
+}
+
+.circle_title h2,
+.circle_title h3 {
+  opacity: 0;
+  color: #4a7479;
+  margin: 0;
+  transition: all 0.2s 0.04s;
+  position: relative;
+  top: -10px;
+}
+
+.circle_title h3 {
+  transition: all 0.2s;
+  color: #b0d5d6;
+  font-size: 15px;
+}
+
+.circle_inner {
+  border-radius: 200px;
+  background: #b0d5d6;
+  overflow: hidden;
+  margin: auto;
+  width: 200px;
+  z-index: 1;
+  transition: all 0.3s;
+  height: 200px;
+  position: relative;
+}
+
+.circle_inner:hover {
+  transform: scale(1.1);
+}
+
+.circle_inner:hover .circle_inner__layer:nth-of-type(1) {
+  left: -80px;
+  transition: all 4s linear;
+}
+
+.circle_inner:hover .circle_inner__layer:nth-of-type(2) {
+  left: -400px;
+  transition: all 4s linear;
+}
+
+.circle_inner:hover .circle_inner__layer:nth-of-type(3) {
+  left: -140px;
+  transition: all 4s linear;
+}
+
+.circle_inner__layer {
+  width: 600px;
+  height: 200px;
+  transition: all 0.4s;
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
+
+.content_shadow {
+  width: 200px;
+  box-shadow: 0px 31px 19px -2px #e0e8f9;
+  height: 20px;
+  border-radius: 70%;
+  position: relative;
+  top: -44px;
+  transition: all 0.3s;
+  z-index: 0;
 }
