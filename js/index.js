@@ -134,10 +134,10 @@ function mobileBtnCountDown() {
 mobileBtn.addEventListener("click", function () {
   console.log(mobileBtnCount);
   if (mobileBtnCount == 0) {
-    body.style.overflow = "hidden";
+    body.style.overflowY = "hidden";
     mobileBtnCountUp();
   } else if (mobileBtnCount == 1) {
-    body.style.overflow = "scroll";
+    body.style.overflowY = "scroll";
     mobileBtnCountDown();
   }
 });
