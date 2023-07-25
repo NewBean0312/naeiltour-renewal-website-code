@@ -432,7 +432,7 @@ nav .main_gnb li a {
 }
 
 .menu_icon:checked + label span {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .menu_icon:checked + label span:nth-child(1) {
@@ -558,6 +558,7 @@ nav .main_gnb li a {
   width: 100%;
   height: 100%;
   border-top: 4px solid transparent;
+  border-left: 1.5px solid transparent;
   background-image: linear-gradient(#fff, #fff),
     linear-gradient(to right, #61b3ff 0%, #00256c 100%);
   background-origin: border-box;

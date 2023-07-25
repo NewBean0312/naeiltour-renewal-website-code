@@ -2,6 +2,7 @@
   /* main */
   .main_container {
     width: 500px;
+    height: 2185px;
   }
 
   .main_header {
@@ -258,13 +259,11 @@
   /* ticketing_wrapper */
   .ticketing_wrapper {
     width: 500px;
-    height: 800px;
+    height: 820px;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     background-color: #f1f3f6;
-    /* 임시 */
-    border-radius: 25px;
   }
 
   .ticketing_wrapper.tab3_height {
@@ -534,6 +533,14 @@
     border-radius: 0 0 25px 25px;
   }
 
+  /* content_box_col_3 */
+  .content_box_row_1 > div.content_box_col_3 {
+    display: none;
+  }
+  .content_box_col_3 > .plan_add_btn {
+    display: none;
+  }
+
   /* content_box_row_2 */
   .content_box .content_box_row_2 {
     display: block;
@@ -541,11 +548,40 @@
     height: auto;
   }
 
+  /* experience */
+  .experience {
+    margin-top: 0;
+    padding: 5rem 1rem;
+  }
+  .exp_inner {
+    width: 500px;
+  }
+  .exp_inner p {
+    font-size: 20px;
+  }
+  .exp_inner ul {
+    flex-direction: column;
+    gap: 22px;
+  }
+  .exp_inner ul li {
+    width: 93%;
+  }
+  .exp_img {
+    height: 208px;
+    margin: 0;
+    background: url(../images/booking-visual--m.jpg) 50% 100%/100% auto
+      no-repeat;
+  }
+
+  .page {
+    display: none;
+  }
+
   /* contact_box */
   .contact_box {
     width: 500px;
     height: 100px;
-    margin-top: 80px;
+    margin-top: -5px;
     margin-left: auto;
     margin-right: auto;
   }

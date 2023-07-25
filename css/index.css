@@ -913,7 +913,7 @@ nav .main_gnb li a {
 }
 
 .menu_icon:checked + label span {
-  background-color: #000;
+  background-color: #fff;
 }
 
 .menu_icon:checked + label span:nth-child(1) {

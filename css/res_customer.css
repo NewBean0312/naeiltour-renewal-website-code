@@ -255,65 +255,10 @@
     line-height: 1.4;
   }
 
-  /* ticketing_wrapper */
-  .ticketing_wrapper {
-    width: 500px;
-    height: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f1f3f6;
-    /* 임시 */
-    border-radius: 25px;
-  }
-
-  .ticketing_wrapper.tab3_height {
-    height: 800px;
-  }
-
-  .ticketing_box > h1 {
-    padding-top: 20px;
-  }
-
-  .ticketing_box {
-    width: 480px;
-  }
-
-  /* tab_menu */
-  .tab_menu {
-    display: flex;
-    justify-content: space-around;
-    width: 200px;
-    margin: 0 auto;
-  }
-
-  .tab_menu li {
-    position: relative;
-    width: auto;
-    height: 30px;
-    margin-right: 10px;
-  }
-
-  .tab_menu li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: gray;
-    font-family: "MaplestoryOTFLight";
-    padding-left: 0;
-    font-size: 17px;
-  }
-
-  .tab_menu .outside_circle,
-  .outside_circle > .inside_circle {
-    display: none;
-  }
-
-  .tab_menu li a.active {
-    font-family: "MaplestoryOTFBold";
-    color: #2b54c4;
-    border-bottom: 3px solid #00256c;
+  /* sub_page_customer */
+  .sub_page_customer {
+    margin-top: 0;
+    padding-top: 50px;
   }
 
   .customer_title {

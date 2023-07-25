@@ -81,15 +81,15 @@ function updateSlide() {
 let mainStartPoint = 0;
 let mainEndPoint = 0;
 
-// main 드래그 이벤트
-mainBg.addEventListener("touchstart", (e) => {
-  console.log("touchstart", e.touches[0].pageX);
-  mainStartPoint = e.touches[0].pageX; // 터치가 시작되는 위치 저장
+// main 마우스 드래그 이벤트
+mainBg.addEventListener("mousedown", (e) => {
+  console.log("mousedown", e.pageX);
+  mainStartPoint = e.pageX; // 마우스 드래그 시작 위치 저장
 });
 
-mainBg.addEventListener("touchend", (e) => {
-  console.log("touchend", e.changedTouches[0].pageX);
-  mainEndPoint = e.changedTouches[0].pageX; // 터치가 끝나는 위치 저장
+mainBg.addEventListener("mouseup", (e) => {
+  console.log("mouseup", e.pageX);
+  mainEndPoint = e.pageX; // 마우스 드래그 끝 위치 저장
   if (mainStartPoint < mainEndPoint) {
     // 마우스가 오른쪽으로 드래그 된 경우
     console.log("prev move");
@@ -109,13 +109,45 @@ mainBg.addEventListener("touchend", (e) => {
     console.log("next move");
     goBg(currentBg + 1);
 
-    if (currentIndex === 0) {
-      goToSlide(sloganslideCount - 1);
-    } else {
-      goToSlide(currentIndex - 1);
-    }
+    goToSlide(currentIndex + 1);
   }
 });
+
+// main 모바일 터치 드래그 버전
+// mainBg.addEventListener("touchstart", (e) => {
+//   console.log("touchstart", e.touches[0].pageX);
+//   mainStartPoint = e.touches[0].pageX; // 터치가 시작되는 위치 저장
+// });
+
+// mainBg.addEventListener("touchend", (e) => {
+//   console.log("touchend", e.changedTouches[0].pageX);
+//   mainEndPoint = e.changedTouches[0].pageX; // 터치가 끝나는 위치 저장
+//   if (mainStartPoint < mainEndPoint) {
+//     // 마우스가 오른쪽으로 드래그 된 경우
+//     console.log("prev move");
+//     if (currentBg === 0) {
+//       goBg(bgImg.length - 1);
+//     } else {
+//       goBg(currentBg - 1);
+//     }
+
+//     if (currentIndex === 0) {
+//       goToSlide(sloganslideCount - 1);
+//     } else {
+//       goToSlide(currentIndex - 1);
+//     }
+//   } else if (mainStartPoint > mainEndPoint) {
+//     // 마우스가 왼쪽으로 드래그 된 경우
+//     console.log("next move");
+//     goBg(currentBg + 1);
+
+//     if (currentIndex === 0) {
+//       goToSlide(sloganslideCount - 1);
+//     } else {
+//       goToSlide(currentIndex - 1);
+//     }
+//   }
+// });
 
 // 반응형 햄버거 변수명 지정
 let mobileBtn = document.querySelector(".mobile_utill > input"),
@@ -245,8 +277,6 @@ let sectionEndPoint = 0;
 // });
 
 // 임시
-
-
 function adjustLayout() {
   var width = window.innerWidth;
 
