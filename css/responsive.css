@@ -152,10 +152,7 @@
     top: 15px;
   }
 
-  /* mobile_utill */
-  .menu_icon + label {
-    display: block;
-  }
+  
 
   /* option_banner */
   .option_banner {
@@ -223,6 +220,11 @@
     margin-top: 30px;
     font-family: "MaplestoryOTFLight";
     font-size: 23px;
+  }
+
+  /* mobile_utill */
+  .menu_icon + label {
+    display: block;
   }
 
   /* login_box */

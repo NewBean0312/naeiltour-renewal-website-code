@@ -412,7 +412,7 @@ nav .main_sub_menu > li > a {
   z-index: 999;
   width: 100%;
   height: 550px;
-  background-color: white;
+  background-color: #fff;
 }
 
 .main_sub_menu > li:hover > div.main_sub_menu_2 {
@@ -868,9 +868,6 @@ nav .main_gnb li a {
 /* .mobile_utill */
 .aside .mobile_utill {
   display: block;
-  top: 0;
-  right: 0;
-  z-index: 999;
 }
 
 .menu_icon {
