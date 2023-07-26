@@ -833,7 +833,10 @@
                     <div class="dim"></div>
                   </div>
                   <div class="planner">
-                    <button class="planner_btn">
+                    <button
+                      class="planner_btn"
+                      onclick="location.href='#tab1_planner_pop_1'"
+                    >
                       <div>출발일</div>
                       <div>
                         <span class="img_box">
@@ -841,6 +844,18 @@
                         >가는날~오는날
                       </div>
                     </button>
+                    <div class="popupfocus" id="tab1_planner_pop_1"></div>
+                    <div class="popup planner_pop">
+                      <div class="planner_pop_col_1">
+                        <h1>날짜 선택</h1>
+                        <div class="close_btn">
+                          <a href="#none">
+                            <img src="./images/ring-box__close.svg" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dim"></div>
                   </div>
                   <div class="personnel">
                     <button
@@ -1080,7 +1095,10 @@
                     <div class="dim"></div>
                   </div>
                   <div class="planner">
-                    <button class="planner_btn">
+                    <button
+                      class="planner_btn"
+                      onclick="location.href='#tab2_planner_pop_1'"
+                    >
                       <div>출발일</div>
                       <div>
                         <span class="img_box">
@@ -1088,6 +1106,18 @@
                         >날짜 선택
                       </div>
                     </button>
+                    <div class="popupfocus" id="tab2_planner_pop_1"></div>
+                    <div class="popup planner_pop">
+                      <div class="planner_pop_col_1">
+                        <h1>날짜 선택</h1>
+                        <div class="close_btn">
+                          <a href="#none">
+                            <img src="./images/ring-box__close.svg" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dim"></div>
                   </div>
                   <div class="personnel">
                     <button
@@ -1341,7 +1371,10 @@
                         <div class="dim"></div>
                       </div>
                       <div class="planner">
-                        <button class="planner_btn">
+                        <button
+                          class="planner_btn"
+                          onclick="location.href='#tab3_planner_pop_1'"
+                        >
                           <div>출발일</div>
                           <div>
                             <span class="img_box">
@@ -1351,6 +1384,21 @@
                             >날짜 선택
                           </div>
                         </button>
+                        <div class="popupfocus" id="tab3_planner_pop_1"></div>
+                        <div class="popup planner_pop">
+                          <div class="planner_pop_col_1">
+                            <h1>날짜 선택</h1>
+                            <div class="close_btn">
+                              <a href="#none">
+                                <img
+                                  src="./images/ring-box__close.svg"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dim"></div>
                       </div>
                     </div>
                     <div class="dashed_line"></div>
@@ -1438,7 +1486,10 @@
                         <div class="dim"></div>
                       </div>
                       <div class="planner">
-                        <button class="planner_btn">
+                        <button
+                          class="planner_btn"
+                          onclick="location.href='#tab3_planner_pop_2'"
+                        >
                           <div>출발일</div>
                           <div>
                             <span class="img_box">
@@ -1448,6 +1499,21 @@
                             >날짜 선택
                           </div>
                         </button>
+                        <div class="popupfocus" id="tab3_planner_pop_2"></div>
+                        <div class="popup planner_pop">
+                          <div class="planner_pop_col_1">
+                            <h1>날짜 선택</h1>
+                            <div class="close_btn">
+                              <a href="#none">
+                                <img
+                                  src="./images/ring-box__close.svg"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dim"></div>
                       </div>
                     </div>
                     <div class="dashed_line"></div>
@@ -1575,49 +1641,51 @@
                       </div>
                       <div class="dim"></div>
                       <button
-                      class="rating_btn"
-                      onclick="location.href='#tab3_rating_pop'"
-                    >
-                      <div>좌석 등급</div>
-                      <div>선택하세요.</div>
-                      <div></div>
-                      <div class="img_box">
-                        <img src="./images//icon-line-seat-quick.svg" alt="" />
-                      </div>
-                    </button>
-                    <div class="popupfocus" id="tab3_rating_pop"></div>
-                    <div class="popup rating_pop">
-                      <div class="rating_pop_col_1">
-                        <h1>좌석 등급 선택</h1>
-                        <div class="close_btn">
-                          <a href="#none">
-                            <img src="./images/ring-box__close.svg" alt="" />
-                          </a>
+                        class="rating_btn"
+                        onclick="location.href='#tab3_rating_pop'"
+                      >
+                        <div>좌석 등급</div>
+                        <div>선택하세요.</div>
+                        <div></div>
+                        <div class="img_box">
+                          <img
+                            src="./images//icon-line-seat-quick.svg"
+                            alt=""
+                          />
                         </div>
-                      </div>
-                      <div class="rating_pop_col_2">
-                        <div class="rating_select_box">
-                          <div>일반석</div>
-                          <div>프레스티지석</div>
-                          <div>일등석</div>
-                        </div>
-                        <div class="upgrade_box">
-                          <div>
-                            <h3>구매와 동시 승급</h3>
-                            <span
-                              ><img src="./images/ico-opener.svg" alt=""
-                            /></span>
-                          </div>
-                          <div class="rating_select_box">
-                            <div>일반석 구매 + 프레스티지석 승급</div>
-                            <div>프레스티지석 구매 + 일등석 승급</div>
-                          </div>
-                        </div>
-                      </div>
-                      <button class="select_btn">선택</button>
-                    </div>
-                    <div class="dim"></div>
                       </button>
+                      <div class="popupfocus" id="tab3_rating_pop"></div>
+                      <div class="popup rating_pop">
+                        <div class="rating_pop_col_1">
+                          <h1>좌석 등급 선택</h1>
+                          <div class="close_btn">
+                            <a href="#none">
+                              <img src="./images/ring-box__close.svg" alt="" />
+                            </a>
+                          </div>
+                        </div>
+                        <div class="rating_pop_col_2">
+                          <div class="rating_select_box">
+                            <div>일반석</div>
+                            <div>프레스티지석</div>
+                            <div>일등석</div>
+                          </div>
+                          <div class="upgrade_box">
+                            <div>
+                              <h3>구매와 동시 승급</h3>
+                              <span
+                                ><img src="./images/ico-opener.svg" alt=""
+                              /></span>
+                            </div>
+                            <div class="rating_select_box">
+                              <div>일반석 구매 + 프레스티지석 승급</div>
+                              <div>프레스티지석 구매 + 일등석 승급</div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="select_btn">선택</button>
+                      </div>
+                      <div class="dim"></div>
                     </div>
                   </div>
                 </div>

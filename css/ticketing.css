@@ -607,8 +607,13 @@ nav .main_gnb li a {
 .passenger_pop {
   height: 611px;
 }
+
 .rating_pop {
   height: 470px;
+}
+
+.planner_pop {
+  height: 846px;
 }
 
 .popupfocus:target + .popup {
@@ -711,6 +716,18 @@ nav .main_gnb li a {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
   opacity: 0;
+}
+
+/* planner_pop_col_1 */
+.popup > .planner_pop_col_1 {
+  position: relative;
+  width: 95%;
+  height: 30px;
+  margin: 20px auto;
+}
+
+.planner_pop_col_1 > h1 {
+  font-size: 23px;
 }
 
 /* passenger_pop_col_1 */
