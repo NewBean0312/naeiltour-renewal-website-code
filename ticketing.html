@@ -1207,7 +1207,10 @@
                       <button class="select_btn">선택</button>
                     </div>
                     <div class="dim"></div>
-                    <button class="rating_btn">
+                    <button
+                      class="rating_btn"
+                      onclick="location.href='#tab2_rating_pop'"
+                    >
                       <div>좌석 등급</div>
                       <div>선택하세요.</div>
                       <div></div>
@@ -1215,6 +1218,38 @@
                         <img src="./images//icon-line-seat-quick.svg" alt="" />
                       </div>
                     </button>
+                    <div class="popupfocus" id="tab2_rating_pop"></div>
+                    <div class="popup rating_pop">
+                      <div class="rating_pop_col_1">
+                        <h1>좌석 등급 선택</h1>
+                        <div class="close_btn">
+                          <a href="#none">
+                            <img src="./images/ring-box__close.svg" alt="" />
+                          </a>
+                        </div>
+                      </div>
+                      <div class="rating_pop_col_2">
+                        <div class="rating_select_box">
+                          <div>일반석</div>
+                          <div>프레스티지석</div>
+                          <div>일등석</div>
+                        </div>
+                        <div class="upgrade_box">
+                          <div>
+                            <h3>구매와 동시 승급</h3>
+                            <span
+                              ><img src="./images/ico-opener.svg" alt=""
+                            /></span>
+                          </div>
+                          <div class="rating_select_box">
+                            <div>일반석 구매 + 프레스티지석 승급</div>
+                            <div>프레스티지석 구매 + 일등석 승급</div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="select_btn">선택</button>
+                    </div>
+                    <div class="dim"></div>
                   </div>
                 </div>
                 <button class="airplane_search_btn">항공편 검색</button>
@@ -1322,10 +1357,42 @@
                     <div class="content_box_col_2">
                       <div class="destination">
                         <div class="journey">여정2</div>
-                        <button class="start_btn">
+                        <button
+                          class="start_btn"
+                          onclick="location.href='#tab3_start_pop_2'"
+                        >
                           <span>FROM</span>
                           <span>출발지</span>
                         </button>
+                        <div class="popupfocus" id="tab3_start_pop_2"></div>
+                        <div class="popup">
+                          <div class="destination_pop_col_1">
+                            <h1>출발지 검색</h1>
+                            <div class="close_btn">
+                              <a href="#none">
+                                <img
+                                  src="./images/ring-box__close.svg"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="destination_pop_col_2">
+                            <input
+                              type="text"
+                              required
+                              placeholder="도시, 공항"
+                            />
+                            <div>
+                              <img
+                                src="./images/search-airport__local.svg"
+                                alt=""
+                              />
+                              모든 지역 보기
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dim"></div>
                         <div class="route">
                           <div></div>
                           <div>
@@ -1333,10 +1400,42 @@
                           </div>
                           <div></div>
                         </div>
-                        <button class="arrival_btn">
-                          <span>To</span>
+                        <button
+                          class="arrival_btn"
+                          onclick="location.href='#tab3_arrival_pop_1'"
+                        >
+                          <span>TO</span>
                           <span>도착지</span>
                         </button>
+                        <div class="popupfocus" id="tab3_arrival_pop_1"></div>
+                        <div class="popup">
+                          <div class="destination_pop_col_1">
+                            <h1>도착지 검색</h1>
+                            <div class="close_btn">
+                              <a href="#none">
+                                <img
+                                  src="./images/ring-box__close.svg"
+                                  alt=""
+                                />
+                              </a>
+                            </div>
+                          </div>
+                          <div class="destination_pop_col_2">
+                            <input
+                              type="text"
+                              required
+                              placeholder="도시, 공항"
+                            />
+                            <div>
+                              <img
+                                src="./images/search-airport__local.svg"
+                                alt=""
+                              />
+                              모든 지역 보기
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dim"></div>
                       </div>
                       <div class="planner">
                         <button class="planner_btn">
@@ -1475,16 +1574,49 @@
                         <button class="select_btn">선택</button>
                       </div>
                       <div class="dim"></div>
-                      <button class="rating_btn">
-                        <div>좌석 등급</div>
-                        <div>선택하세요.</div>
-                        <div></div>
-                        <div class="img_box">
-                          <img
-                            src="./images//icon-line-seat-quick.svg"
-                            alt=""
-                          />
+                      <button
+                      class="rating_btn"
+                      onclick="location.href='#tab3_rating_pop'"
+                    >
+                      <div>좌석 등급</div>
+                      <div>선택하세요.</div>
+                      <div></div>
+                      <div class="img_box">
+                        <img src="./images//icon-line-seat-quick.svg" alt="" />
+                      </div>
+                    </button>
+                    <div class="popupfocus" id="tab3_rating_pop"></div>
+                    <div class="popup rating_pop">
+                      <div class="rating_pop_col_1">
+                        <h1>좌석 등급 선택</h1>
+                        <div class="close_btn">
+                          <a href="#none">
+                            <img src="./images/ring-box__close.svg" alt="" />
+                          </a>
                         </div>
+                      </div>
+                      <div class="rating_pop_col_2">
+                        <div class="rating_select_box">
+                          <div>일반석</div>
+                          <div>프레스티지석</div>
+                          <div>일등석</div>
+                        </div>
+                        <div class="upgrade_box">
+                          <div>
+                            <h3>구매와 동시 승급</h3>
+                            <span
+                              ><img src="./images/ico-opener.svg" alt=""
+                            /></span>
+                          </div>
+                          <div class="rating_select_box">
+                            <div>일반석 구매 + 프레스티지석 승급</div>
+                            <div>프레스티지석 구매 + 일등석 승급</div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="select_btn">선택</button>
+                    </div>
+                    <div class="dim"></div>
                       </button>
                     </div>
                   </div>
