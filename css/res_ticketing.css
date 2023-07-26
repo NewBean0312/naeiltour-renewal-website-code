@@ -548,6 +548,18 @@
     height: auto;
   }
 
+  .popupfocus {
+    display: none;
+  }
+
+  .popup {
+    display: none;
+  }
+
+  .popupfocus:target + .popup + .dim {
+    display: none;
+  }
+
   /* experience */
   .experience {
     margin-top: 0;
