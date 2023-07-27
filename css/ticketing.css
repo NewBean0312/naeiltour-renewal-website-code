@@ -781,6 +781,7 @@ nav .main_gnb li a {
   top: 32%;
 }
 .choice_btn {
+  display: flex;
   font-family: "MaplestoryOTFLight";
   width: 150px;
   height: 48px;
@@ -794,6 +795,12 @@ nav .main_gnb li a {
   color: #fff;
   cursor: pointer;
 }
+
+.choice_btn > a {
+  width: 100%;
+  height: 100%;
+}
+
 .choice_btn:hover {
   box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
 }
@@ -1045,15 +1052,24 @@ nav .main_gnb li a {
 
 /* select_btn */
 .popup > .select_btn {
-  display: block;
+  display: flex;
   width: 240px;
   height: 50px;
   margin: 15px auto 0;
   border: none;
   background: #013066;
+  border-radius: 10px;
   font-family: "MaplestoryOTFLight";
   color: #fff;
-  cursor: pointer;
+}
+
+.select_btn > a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .popup > .select_btn:hover {
@@ -1136,18 +1152,6 @@ nav .main_gnb li a {
   box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
 }
 
-/* select_btn */
-.popup > .select_btn {
-  display: block;
-  width: 240px;
-  height: 50px;
-  margin: 15px auto 0;
-  border: none;
-  background: #013066;
-  font-family: "MaplestoryOTFLight";
-  color: #fff;
-  cursor: pointer;
-}
 
 /* destination */
 .tab_content .destination {
