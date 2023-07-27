@@ -627,6 +627,177 @@ nav .main_gnb li a {
   z-index: 3;
 }
 
+/* ======== Calendar ======== */
+.planner_pop_col_2 .my-calendar {
+  width: 700px;
+  margin: 30px;
+  text-align: center;
+  font-weight: 800;
+  border: 1px solid #ddd;
+  cursor: default;
+}
+.my-calendar .clicked-date {
+  border-radius: 25px;
+  margin-top: 136px;
+  float: left;
+  width: 42%;
+  padding: 46px 0 26px;
+  background: #ddd;
+}
+.my-calendar .calendar-box {
+  margin-top: 100px;
+  float: right;
+  width: 58%;
+  padding-left: 30px;
+}
+
+.clicked-date .tab1-cal-day,
+.clicked-date .tab2-cal-day,
+.clicked-date .tab3_1-cal-day,
+.clicked-date .tab3_2-cal-day {
+  font-size: 24px;
+}
+.clicked-date .tab1-cal-date,
+.clicked-date .tab2-cal-date,
+.clicked-date .tab3_1-cal-date,
+.clicked-date .tab3_2-cal-date {
+  font-size: 130px;
+}
+
+.ctr-box {
+  padding: 0 16px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.ctr-box .tab1-btn-cal,
+.ctr-box .tab2-btn-cal,
+.ctr-box .tab3_1-btn-cal,
+.ctr-box .tab3_2-btn-cal {
+  position: relative;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.ctr-box .tab1-btn-cal:after,
+.ctr-box .tab2-btn-cal:after,
+.ctr-box .tab3_1-btn-cal:after,
+.ctr-box .tab3_2-btn-cal:after {
+  content: "<";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ctr-box .tab1-btn-cal.next,
+.ctr-box .tab2-btn-cal.next,
+.ctr-box .tab3_1-btn-cal.next,
+.ctr-box .tab3_2-btn-cal.next {
+  float: right;
+}
+.ctr-box .tab1-btn-cal.next:after,
+.ctr-box .tab2-btn-cal.next:after,
+.ctr-box .tab3_1-btn-cal.next:after,
+.ctr-box .tab3_2-btn-cal.next:after {
+  content: ">";
+}
+
+.cal-table {
+  width: 100%;
+}
+.cal-table th {
+  width: 14.2857%;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 900;
+}
+.cal-table td {
+  padding: 3px 0;
+  height: 50px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.cal-table td.day {
+  position: relative;
+  cursor: pointer;
+}
+.cal-table td.today {
+  background: #ffd255;
+  border-radius: 50%;
+  color: #fff;
+}
+.cal-table td.day-active {
+  background: #ff8585;
+  border-radius: 50%;
+  color: #fff;
+}
+.cal-table td.has-event:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffc107;
+}
+.choice {
+  width: 95%;
+  margin: auto;
+  margin-top: 550px;
+  min-height: 74px;
+  padding: 0 50px;
+  background-color: #f8f9fc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.choice_text {
+  font-size: 14px;
+  color: #555;
+  line-height: 74px;
+  margin-right: 20px;
+  position: relative;
+}
+.choice_text::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.4rem;
+  background: url(../images/ico-caption.svg) center center/16px 16px no-repeat;
+  vertical-align: -0.3rem;
+  left: -5.5%;
+  top: 32%;
+}
+.choice_btn {
+  font-family: "MaplestoryOTFLight";
+  width: 150px;
+  height: 48px;
+  border: 1px solid #bcbcbc;
+  background-color: #00256c !important;
+  padding: 11px 11px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+.choice_btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
+}
+
 /* .destination_pop_col_1 */
 .popup > .destination_pop_col_1 {
   position: relative;
@@ -1539,7 +1710,6 @@ button.planner_btn span.img_box > img {
   font-weight: 400;
 }
 
-
 @import url(https://fonts.googleapis.com/css?family=Nunito:400,700,300);
 
 * {
@@ -1547,7 +1717,7 @@ button.planner_btn span.img_box > img {
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .page {
