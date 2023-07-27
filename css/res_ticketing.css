@@ -548,17 +548,182 @@
     height: auto;
   }
 
+  /* popup */
   .popupfocus {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
 
   .popup {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(0%, 0%);
+    width: 500px;
+    height: 1000px;
+    z-index: -1;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    padding: 20px;
+    opacity: 0;
   }
 
   .popupfocus:target + .popup + .dim {
     display: none;
   }
+
+  /* .destination_pop_col_1 */
+  .popup > .destination_pop_col_1 {
+    margin: 5px auto 0;
+  }
+
+  .destination_pop_col_1 > h1 {
+    font-family: "MaplestoryOTFLight";
+    font-size: 20px;
+  }
+
+  /* destination_pop_col_2 */
+  .popup > .destination_pop_col_2 {
+    position: relative;
+    height: 150px;
+  }
+
+  .destination_pop_col_2 > input {
+    height: 50px;
+    font-family: "MaplestoryOTFLight";
+    font-size: 20px;
+  }
+
+  /* passenger_pop_col_1 */
+  .popup > .passenger_pop_col_1 {
+    margin: 5px auto;
+  }
+
+  .passenger_pop_col_1 > h1 {
+    font-size: 20px;
+  }
+
+  /* passenger_pop_col_2 */
+  .popup > .passenger_pop_col_2 {
+    display: block;
+    height: 210px;
+    margin-top: 30px;
+  }
+
+  .passenger_pop_col_2 > div {
+    display: flex;
+    width: 100%;
+    height: 70px;
+  }
+
+  .passenger_pop_col_2 > div > div {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  .passenger_pop_col_2 > div > div:first-child {
+    justify-self: start;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .passenger_pop_col_2 > div > div:last-child {
+    justify-self: end;
+    height: 100%;
+    margin-top: 0;
+  }
+
+  .passenger_pop_col_2 h3 {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  /* count_box */
+  .passenger_pop_col_2 .count_box {
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* notice_box */
+  .popup > .notice_box {
+    width: 100%;
+    height: 270px;
+    margin-top: 40px;
+    padding: 20px 10px;
+    background-color: #f8f9fc;
+  }
+
+  .notice_box > ul > li {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .notice_box > ul > li:nth-child(3)::after {
+    display: block;
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .notice_box > ul > li:last-child {
+    color: #0064de;
+  }
+
+  /* select_btn */
+  .popup > .select_btn {
+    display: block;
+    width: 100%;
+    margin: 10px auto 0;
+  }
+
+  /* rating_pop_col_1 */
+  .rating_pop_col_1 {
+    margin: 5px auto 0;
+  }
+
+  .rating_pop_col_1 > h1 {
+    font-family: "MaplestoryOTFLight";
+    font-size: 20px;
+  }
+
+  /* rating_pop_col_2 */
+  .rating_pop_col_2 {
+    height: 430px;
+    margin: 25px auto 0;
+  }
+
+  /* rating_select_box */
+  .rating_select_box {
+    display: block;
+    height: auto;
+  }
+
+  .rating_select_box > div {
+    height: 52px;
+    margin-top: 10px;
+  }
+
+  /* upgrade_box */
+  .rating_pop_col_2 > .upgrade_box {
+    height: 100px;
+    margin-top: 50px;
+  }
+
+  .upgrade_box > div:first-child {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .upgrade_box > div:last-child {
+    display: block
+  }
+
+  
 
   /* experience */
   .experience {

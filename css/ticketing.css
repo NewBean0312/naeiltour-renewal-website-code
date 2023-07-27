@@ -581,578 +581,6 @@ nav .main_gnb li a {
   border: 1.5px solid #2b54c4;
 }
 
-/* popup */
-.popupfocus {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.popup {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 880px;
-  height: 403px;
-  z-index: -1;
-  border-radius: 10px;
-  background: #fff;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-  padding: 20px;
-  opacity: 0;
-}
-
-.passenger_pop {
-  height: 611px;
-}
-
-.rating_pop {
-  height: 470px;
-}
-
-.planner_pop {
-  height: 846px;
-}
-
-.popupfocus:target + .popup {
-  opacity: 1;
-  z-index: 5;
-}
-
-.popupfocus:target + .popup + .dim {
-  display: block;
-  opacity: 1;
-  z-index: 3;
-}
-
-/* ======== Calendar ======== */
-.planner_pop_col_2 .my-calendar {
-  width: 700px;
-  margin: 30px;
-  text-align: center;
-  font-weight: 800;
-  border: 1px solid #ddd;
-  cursor: default;
-}
-.my-calendar .clicked-date {
-  border-radius: 25px;
-  margin-top: 136px;
-  float: left;
-  width: 42%;
-  padding: 46px 0 26px;
-  background: #ddd;
-}
-.my-calendar .calendar-box {
-  margin-top: 100px;
-  float: right;
-  width: 58%;
-  padding-left: 30px;
-}
-
-.clicked-date .tab1-cal-day,
-.clicked-date .tab2-cal-day,
-.clicked-date .tab3_1-cal-day,
-.clicked-date .tab3_2-cal-day {
-  font-size: 24px;
-}
-.clicked-date .tab1-cal-date,
-.clicked-date .tab2-cal-date,
-.clicked-date .tab3_1-cal-date,
-.clicked-date .tab3_2-cal-date {
-  font-size: 130px;
-}
-
-.ctr-box {
-  padding: 0 16px;
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-.ctr-box .tab1-btn-cal,
-.ctr-box .tab2-btn-cal,
-.ctr-box .tab3_1-btn-cal,
-.ctr-box .tab3_2-btn-cal {
-  position: relative;
-  float: left;
-  width: 25px;
-  height: 25px;
-  margin-top: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
-.ctr-box .tab1-btn-cal:after,
-.ctr-box .tab2-btn-cal:after,
-.ctr-box .tab3_1-btn-cal:after,
-.ctr-box .tab3_2-btn-cal:after {
-  content: "<";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  line-height: 25px;
-  font-weight: bold;
-  font-size: 20px;
-}
-.ctr-box .tab1-btn-cal.next,
-.ctr-box .tab2-btn-cal.next,
-.ctr-box .tab3_1-btn-cal.next,
-.ctr-box .tab3_2-btn-cal.next {
-  float: right;
-}
-.ctr-box .tab1-btn-cal.next:after,
-.ctr-box .tab2-btn-cal.next:after,
-.ctr-box .tab3_1-btn-cal.next:after,
-.ctr-box .tab3_2-btn-cal.next:after {
-  content: ">";
-}
-
-.cal-table {
-  width: 100%;
-}
-.cal-table th {
-  width: 14.2857%;
-  padding-bottom: 5px;
-  font-size: 16px;
-  font-weight: 900;
-}
-.cal-table td {
-  padding: 3px 0;
-  height: 50px;
-  font-size: 15px;
-  vertical-align: middle;
-}
-.cal-table td.day {
-  position: relative;
-  cursor: pointer;
-}
-.cal-table td.today {
-  background: #ffd255;
-  border-radius: 50%;
-  color: #fff;
-}
-.cal-table td.day-active {
-  background: #ff8585;
-  border-radius: 50%;
-  color: #fff;
-}
-.cal-table td.has-event:after {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background: #ffc107;
-}
-.choice {
-  width: 95%;
-  margin: auto;
-  margin-top: 550px;
-  min-height: 74px;
-  padding: 0 50px;
-  background-color: #f8f9fc;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.choice_text {
-  font-size: 14px;
-  color: #555;
-  line-height: 74px;
-  margin-right: 20px;
-  position: relative;
-}
-.choice_text::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 1.6rem;
-  height: 1.6rem;
-  margin-right: 0.4rem;
-  background: url(../images/ico-caption.svg) center center/16px 16px no-repeat;
-  vertical-align: -0.3rem;
-  left: -5.5%;
-  top: 32%;
-}
-.choice_btn {
-  display: flex;
-  font-family: "MaplestoryOTFLight";
-  width: 150px;
-  height: 48px;
-  border: 1px solid #bcbcbc;
-  background-color: #00256c !important;
-  padding: 11px 11px;
-  border-radius: 10px;
-  font-size: 16px;
-  line-height: 1.5;
-  margin-top: 15px;
-  color: #fff;
-  cursor: pointer;
-}
-
-.choice_btn > a {
-  width: 100%;
-  height: 100%;
-}
-
-.choice_btn:hover {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
-}
-
-/* .destination_pop_col_1 */
-.popup > .destination_pop_col_1 {
-  position: relative;
-  width: 95%;
-  height: 30px;
-  margin: 20px auto 0;
-}
-
-.destination_pop_col_1 > h1 {
-  font-size: 23px;
-}
-
-/* close_btn */
-.close_btn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 25px;
-  height: 25px;
-  float: right;
-  box-sizing: border-box;
-}
-
-.close_btn > a {
-  width: 100%;
-  height: 100%;
-}
-
-.close_btn img {
-  width: 100%;
-  height: 100%;
-}
-
-/* destination_pop_col_2 */
-.popup > .destination_pop_col_2 {
-  position: relative;
-  width: 95%;
-  height: 300px;
-  margin: 0 auto;
-}
-
-.destination_pop_col_2 > input {
-  width: 100%;
-  height: 60px;
-  border: none;
-  margin-top: 30px;
-  border-bottom: 1px solid #000;
-  font-family: "MaplestoryOTFLight";
-  font-size: 20px;
-  transition: border 0.15s;
-}
-
-.destination_pop_col_2 > input:hover {
-  border: 2px solid #2b54c4;
-  box-shadow: 1px 1px 1px #ecf1ff;
-}
-
-.destination_pop_col_2 > div {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 150px;
-  height: 40px;
-  border-radius: 5px;
-  font-family: "MaplestoryOTFLight";
-  font-size: 17px;
-  cursor: pointer;
-}
-
-.destination_pop_col_2 > div:hover {
-  border: 2px solid #2b54c4;
-}
-
-.destination_pop_col_2 > div > img {
-  margin: 0 10px;
-}
-
-.dim {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -999;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-}
-
-/* planner_pop_col_1 */
-.popup > .planner_pop_col_1 {
-  position: relative;
-  width: 95%;
-  height: 30px;
-  margin: 20px auto;
-}
-
-.planner_pop_col_1 > h1 {
-  font-size: 23px;
-}
-
-/* passenger_pop_col_1 */
-.popup > .passenger_pop_col_1 {
-  position: relative;
-  width: 95%;
-  height: 30px;
-  margin: 20px auto;
-}
-
-.passenger_pop_col_1 > h1 {
-  font-size: 23px;
-}
-
-/* passenger_pop_col_2 */
-.popup > .passenger_pop_col_2 {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  width: 95%;
-  height: 150px;
-  margin: 20px auto;
-}
-
-.passenger_pop_col_2 > div {
-  height: 100%;
-  box-sizing: border-box;
-}
-
-.passenger_pop_col_2 > div > div {
-  display: flex;
-  width: 100%;
-}
-
-.passenger_pop_col_2 > div > div:first-child {
-  height: 30px;
-  margin-top: 20px;
-}
-
-.passenger_pop_col_2 > div > div:last-child {
-  height: 120px;
-  margin-top: 10px;
-}
-
-.passenger_pop_col_2 h3 {
-  margin-top: 5px;
-  font-family: "MaplestoryOTFLight";
-  font-size: 18px;
-}
-
-.passenger_pop_col_2 span {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  margin-top: 5px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.passenger_pop_col_2 span:hover {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
-}
-
-/* count_box */
-.passenger_pop_col_2 .count_box {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 70px;
-}
-
-.count_box > input {
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  border: 1px solid #767676;
-  border-radius: 50%;
-  font-family: "MaplestoryOTFLight";
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.passenger_pop_col_2 input:hover {
-  box-shadow: 0 0 0 4px #fff, 0 0 0 5.5px #0064de;
-}
-
-.count_box > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  margin: 0 10px;
-  border: none;
-  font-size: 25px;
-}
-
-.count_box > div:hover {
-  border: 1.5px solid #0064de;
-}
-
-/* notice_box */
-.popup > .notice_box {
-  width: 800px;
-  height: 160.46px;
-  padding: 30px 32px;
-  margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #f8f9fc;
-  border-radius: 25px;
-}
-
-.notice_box > ul > li {
-  position: relative;
-  margin-top: 10px;
-  margin-left: 10px;
-  color: #555;
-  font-family: "MaplestoryOTFLight";
-  font-size: 14px;
-}
-
-.notice_box > ul > li::before {
-  position: absolute;
-  top: 5px;
-  left: -10px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background-color: #555;
-  content: "";
-}
-.notice_box > ul > li:nth-child(3)::after {
-  margin-left: 10px;
-  color: #0064de;
-  cursor: pointer;
-  content: "자세히 보기 >";
-}
-
-.notice_box > ul > li:last-child {
-  color: #0064de;
-}
-
-/* select_btn */
-.popup > .select_btn {
-  display: flex;
-  width: 240px;
-  height: 50px;
-  margin: 15px auto 0;
-  border: none;
-  background: #013066;
-  border-radius: 10px;
-  font-family: "MaplestoryOTFLight";
-  color: #fff;
-}
-
-.select_btn > a {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-.popup > .select_btn:hover {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
-}
-
-/* rating_pop_col_1 */
-.rating_pop_col_1 {
-  position: relative;
-  width: 95%;
-  height: 30px;
-  margin: 20px auto 0;
-}
-
-.rating_pop_col_1 > h1 {
-  font-size: 23px;
-}
-
-/* rating_pop_col_2 */
-.rating_pop_col_2 {
-  width: 95%;
-  height: 250px;
-  margin: 40px auto 0;
-}
-
-/* rating_select_box */
-.rating_select_box {
-  display: flex;
-  width: 100%;
-  height: 52px;
-}
-
-.rating_select_box > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  height: 100%;
-  border: 1px solid #000;
-  box-sizing: border-box;
-  font-family: "MaplestoryOTFLight";
-  font-size: 15px;
-  cursor: pointer;
-}
-
-.rating_select_box > div:hover {
-  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
-}
-
-/* upgrade_box */
-.rating_pop_col_2 > .upgrade_box {
-  width: 100%;
-  height: 100px;
-  margin-top: 60px;
-}
-
-.upgrade_box > div {
-  display: flex;
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-.upgrade_box h3 {
-  margin-top: 5px;
-  font-family: "MaplestoryOTFLight";
-  font-size: 18px;
-}
-
-.upgrade_box span {
-  display: flex;
-  width: 20px;
-  height: 20px;
-  margin-left: 5px;
-  margin-top: 5px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.upgrade_box span:hover {
-  box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
-}
-
-
 /* destination */
 .tab_content .destination {
   display: flex;
@@ -1422,6 +850,577 @@ button.planner_btn span.img_box > img {
   align-items: start;
   width: 338px;
   height: 470px;
+}
+
+/* popup */
+.popupfocus {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.popup {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 880px;
+  height: 403px;
+  z-index: -1;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 0;
+}
+
+.passenger_pop {
+  height: 611px;
+}
+
+.rating_pop {
+  height: 470px;
+}
+
+.planner_pop {
+  height: 846px;
+}
+
+.popupfocus:target + .popup {
+  opacity: 1;
+  z-index: 5;
+}
+
+.popupfocus:target + .popup + .dim {
+  display: block;
+  opacity: 1;
+  z-index: 3;
+}
+
+/* .destination_pop_col_1 */
+.popup > .destination_pop_col_1 {
+  position: relative;
+  width: 95%;
+  height: 30px;
+  margin: 20px auto 0;
+}
+
+.destination_pop_col_1 > h1 {
+  font-size: 23px;
+}
+
+/* close_btn */
+.close_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  float: right;
+  box-sizing: border-box;
+}
+
+.close_btn > a {
+  width: 100%;
+  height: 100%;
+}
+
+.close_btn img {
+  width: 100%;
+  height: 100%;
+}
+
+/* destination_pop_col_2 */
+.popup > .destination_pop_col_2 {
+  position: relative;
+  width: 95%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.destination_pop_col_2 > input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  margin-top: 30px;
+  border-bottom: 1px solid #000;
+  font-family: "MaplestoryOTFLight";
+  font-size: 20px;
+  transition: border 0.15s;
+}
+
+.destination_pop_col_2 > input:hover {
+  border: 2px solid #2b54c4;
+  box-shadow: 1px 1px 1px #ecf1ff;
+}
+
+.destination_pop_col_2 > div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  font-family: "MaplestoryOTFLight";
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.destination_pop_col_2 > div:hover {
+  border: 2px solid #2b54c4;
+}
+
+.destination_pop_col_2 > div > img {
+  margin: 0 10px;
+}
+
+.dim {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+}
+
+/* planner_pop_col_1 */
+.popup > .planner_pop_col_1 {
+  position: relative;
+  width: 95%;
+  height: 30px;
+  margin: 20px auto;
+}
+
+.planner_pop_col_1 > h1 {
+  font-size: 23px;
+}
+
+/* planner_pop_col_2 */
+.planner_pop_col_2 .my-calendar {
+  width: 700px;
+  margin: 30px;
+  text-align: center;
+  font-weight: 800;
+  border: 1px solid #ddd;
+  cursor: default;
+}
+.my-calendar .clicked-date {
+  border-radius: 25px;
+  margin-top: 136px;
+  float: left;
+  width: 42%;
+  padding: 46px 0 26px;
+  background: #ddd;
+}
+.my-calendar .calendar-box {
+  margin-top: 100px;
+  float: right;
+  width: 58%;
+  padding-left: 30px;
+}
+
+.clicked-date .tab1-cal-day,
+.clicked-date .tab2-cal-day,
+.clicked-date .tab3_1-cal-day,
+.clicked-date .tab3_2-cal-day {
+  font-size: 24px;
+}
+.clicked-date .tab1-cal-date,
+.clicked-date .tab2-cal-date,
+.clicked-date .tab3_1-cal-date,
+.clicked-date .tab3_2-cal-date {
+  font-size: 130px;
+}
+
+.ctr-box {
+  padding: 0 16px;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.ctr-box .tab1-btn-cal,
+.ctr-box .tab2-btn-cal,
+.ctr-box .tab3_1-btn-cal,
+.ctr-box .tab3_2-btn-cal {
+  position: relative;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.ctr-box .tab1-btn-cal:after,
+.ctr-box .tab2-btn-cal:after,
+.ctr-box .tab3_1-btn-cal:after,
+.ctr-box .tab3_2-btn-cal:after {
+  content: "<";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.ctr-box .tab1-btn-cal.next,
+.ctr-box .tab2-btn-cal.next,
+.ctr-box .tab3_1-btn-cal.next,
+.ctr-box .tab3_2-btn-cal.next {
+  float: right;
+}
+.ctr-box .tab1-btn-cal.next:after,
+.ctr-box .tab2-btn-cal.next:after,
+.ctr-box .tab3_1-btn-cal.next:after,
+.ctr-box .tab3_2-btn-cal.next:after {
+  content: ">";
+}
+
+.cal-table {
+  width: 100%;
+}
+.cal-table th {
+  width: 14.2857%;
+  padding-bottom: 5px;
+  font-size: 16px;
+  font-weight: 900;
+}
+.cal-table td {
+  padding: 3px 0;
+  height: 50px;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.cal-table td.day {
+  position: relative;
+  cursor: pointer;
+}
+.cal-table td.today {
+  background: #ffd255;
+  border-radius: 50%;
+  color: #fff;
+}
+.cal-table td.day-active {
+  background: #ff8585;
+  border-radius: 50%;
+  color: #fff;
+}
+.cal-table td.has-event:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 4px;
+  background: #ffc107;
+}
+.choice {
+  width: 95%;
+  margin: auto;
+  margin-top: 550px;
+  min-height: 74px;
+  padding: 0 50px;
+  background-color: #f8f9fc;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.choice_text {
+  font-size: 14px;
+  color: #555;
+  line-height: 74px;
+  margin-right: 20px;
+  position: relative;
+}
+.choice_text::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.4rem;
+  background: url(../images/ico-caption.svg) center center/16px 16px no-repeat;
+  vertical-align: -0.3rem;
+  left: -5.5%;
+  top: 32%;
+}
+.choice_btn {
+  display: flex;
+  font-family: "MaplestoryOTFLight";
+  width: 150px;
+  height: 48px;
+  border: 1px solid #bcbcbc;
+  background-color: #00256c !important;
+  padding: 11px 11px;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 15px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.choice_btn > a {
+  width: 100%;
+  height: 100%;
+}
+
+.choice_btn:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
+}
+
+/* passenger_pop_col_1 */
+.popup > .passenger_pop_col_1 {
+  position: relative;
+  width: 95%;
+  height: 30px;
+  margin: 20px auto;
+}
+
+.passenger_pop_col_1 > h1 {
+  font-size: 23px;
+}
+
+/* passenger_pop_col_2 */
+.popup > .passenger_pop_col_2 {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 95%;
+  height: 150px;
+  margin: 20px auto;
+}
+
+.passenger_pop_col_2 > div {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.passenger_pop_col_2 > div > div {
+  display: flex;
+  width: 100%;
+}
+
+.passenger_pop_col_2 > div > div:first-child {
+  height: 30px;
+  margin-top: 20px;
+}
+
+.passenger_pop_col_2 > div > div:last-child {
+  height: 120px;
+  margin-top: 10px;
+}
+
+.passenger_pop_col_2 h3 {
+  margin-top: 5px;
+  font-family: "MaplestoryOTFLight";
+  font-size: 18px;
+}
+
+.passenger_pop_col_2 span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.passenger_pop_col_2 span:hover {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
+}
+
+/* count_box */
+.passenger_pop_col_2 .count_box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+
+.count_box > input {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #767676;
+  border-radius: 50%;
+  font-family: "MaplestoryOTFLight";
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.passenger_pop_col_2 input:hover {
+  box-shadow: 0 0 0 4px #fff, 0 0 0 5.5px #0064de;
+}
+
+.count_box > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  border: none;
+  font-size: 25px;
+}
+
+.count_box > div:hover {
+  border: 1.5px solid #0064de;
+}
+
+/* notice_box */
+.popup > .notice_box {
+  width: 800px;
+  height: 160.46px;
+  padding: 30px 32px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f8f9fc;
+  border-radius: 25px;
+}
+
+.notice_box > ul > li {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  color: #555;
+  font-family: "MaplestoryOTFLight";
+  font-size: 14px;
+}
+
+.notice_box > ul > li::before {
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #555;
+  content: "";
+}
+.notice_box > ul > li:nth-child(3)::after {
+  margin-left: 10px;
+  color: #0064de;
+  cursor: pointer;
+  content: "자세히 보기 >";
+}
+
+.notice_box > ul > li:last-child {
+  color: #0064de;
+}
+
+/* select_btn */
+.popup > .select_btn {
+  display: flex;
+  width: 240px;
+  height: 50px;
+  margin: 15px auto 0;
+  border: none;
+  background: #013066;
+  border-radius: 10px;
+  font-family: "MaplestoryOTFLight";
+  color: #fff;
+}
+
+.select_btn > a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.popup > .select_btn:hover {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
+}
+
+/* rating_pop_col_1 */
+.rating_pop_col_1 {
+  position: relative;
+  width: 95%;
+  height: 30px;
+  margin: 20px auto 0;
+}
+
+.rating_pop_col_1 > h1 {
+  font-size: 23px;
+}
+
+/* rating_pop_col_2 */
+.rating_pop_col_2 {
+  width: 95%;
+  height: 250px;
+  margin: 40px auto 0;
+}
+
+/* rating_select_box */
+.rating_select_box {
+  display: flex;
+  width: 100%;
+  height: 52px;
+}
+
+.rating_select_box > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  font-family: "MaplestoryOTFLight";
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.rating_select_box > div:hover {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 3px #0064de;
+}
+
+/* upgrade_box */
+.rating_pop_col_2 > .upgrade_box {
+  width: 100%;
+  height: 100px;
+  margin-top: 60px;
+}
+
+.upgrade_box > div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.upgrade_box h3 {
+  margin-top: 5px;
+  font-family: "MaplestoryOTFLight";
+  font-size: 18px;
+}
+
+.upgrade_box span {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.upgrade_box span:hover {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2.5px #0064de;
 }
 
 /* experience */
