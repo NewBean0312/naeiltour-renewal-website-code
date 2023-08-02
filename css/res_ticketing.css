@@ -418,6 +418,10 @@
     height: 26px;
   }
 
+  .planner_pop {
+    display: none;
+  }
+
   /* personnel */
   .tab_content .personnel {
     width: 100%;
